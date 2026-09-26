@@ -258,39 +258,86 @@ export const translations = {
       ]
     },
     team: {
-      title: 'Liderazgo Ejecutivo',
-      rosterTitle: 'Mesa de Operaciones y Trading',
+      title: 'Liderazgo & Equipo Ejecutivo',
+      subtitle: 'Profesionales líderes en trading de commodities, logística marítima y desarrollo de negocios globales.',
       executives: [
         {
-          name: 'Raquel Cantero',
-          role: 'Directora Ejecutiva (C.E.O.)',
+          name: 'Gladys Raquel Cantero López',
+          role: 'Directora Ejecutiva & Presidenta (C.E.O. & President)',
           email: 'operations@vsinternationalllc.com',
-          bio: 'Liderando la estrategia global de trading de commodities, alianzas comerciales transfronterizas y gobernanza institucional en América, Europa y Medio Oriente.',
+          bio: 'Fundadora y líder ejecutiva de VS International Group LLC. Conduce la visión global de la compañía, las alianzas estratégicas soberanas y bancarias, y la expansión de las operaciones de trading físico y trade finance en América, Europa, EAU y Asia.',
           skills: [
-            { name: 'Trading de Commodities', value: 85 },
-            { name: 'Gobernanza Corporativa', value: 80 },
-            { name: 'Estrategia de Crédito Privado', value: 90 }
+            { name: 'Trading Global de Commodities', value: 95 },
+            { name: 'Gobernanza & Alianzas Institucionales', value: 92 },
+            { name: 'Estrategia de Trade Finance & Capital', value: 94 }
           ]
         },
         {
-          name: 'Michele',
-          role: 'Directora de Operaciones',
-          email: 'michele@vsinternationalllc.com',
-          bio: 'Supervisando la ejecución operativa global, logística portuaria y cumplimiento de contratos en transacciones internacionales de commodities.',
+          name: 'Carlos Ibarra',
+          role: 'Director Comercial (Commercial Director)',
+          email: 'salesc@vsinternationalllc.com',
+          bio: 'Responsable de la dirección comercial global, originación de contratos de suministro físico y gestión de alianzas estratégicas con refinerías, comercializadoras mayoristas y compradores industriales en los principales corredores comerciales del mundo.',
           skills: [
-            { name: 'Operaciones Globales y Logística', value: 90 },
-            { name: 'Gestión y Cumplimiento de Contratos', value: 85 },
-            { name: 'Mitigación de Riesgos Operativos', value: 85 }
+            { name: 'Desarrollo Comercial Global', value: 94 },
+            { name: 'Negociación de Contratos de Suministro', value: 92 },
+            { name: 'Relaciones con Refinerías & Clientes', value: 89 }
+          ]
+        },
+        {
+          name: 'Betania Biagini',
+          role: 'Gerente Global de Trading (Global Trading Manager)',
+          email: 'biagini@vsinternationalllc.com',
+          bio: 'Dirige la mesa de trading físico de destilados medios, combustibles y materias primas energéticas. Especialista en análisis de diferenciales de mercado, arbitraje internacional y optimización de fletes y logística marítima para entregas FOB y CIF.',
+          skills: [
+            { name: 'Trading Físico de Destilados', value: 93 },
+            { name: 'Arbitraje de Mercado & Coberturas', value: 90 },
+            { name: 'Logística Marítima & Fletamento', value: 88 }
+          ]
+        },
+        {
+          name: 'Fredd Ortega',
+          role: 'Adquisición de Productos (Product Acquisition)',
+          email: 'fortega@vsinternationalllc.com',
+          bio: 'Encabezando la originación y aseguramiento de volúmenes de commodities en boca de producción y terminales. Especializado en verificación de calidad independiente (SGS/Saybolt), auditoría técnica y gestión de suministros energéticos y minerales.',
+          skills: [
+            { name: 'Adquisición & Suministro Upstream', value: 91 },
+            { name: 'Control de Calidad & Certificación SGS', value: 90 },
+            { name: 'Operaciones en Terminales & Almacenamiento', value: 87 }
+          ]
+        },
+        {
+          name: 'Michele Carvalho',
+          role: 'Directora de Operaciones & Business Development',
+          email: 'michele@vsinternationalllc.com',
+          bio: 'Lidera la ejecución de operaciones globales, supervisión de contratos transfronterizos y la expansión de nuevos negocios en América Latina y mercados estratégicos. Garantiza el cumplimiento contractual riguroso y la mitigación de riesgos operativos.',
+          skills: [
+            { name: 'Operaciones Globales & Logística', value: 92 },
+            { name: 'Cumplimiento Contractual & Legal', value: 89 },
+            { name: 'Desarrollo de Negocios Internacionales', value: 90 }
+          ]
+        },
+        {
+          name: 'Eva García',
+          role: 'Ejecutiva de Desarrollo de Negocios (Business Development Executive)',
+          email: 'egarcia@vsinternationalllc.com',
+          bio: 'Encargada del crecimiento de alianzas corporativas, incorporación de nuevos compradores y estructuración de acuerdos en los mercados de commodities agrícolas y energéticos en Europa, América y Medio Oriente.',
+          skills: [
+            { name: 'Estructuración de Alianzas Corporativas', value: 90 },
+            { name: 'Incorporación & Fidelización de Clientes', value: 89 },
+            { name: 'Expansión de Mercados Transfronterizos', value: 86 }
+          ]
+        },
+        {
+          name: 'Jorge Eger',
+          role: 'Desarrollo de Negocios - Tierras Raras & Proyectos Mineros',
+          email: 'eger@vsinternationalllc.com',
+          bio: 'Especialista en el desarrollo y estructuración de proyectos de minería crítica, tierras raras y metales estratégicos para la transición tecnológica. Conecta depósitos minerales y centros de beneficio con consumidores industriales globales.',
+          skills: [
+            { name: 'Tierras Raras & Minerales Críticos', value: 92 },
+            { name: 'Estructuración de Proyectos Mineros', value: 90 },
+            { name: 'Cadenas de Suministro Industrial Offtake', value: 87 }
           ]
         }
-      ],
-      roster: [
-        { name: 'Carlos Ibarra', role: 'Director Comercial', email: 'salesc@vsinternationalllc.com' },
-        { name: 'Eva García', role: 'Gestión Comercial & Trading', email: 'egarcia@vsinternationalllc.com' },
-        { name: 'Jorge Eger', role: 'Trade Finance & Finanzas', email: 'jeger@vsinternationalllc.com' },
-        { name: 'Betania Biagini', role: 'Gerente Global de Trading', email: 'biagini@vsinternationalllc.com' },
-        { name: 'Davi Assis', role: 'Gerente de Desarrollo', email: 'dassis@vsinternationalllc.com' },
-        { name: 'Fredd Ortega', role: 'Adquisición de Productos', email: 'fortega@vsinternationalllc.com' }
       ]
     },
     blog: {
@@ -691,39 +738,86 @@ export const translations = {
       ]
     },
     team: {
-      title: 'Executive Leadership',
-      rosterTitle: 'Operations & Trading Desk',
+      title: 'Leadership & Executive Team',
+      subtitle: 'Leading professionals in physical commodities trading, maritime logistics, structured trade finance, and global business development.',
       executives: [
         {
-          name: 'Raquel Cantero',
-          role: 'Chief Executive Officer (C.E.O.)',
+          name: 'Gladys Raquel Cantero López',
+          role: 'Chief Executive Officer & President (C.E.O. & President)',
           email: 'operations@vsinternationalllc.com',
-          bio: 'Leading global physical commodities trading strategy, cross-border commercial partnerships and institutional corporate governance across the Americas, Europe and Middle East.',
+          bio: 'Founder and executive leader of VS International Group LLC. Directs the firm’s global vision, sovereign and institutional banking partnerships, and the worldwide expansion of physical trading and trade finance across the Americas, Europe, UAE, and Asia.',
           skills: [
-            { name: 'Commodity Trading', value: 85 },
-            { name: 'Corporate Governance', value: 80 },
-            { name: 'Private Credit Strategy', value: 90 }
+            { name: 'Global Commodities Trading', value: 95 },
+            { name: 'Governance & Institutional Partnerships', value: 92 },
+            { name: 'Trade Finance & Capital Strategy', value: 94 }
           ]
         },
         {
-          name: 'Michele',
-          role: 'Director of Operations',
-          email: 'michele@vsinternationalllc.com',
-          bio: 'Overseeing global operational execution, port logistics management and contract compliance across international commodity transactions.',
+          name: 'Carlos Ibarra',
+          role: 'Commercial Director',
+          email: 'salesc@vsinternationalllc.com',
+          bio: 'Leads global commercial direction, physical supply contract origination, and strategic partnerships with refineries, wholesale marketers, and industrial offtakers across the world’s primary trade corridors.',
           skills: [
-            { name: 'Global Operations & Logistics', value: 90 },
-            { name: 'Contract Execution & Compliance', value: 85 },
-            { name: 'Operational Risk Mitigation', value: 85 }
+            { name: 'Global Commercial Development', value: 94 },
+            { name: 'Supply Contract Negotiation', value: 92 },
+            { name: 'Refinery & Offtaker Relations', value: 89 }
+          ]
+        },
+        {
+          name: 'Betania Biagini',
+          role: 'Global Trading Manager',
+          email: 'biagini@vsinternationalllc.com',
+          bio: 'Directs the physical trading desk for middle distillates, fuels, and energy commodities. Specializes in market differential analysis, international arbitrage structures, and chartering and maritime freight optimization for FOB and CIF deliveries.',
+          skills: [
+            { name: 'Physical Distillates Trading', value: 93 },
+            { name: 'Market Arbitrage & Hedging', value: 90 },
+            { name: 'Maritime Logistics & Chartering', value: 88 }
+          ]
+        },
+        {
+          name: 'Fredd Ortega',
+          role: 'Product Acquisition',
+          email: 'fortega@vsinternationalllc.com',
+          bio: 'Heads origination and procurement of physical commodities at production heads and terminal hubs. Specializes in independent quality inspection (SGS/Saybolt), technical cargo auditing, and energy and mineral supply chain management.',
+          skills: [
+            { name: 'Upstream Sourcing & Acquisition', value: 91 },
+            { name: 'Quality Control & SGS Verification', value: 90 },
+            { name: 'Terminal Storage & Operations', value: 87 }
+          ]
+        },
+        {
+          name: 'Michele Carvalho',
+          role: 'Director of Operations & Business Development',
+          email: 'michele@vsinternationalllc.com',
+          bio: 'Oversees global transaction execution, cross-border contract compliance, and business development across Latin America and strategic emerging markets. Ensures rigorous operational risk mitigation and vessel logistics execution.',
+          skills: [
+            { name: 'Global Operations & Logistics', value: 92 },
+            { name: 'Contract Execution & Compliance', value: 89 },
+            { name: 'International Business Expansion', value: 90 }
+          ]
+        },
+        {
+          name: 'Eva García',
+          role: 'Business Development Executive',
+          email: 'egarcia@vsinternationalllc.com',
+          bio: 'Drives strategic corporate partnerships, new buyer onboarding, and cross-border commercial structuring across agricultural and energy commodities in Europe, the Americas, and the Middle East.',
+          skills: [
+            { name: 'Corporate Partnership Structuring', value: 90 },
+            { name: 'Client Onboarding & Relations', value: 89 },
+            { name: 'Cross-Border Market Expansion', value: 86 }
+          ]
+        },
+        {
+          name: 'Jorge Eger',
+          role: 'Business Development Executive - Rare Earths & Mining Projects',
+          email: 'eger@vsinternationalllc.com',
+          bio: 'Specialist in the structuring and development of critical minerals, rare earths, and strategic industrial metals projects for the global technological transition. Connects mining assets and processing facilities with tier-1 industrial offtakers worldwide.',
+          skills: [
+            { name: 'Rare Earths & Critical Minerals', value: 92 },
+            { name: 'Mining Project Structuring', value: 90 },
+            { name: 'Industrial Supply Offtake Chains', value: 87 }
           ]
         }
-      ],
-      roster: [
-        { name: 'Carlos Ibarra', role: 'Commercial Director', email: 'salesc@vsinternationalllc.com' },
-        { name: 'Eva García', role: 'Commercial Trading & Operations', email: 'egarcia@vsinternationalllc.com' },
-        { name: 'Jorge Eger', role: 'Trade Finance & Structured Credit', email: 'jeger@vsinternationalllc.com' },
-        { name: 'Betania Biagini', role: 'Global Trading Manager', email: 'biagini@vsinternationalllc.com' },
-        { name: 'Davi Assis', role: 'Development Manager', email: 'dassis@vsinternationalllc.com' },
-        { name: 'Fredd Ortega', role: 'Product Acquisition', email: 'fortega@vsinternationalllc.com' }
       ]
     },
     blog: {

@@ -2,16 +2,37 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 const memberImages = [
-  '/_sample/team/image_01.jpg',
-  '/_sample/team/image_02.jpg'
+  '/image/team/raquel_cantero.jpg',
+  '/image/team/carlos_ibarra.jpg',
+  '/image/team/betania_biagini.jpg',
+  '/image/team/fredd_ortega.jpg',
+  '/image/team/michele_carvalho.jpg',
+  '/image/team/eva_garcia.jpg',
+  '/image/team/jorge_eger.jpg'
 ];
 
 const memberSocials = [
   [
-    { class: 'social-list-linkedin', link: 'https://www.linkedin.com/in/raquel-cantero-184641158' }
+    { class: 'social-list-linkedin', link: 'https://www.linkedin.com/in/raquel-cantero-184641158' },
+    { class: 'social-list-email', link: 'mailto:operations@vsinternationalllc.com' }
+  ],
+  [
+    { class: 'social-list-email', link: 'mailto:salesc@vsinternationalllc.com' }
+  ],
+  [
+    { class: 'social-list-email', link: 'mailto:biagini@vsinternationalllc.com' }
+  ],
+  [
+    { class: 'social-list-email', link: 'mailto:fortega@vsinternationalllc.com' }
   ],
   [
     { class: 'social-list-email', link: 'mailto:michele@vsinternationalllc.com' }
+  ],
+  [
+    { class: 'social-list-email', link: 'mailto:egarcia@vsinternationalllc.com' }
+  ],
+  [
+    { class: 'social-list-email', link: 'mailto:eger@vsinternationalllc.com' }
   ]
 ];
 
@@ -20,13 +41,13 @@ export default function TeamSection() {
   const [animated, setAnimated] = useState(false);
   const teamRef = useRef(null);
 
-  const teamMembers = t.team.executives.map((exec, idx) => ({
+  const teamMembers = (t.team.executives || []).map((exec, idx) => ({
     ...exec,
-    image: memberImages[idx],
-    socials: memberSocials[idx]
+    image: memberImages[idx] || '/image/team/raquel_cantero.jpg',
+    socials: memberSocials[idx] || []
   }));
 
-  const managementTeam = t.team.roster;
+  const managementTeam = t.team.roster || [];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -35,7 +56,7 @@ export default function TeamSection() {
           setAnimated(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     if (teamRef.current) {
@@ -54,6 +75,12 @@ export default function TeamSection() {
           <span></span>
         </h2>
 
+        {t.team.subtitle && (
+          <p className="subheader" style={{ maxWidth: '850px', marginBottom: '35px', color: '#666' }}>
+            {t.team.subtitle}
+          </p>
+        )}
+
         {/* Team members list */}
         <ul className="team-list clear-fix">
           {teamMembers.map((member, index) => (
@@ -63,7 +90,7 @@ export default function TeamSection() {
                 <div className="column-left">
                   <div className="image image-overlay-image">
                     <a href={member.image} className="image-overlay-container" onClick={(e) => e.preventDefault()}>
-                      <img src={member.image} alt={member.name} style={{ width: '100%', display: 'block' }} />
+                      <img src={member.image} alt={member.name} style={{ width: '100%', display: 'block', borderRadius: '2px' }} />
                       <div className="overlay-curtain">
                         <span
                           style={{
@@ -84,7 +111,7 @@ export default function TeamSection() {
 
                   {/* Social icon list */}
                   <ul className="social-list social-list-style-1">
-                    {member.socials.map((soc, sIdx) => (
+                    {(member.socials || []).map((soc, sIdx) => (
                       <li key={sIdx}>
                         <a
                           href={soc.link}
@@ -105,8 +132,8 @@ export default function TeamSection() {
 
                   <p>{member.bio}</p>
 
-                  <div style={{ margin: '8px 0 16px', fontSize: '14px', color: '#00214E', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#00214E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                  <div style={{ margin: '8px 0 16px', fontSize: '14px', color: '#00214E', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#00214E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
                       <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                       <polyline points="22,6 12,13 2,6" />
                     </svg>
@@ -115,7 +142,7 @@ export default function TeamSection() {
 
                   {/* Skills list */}
                   <ul className="skill-list list-0">
-                    {member.skills.map((skill, kIdx) => (
+                    {(member.skills || []).map((skill, kIdx) => (
                       <li key={kIdx}>
                         <span>{skill.name}</span>
                         <span className="progress-bar">
@@ -137,28 +164,30 @@ export default function TeamSection() {
           ))}
         </ul>
 
-        {/* Extended Management Roster */}
-        <div style={{ marginTop: '50px', borderTop: '1px solid #E6E6DF', paddingTop: '40px' }}>
-          <h4 className="underline" style={{ textAlign: 'center', marginBottom: '30px' }}>
-            <span>{t.team.rosterTitle}</span>
-            <span></span>
-          </h4>
+        {/* Extended Management Roster (if items present) */}
+        {managementTeam.length > 0 && (
+          <div style={{ marginTop: '50px', borderTop: '1px solid #E6E6DF', paddingTop: '40px' }}>
+            <h4 className="underline" style={{ textAlign: 'center', marginBottom: '30px' }}>
+              <span>{t.team.rosterTitle}</span>
+              <span></span>
+            </h4>
 
-          <ul className="feature-list feature-list-style-1 feature-list-icon-small feature-list-icon-left clear-fix layout-p-50x50">
-            {managementTeam.map((officer, oIdx) => (
-              <li key={oIdx} className={oIdx % 2 === 0 ? 'column-left' : 'column-right'}>
-                <span className="icon icon-people" />
-                <h5>{officer.name}</h5>
-                <p style={{ margin: '2px 0 4px', fontWeight: '600', color: '#555' }}>{officer.role}</p>
-                <p style={{ margin: 0 }}>
-                  <a href={`mailto:${officer.email}`} style={{ color: '#00214E', textDecoration: 'none', fontSize: '13px' }}>
-                    {officer.email}
-                  </a>
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
+            <ul className="feature-list feature-list-style-1 feature-list-icon-small feature-list-icon-left clear-fix layout-p-50x50">
+              {managementTeam.map((officer, oIdx) => (
+                <li key={oIdx} className={oIdx % 2 === 0 ? 'column-left' : 'column-right'}>
+                  <span className="icon icon-people" />
+                  <h5>{officer.name}</h5>
+                  <p style={{ margin: '2px 0 4px', fontWeight: '600', color: '#555' }}>{officer.role}</p>
+                  <p style={{ margin: 0 }}>
+                    <a href={`mailto:${officer.email}`} style={{ color: '#00214E', textDecoration: 'none', fontSize: '13px' }}>
+                      {officer.email}
+                    </a>
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </li>
   );
