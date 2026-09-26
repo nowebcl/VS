@@ -6,7 +6,16 @@ export default function NavigationBar() {
 
   const navItems = [
     { id: 'about', label: t.nav.about, targetId: 'page-about' },
-    { id: 'services', label: t.nav.divisions, targetId: 'page-services' },
+    {
+      id: 'commodities',
+      label: t.nav.commodities || 'Commodities',
+      targetId: 'page-commodities',
+      subItems: [
+        { label: t.commodities?.title || 'Commodities Divisions', targetId: 'page-commodities' },
+        { label: t.energyProducts?.title || 'Energy Products', targetId: 'page-energy-products' },
+        { label: t.nav.divisions || 'Operational Services', targetId: 'page-services' }
+      ]
+    },
     { id: 'portfolio', label: t.nav.terminals, targetId: 'page-portfolio' },
     { id: 'team', label: t.nav.leadership, targetId: 'page-team' },
     {
@@ -190,6 +199,9 @@ export default function NavigationBar() {
               }}
             >
               <option value="about">{t.nav.about}</option>
+              <option value="commodities">{t.nav.commodities || 'Commodities'}</option>
+              <option value="commodities">- {t.commodities?.title || 'Commodities Divisions'}</option>
+              <option value="commodities">- {t.energyProducts?.title || 'Energy Products'}</option>
               <option value="services">{t.nav.divisions}</option>
               <option value="portfolio">{t.nav.terminals}</option>
               <option value="team">{t.nav.leadership}</option>

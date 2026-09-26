@@ -2,6 +2,8 @@ export const translations = {
   es: {
     nav: {
       about: 'Quiénes Somos',
+      commodities: 'Commodities',
+      energyProducts: 'Energía',
       divisions: 'Divisiones',
       terminals: 'Terminales',
       leadership: 'Liderazgo',
@@ -48,6 +50,92 @@ export const translations = {
           icon: 'icon-shield',
           title: 'Trade Finance',
           description: 'Crédito privado, facilidades borrowing base, descuento de facturas y liquidez de suministro.'
+        }
+      ]
+    },
+    commodities: {
+      title: 'Divisiones de Commodities',
+      subtitle: 'Comercio físico global, infraestructura logística y liquidez estructurada en cuatro divisiones fundamentales.',
+      imageAlt: 'Divisiones de Commodities de VS International Group: Metales, Agricultura, Energía y Finanzas',
+      badgeSector: 'Portafolio de Trading Global',
+      divisions: [
+        {
+          id: 'energy',
+          title: 'Energía',
+          badge: 'División Primaria',
+          desc: 'Trading físico de destilados medios, fuel oil pesado, nafta, asfalto y crudo ligero y pesado con acceso a terminales estratégicas.',
+          products: ['Jet A-1', 'EN590 10ppm', 'Fuel Oil D6', 'Nafta Alifática / Aromática', 'Petróleo Crudo'],
+          actionText: 'Ver Productos de Energía →',
+          actionLink: '#page-energy-products'
+        },
+        {
+          id: 'metals',
+          title: 'Metales',
+          badge: 'Minería & Fundición',
+          desc: 'Abastecimiento y distribución transfronteriza de metales preciosos e industriales para cadenas de manufactura global.',
+          products: ['Lingotes de Oro 999.9', 'Plata Fina', 'Cátodos de Cobre Grado A', 'Aluminio P1020', 'Litio'],
+          actionText: 'Consultar Mesa de Metales →',
+          actionLink: '#page-contact'
+        },
+        {
+          id: 'agriculture',
+          title: 'Agricultura',
+          badge: 'Soft Commodities',
+          desc: 'Originación directa desde productores líderes y entrega a granel de alimentos esenciales y materias primas agrícolas.',
+          products: ['Azúcar ICUMSA 45', 'Cacao en Grano', 'Café Arábica & Robusta', 'Soja & Trigo', 'Arroz Blanco'],
+          actionText: 'Consultar Mesa Agrícola →',
+          actionLink: '#page-contact'
+        },
+        {
+          id: 'financial',
+          title: 'Finanzas',
+          badge: 'Trade Finance Desk',
+          desc: 'Estructuración de crédito privado garantizado por inventario y conocimientos de embarque (BL) para mitigar riesgos.',
+          products: ['Borrowing Base', 'Cartas de Crédito (LC / SBLC)', 'Descuento de Facturas', 'Pre-export Finance'],
+          actionText: 'Ver Soluciones de Trade Finance →',
+          actionLink: '#page-pricing-plans'
+        }
+      ]
+    },
+    energyProducts: {
+      title: 'Nuestros Productos de Energía',
+      subtitle: 'Especificaciones premium de destilados, crudos y derivados petrolíferos para clientes industriales y mayoristas globales.',
+      imageAlt: 'Instalaciones y terminal de almacenamiento de productos de energía',
+      cards: [
+        {
+          id: 'middle-distillates',
+          name: 'Destilados Medios',
+          nameOriginal: 'Middle Distillates',
+          products: 'Jet A1 , EN590, D6, Heating Oil, Gasoline',
+          desc: 'Combustibles refinados para aviación comercial, transporte de carga pesada y generación térmica.'
+        },
+        {
+          id: 'heavy-fuel',
+          name: 'Fuel Pesado y Materias Primas',
+          nameOriginal: 'Heavy Fuel and Feedstock',
+          products: 'Low and high Sulfur Bunker, Heavy Fuel Oil, Pet coke',
+          desc: 'Bunkers marinos de bajo y alto azufre, combustibles residuales industriales y coque de petróleo.'
+        },
+        {
+          id: 'bitumen',
+          name: 'Betún / Asfalto',
+          nameOriginal: 'Bitumen',
+          products: 'Asphalt',
+          desc: 'Asfalto y betún de penetración y modificado para proyectos de infraestructura vial de gran escala.'
+        },
+        {
+          id: 'naphtha',
+          name: 'Nafta',
+          nameOriginal: 'Naphtha',
+          products: 'Aliphatic , Aromatic',
+          desc: 'Naftas alifáticas y aromáticas para reformado catalítico, blending de gasolinas y síntesis petroquímica.'
+        },
+        {
+          id: 'crude-oil',
+          name: 'Petróleo Crudo',
+          nameOriginal: 'Crude Oil',
+          products: 'Heavy , Light',
+          desc: 'Grados de crudo pesado y ligero (WTI, Brent, blends latinoamericanos y del Medio Oriente).'
         }
       ]
     },
@@ -346,6 +434,8 @@ export const translations = {
   en: {
     nav: {
       about: 'About',
+      commodities: 'Commodities',
+      energyProducts: 'Energy',
       divisions: 'Divisions',
       terminals: 'Terminals',
       leadership: 'Leadership',
@@ -392,6 +482,92 @@ export const translations = {
           icon: 'icon-shield',
           title: 'Trade Finance',
           description: 'Private credit, senior borrowing base facilities, receivables discounting and supply chain liquidity.'
+        }
+      ]
+    },
+    commodities: {
+      title: 'Commodities Divisions',
+      subtitle: 'Global physical trading, integrated logistics, and structured liquidity across four core commodity divisions.',
+      imageAlt: 'VS International Group Commodities Divisions: Metals, Agriculture, Energy, and Financial',
+      badgeSector: 'Global Trading Portfolio',
+      divisions: [
+        {
+          id: 'energy',
+          title: 'Energy',
+          badge: 'Primary Division',
+          desc: 'Physical trading of middle distillates, heavy fuel oils, naphtha, asphalt, and crude oils backed by key terminal storage.',
+          products: ['Jet A-1', 'EN590 10ppm', 'D6 Fuel Oil', 'Aliphatic / Aromatic Naphtha', 'Crude Oil'],
+          actionText: 'Explore Energy Products →',
+          actionLink: '#page-energy-products'
+        },
+        {
+          id: 'metals',
+          title: 'Metals',
+          badge: 'Mining & Smelting',
+          desc: 'Cross-border origination and global delivery of precious, base, and strategic metals for international manufacturing.',
+          products: ['Gold Bullion 999.9', 'Fine Silver', 'Copper Cathodes Grade A', 'Aluminum P1020', 'Lithium'],
+          actionText: 'Contact Metals Desk →',
+          actionLink: '#page-contact'
+        },
+        {
+          id: 'agriculture',
+          title: 'Agriculture',
+          badge: 'Soft Commodities',
+          desc: 'Direct farm-to-port origination and bulk supply of vital food staples and essential agricultural soft commodities.',
+          products: ['ICUMSA 45 Sugar', 'Raw Cocoa Beans', 'Arabica & Robusta Coffee', 'Soybeans & Wheat', 'White Rice'],
+          actionText: 'Contact Agri Desk →',
+          actionLink: '#page-contact'
+        },
+        {
+          id: 'financial',
+          title: 'Financial',
+          badge: 'Trade Finance Desk',
+          desc: 'Bespoke inventory-backed credit facilities, borrowing base loans, and transactional liquidity mitigating market risks.',
+          products: ['Borrowing Base', 'Letters of Credit (LC / SBLC)', 'Invoice Discounting', 'Pre-export Finance'],
+          actionText: 'Explore Trade Finance →',
+          actionLink: '#page-pricing-plans'
+        }
+      ]
+    },
+    energyProducts: {
+      title: 'Our Energy Products',
+      subtitle: 'High-grade refined distillates, heavy fuel feedstocks, asphalt, naphtha, and crude grades for global counterparties.',
+      imageAlt: 'Energy products terminal and refining storage facility',
+      cards: [
+        {
+          id: 'middle-distillates',
+          name: 'Middle Distillates',
+          nameOriginal: 'Middle Distillates',
+          products: 'Jet A1 , EN590, D6, Heating Oil, Gasoline',
+          desc: 'Refined transportation and power generation fuels for commercial aviation and heavy transport.'
+        },
+        {
+          id: 'heavy-fuel',
+          name: 'Heavy Fuel and Feedstock',
+          nameOriginal: 'Heavy Fuel and Feedstock',
+          products: 'Low and high Sulfur Bunker, Heavy Fuel Oil, Pet coke',
+          desc: 'High & low sulfur marine bunker fuels, residual fuel oil grades, and petroleum coke.'
+        },
+        {
+          id: 'bitumen',
+          name: 'Bitumen',
+          nameOriginal: 'Bitumen',
+          products: 'Asphalt',
+          desc: 'Penetration grade and polymer-modified bitumen/asphalt for major infrastructure projects.'
+        },
+        {
+          id: 'naphtha',
+          name: 'Naphtha',
+          nameOriginal: 'Naphtha',
+          products: 'Aliphatic , Aromatic',
+          desc: 'Light and heavy naphthas for catalytic reforming, gasoline blending, and petrochemical steam cracking.'
+        },
+        {
+          id: 'crude-oil',
+          name: 'Crude Oil',
+          nameOriginal: 'Crude Oil',
+          products: 'Heavy , Light',
+          desc: 'Light sweet, medium, and heavy sour crude grades sourced from premier regional producers.'
         }
       ]
     },

@@ -6,6 +6,8 @@ export default function Footer() {
 
   const footerLinks = [
     { label: t.nav.about, targetId: 'page-about' },
+    { label: t.commodities?.title || 'Commodities', targetId: 'page-commodities' },
+    { label: t.energyProducts?.title || 'Energy Products', targetId: 'page-energy-products' },
     { label: t.nav.divisions, targetId: 'page-services' },
     { label: t.nav.terminals, targetId: 'page-portfolio' },
     { label: t.nav.leadership, targetId: 'page-team' },

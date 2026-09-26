@@ -1640,5 +1640,542 @@ ul.filter-list li,
   }
 }
 
+/* ==========================================================================
+   Commodities Divisions Section Styling (.page-commodities)
+   ========================================================================== */
+.page-commodities {
+  background-color: #FFFFFF !important;
+  padding: 85px 0 80px 0 !important;
+  border-bottom: 1px solid #E8EDF3 !important;
+}
+
+.commodities-lead {
+  max-width: 880px !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+  color: #475569 !important;
+  margin-bottom: 35px !important;
+}
+
+.commodities-showcase-container {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.commodities-visual-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 33, 78, 0.12);
+  border: 1px solid rgba(0, 33, 78, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.commodities-visual-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 42px rgba(0, 33, 78, 0.16);
+}
+
+.commodities-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1872 / 1248;
+  background-color: #0b1a2e;
+}
+
+.commodities-quadrant-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.commodities-visual-card:hover .commodities-quadrant-img {
+  transform: scale(1.02);
+}
+
+/* Quadrant Badge Overlays matching image sectors */
+.quadrant-badge {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.badge-metals {
+  top: 14px;
+  left: 14px;
+}
+
+.badge-agriculture {
+  top: 14px;
+  right: 14px;
+}
+
+.badge-energy {
+  bottom: 14px;
+  left: 14px;
+}
+
+.badge-financial {
+  bottom: 14px;
+  right: 14px;
+}
+
+.commodities-caption-bar {
+  padding: 16px 20px;
+  background: #00214E;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.caption-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #38BDF8;
+}
+
+.caption-sub {
+  font-size: 13px;
+  color: #CBD5E1;
+  line-height: 1.4;
+}
+
+/* 4 Division Cards Grid */
+.commodities-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.commodity-division-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 22px;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.commodity-division-card:hover,
+.commodity-division-card.is-selected {
+  background: #FFFFFF;
+  border-color: #00214E;
+  box-shadow: 0 10px 24px rgba(0, 33, 78, 0.09);
+  transform: translateY(-3px);
+}
+
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-icon-pill {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon-pill.icon-energy {
+  background: #E0F2FE;
+  color: #0284C7;
+}
+
+.card-icon-pill.icon-metals {
+  background: #FEF3C7;
+  color: #B45309;
+}
+
+.card-icon-pill.icon-agriculture {
+  background: #DCFCE7;
+  color: #16A34A;
+}
+
+.card-icon-pill.icon-financial {
+  background: #EDE9FE;
+  color: #7C3AED;
+}
+
+.division-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748B;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.division-title {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: #00214E !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.division-desc {
+  font-size: 13.5px !important;
+  line-height: 1.5 !important;
+  color: #475569 !important;
+  margin-bottom: 14px !important;
+  flex-grow: 1;
+}
+
+.division-products-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.product-chip {
+  font-size: 11.5px;
+  background: #FFFFFF;
+  color: #1E293B;
+  border: 1px solid #CBD5E1;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.division-action-wrapper {
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.division-action-link {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #00214E !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.division-action-link:hover {
+  color: #0284C7 !important;
+}
+
+/* ==========================================================================
+   Our Energy Products Section Styling (.page-energy-products)
+   Reproducing layout from media_1790452969188.png
+   ========================================================================== */
+.page-energy-products {
+  background-color: #F8FAFC !important;
+  padding: 85px 0 80px 0 !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.energy-lead {
+  max-width: 880px !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+  color: #475569 !important;
+  margin-bottom: 35px !important;
+}
+
+.energy-products-container {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.energy-hero-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.energy-hero-image-box {
+  position: relative;
+  height: 100%;
+  min-height: 520px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(0, 33, 78, 0.15);
+  border: 1px solid rgba(0, 33, 78, 0.08);
+}
+
+.energy-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.energy-hero-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 25, 60, 0.72) 0%,
+    rgba(0, 25, 60, 0.45) 50%,
+    rgba(0, 25, 60, 0.2) 100%
+  ),
+  linear-gradient(
+    to top,
+    rgba(0, 20, 50, 0.8) 0%,
+    transparent 60%
+  );
+}
+
+.energy-hero-text-content {
+  position: absolute;
+  left: 36px;
+  top: 42px;
+  bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.energy-hero-display-title {
+  font-family: inherit, sans-serif !important;
+  font-style: italic !important;
+  font-size: 44px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.65) !important;
+  margin: 0 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.5px !important;
+  max-width: 340px !important;
+}
+
+.energy-hero-tagline {
+  color: #E2E8F0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 33, 78, 0.65);
+  padding: 6px 14px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  align-self: flex-start;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Right Column: 5 Exact Product Category Cards */
+.energy-cards-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.energy-product-row-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.energy-product-row-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 33, 78, 0.1);
+  border-color: #CBD5E1;
+  transform: translateY(-2px);
+}
+
+.energy-icon-holder {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #F8FAFC;
+}
+
+.energy-prod-icon {
+  display: block;
+}
+
+.energy-category-title-box {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.energy-category-title {
+  margin: 0 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  color: #111827 !important;
+  line-height: 1.25 !important;
+}
+
+.energy-products-list-box {
+  flex-grow: 1;
+}
+
+.energy-products-list {
+  margin: 0 !important;
+  font-size: 15.5px !important;
+  font-style: italic !important;
+  color: #374151 !important;
+  line-height: 1.4 !important;
+  font-weight: 500 !important;
+}
+
+/* Specs Bottom Strip */
+.energy-specs-strip {
+  margin-top: 36px;
+  background: #00214E;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: 0 8px 24px rgba(0, 33, 78, 0.12);
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+}
+
+.spec-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #94A3B8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.spec-val {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.spec-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ==========================================================================
+   Responsive Adaptations for Commodities & Energy Products
+   ========================================================================== */
+@media (max-width: 991px) {
+  .commodities-showcase-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .energy-products-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .energy-hero-image-box {
+    min-height: 320px;
+  }
+
+  .energy-hero-display-title {
+    font-size: 34px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .commodities-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .energy-product-row-card {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .energy-category-title-box {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .energy-products-list-box {
+    width: 100%;
+    padding-left: 64px;
+  }
+
+  .energy-hero-text-content {
+    left: 20px;
+    top: 24px;
+    bottom: 20px;
+  }
+
+  .energy-hero-display-title {
+    font-size: 28px !important;
+  }
+
+  .energy-specs-strip {
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .spec-divider {
+    display: none;
+  }
+}
+
+
 
 

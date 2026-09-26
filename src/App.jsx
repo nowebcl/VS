@@ -3,6 +3,8 @@ import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import HeaderHero from './components/HeaderHero';
 import NavigationBar from './components/NavigationBar';
 import AboutSection from './components/AboutSection';
+import CommoditiesDivisionsSection from './components/CommoditiesDivisionsSection';
+import EnergyProductsSection from './components/EnergyProductsSection';
 import ServicesSection from './components/ServicesSection';
 import PortfolioSection from './components/PortfolioSection';
 import TeamSection from './components/TeamSection';
@@ -39,6 +41,12 @@ function MainApp() {
 
         {/* About Page */}
         <AboutSection />
+
+        {/* Commodities Divisions Page */}
+        <CommoditiesDivisionsSection />
+
+        {/* Energy Products Page */}
+        <EnergyProductsSection />
 
         {/* Services Page */}
         <ServicesSection />
