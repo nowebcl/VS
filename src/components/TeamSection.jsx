@@ -8,14 +8,10 @@ const memberImages = [
 
 const memberSocials = [
   [
-    { class: 'social-list-facebook', link: '#facebook' },
-    { class: 'social-list-googleplus', link: '#googleplus' },
-    { class: 'social-list-twitter', link: '#twitter' }
+    { class: 'social-list-linkedin', link: 'https://www.linkedin.com/in/raquel-cantero-184641158' }
   ],
   [
-    { class: 'social-list-email', link: 'mailto:michele@vsinternationalllc.com' },
-    { class: 'social-list-tumblr', link: '#corporate' },
-    { class: 'social-list-digg', link: '#finance' }
+    { class: 'social-list-email', link: 'mailto:michele@vsinternationalllc.com' }
   ]
 ];
 
@@ -90,7 +86,13 @@ export default function TeamSection() {
                   <ul className="social-list social-list-style-1">
                     {member.socials.map((soc, sIdx) => (
                       <li key={sIdx}>
-                        <a href={soc.link} className={soc.class} />
+                        <a
+                          href={soc.link}
+                          className={soc.class}
+                          target={soc.link.startsWith('http') ? '_blank' : undefined}
+                          rel={soc.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          title={soc.class.includes('linkedin') ? 'LinkedIn' : 'Email'}
+                        />
                       </li>
                     ))}
                   </ul>

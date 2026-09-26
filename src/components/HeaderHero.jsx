@@ -65,11 +65,17 @@ export default function HeaderHero() {
             />
           </a>
 
-          {/* Social icon list */}
+          {/* Social icon list - Only LinkedIn */}
           <ul className="social-list social-list-style-3 float-right">
-            <li><a href="#skype" className="social-list-skype" title="Skype"></a></li>
-            <li><a href="#vimeo" className="social-list-vimeo" title="Vimeo"></a></li>
-            <li><a href="#youtube" className="social-list-youtube" title="YouTube"></a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/raquel-cantero-184641158"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-list-linkedin"
+                title="LinkedIn"
+              />
+            </li>
           </ul>
         </div>
       </div>

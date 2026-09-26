@@ -203,11 +203,17 @@ export default function ContactSection() {
                 </li>
               </ul>
 
-              {/* Social icon list */}
+              {/* Social icon list - Only LinkedIn */}
               <ul className="social-list social-list-style-2 clear-fix margin-top-50">
-                <li><a href="#linkedin" className="social-list-linkedin" title="LinkedIn"></a></li>
-                <li><a href="#email" className="social-list-email" title="Email Desk"></a></li>
-                <li><a href="#twitter" className="social-list-twitter" title="Twitter"></a></li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/raquel-cantero-184641158"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-list-linkedin"
+                    title="LinkedIn"
+                  />
+                </li>
               </ul>
             </div>
           </div>
