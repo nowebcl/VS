@@ -3,7 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 const sliderImages = [
   '/_sample/home_carousel/image_01.jpg',
-  '/_sample/nivo_slider/image_02.jpg'
+  '/2.jpeg'
 ];
 
 export default function AboutSection() {
