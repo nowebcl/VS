@@ -370,7 +370,7 @@ export const translations = {
           title: 'Logística de Minerales Críticos: Cobre, Litio y Demanda Industrial Verde',
           excerpt: 'Evaluación estratégica de infraestructura portuaria, manejo logístico y rutas marítimas que conectan depósitos minerales de Sudamérica con centros industriales globales [...]',
           categories: ['Metales', 'Minería', 'Suministro'],
-          author: 'Davi Assis'
+          author: 'Jorge Eger'
         }
       ],
       tweets: [
@@ -850,7 +850,7 @@ export const translations = {
           title: 'Critical Minerals Logistics: Copper, Lithium & Green Industrial Demand',
           excerpt: 'Strategic evaluation of supply chain infrastructure, port handling and shipping corridors connecting South American mineral deposits with global manufacturing and smelting hubs [...]',
           categories: ['Metals', 'Mining', 'Supply Chain'],
-          author: 'Davi Assis'
+          author: 'Jorge Eger'
         }
       ],
       tweets: [
