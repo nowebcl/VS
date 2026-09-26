@@ -105,8 +105,12 @@ export default function TeamSection() {
 
                   <p>{member.bio}</p>
 
-                  <div style={{ margin: '8px 0 16px', fontSize: '14px', color: '#00214E', fontWeight: '600' }}>
-                    ✉ <a href={`mailto:${member.email}`} style={{ color: '#00214E', textDecoration: 'none' }}>{member.email}</a>
+                  <div style={{ margin: '8px 0 16px', fontSize: '14px', color: '#00214E', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#00214E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <a href={`mailto:${member.email}`} style={{ color: '#00214E', textDecoration: 'none' }}>{member.email}</a>
                   </div>
 
                   {/* Skills list */}
