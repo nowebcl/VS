@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 const postImages = [
-  '/_sample/blog/image_01.jpg',
-  '/_sample/blog/image_02.jpg',
-  '/_sample/blog/image_03.jpg'
+  '/image/blog/blog_01.jpg',
+  '/image/blog/blog_02.jpg',
+  '/image/blog/blog_03.jpg'
 ];
 
 export default function BlogSection() {
