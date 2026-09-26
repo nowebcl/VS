@@ -54,10 +54,9 @@ export default function PricingSection() {
                 {plans.map((plan, index) => (
                   <li key={index} className={plan.colClass}>
                     <div className="pricing-card-wrap">
-                      <div className="pricing-tooltip">{plan.name}</div>
                       <h4>{plan.name}</h4>
                       <h2>{plan.price}</h2>
-                      <span>{plan.period}</span>
+                      <span className="pricing-period">{plan.period}</span>
                       <p>{plan.desc}</p>
 
                       <ul className="list-0 pricing-list-features">

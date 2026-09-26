@@ -811,42 +811,199 @@ div.section-background-3 > .main {
   line-height: 1.6;
 }
 
-/* Tooltip on Pricing Cards */
-.pricing-card-wrap {
-  position: relative;
+/* ==========================================================================
+   Trade Finance Structures / Pricing Section Polish
+   ========================================================================== */
+.page-pricing-plans .carousel {
+  overflow: visible !important;
+  padding: 10px 0 20px 0 !important;
+}
+
+.page-pricing-plans .carousel-content {
+  overflow: visible !important;
+}
+
+ul.pricing-list {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  align-items: stretch !important;
+}
+
+ul.pricing-list > li {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.pricing-card-wrap,
+ul.pricing-list > li > div {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  flex: 1 1 auto !important;
+  box-sizing: border-box !important;
+  background: #FFFFFF !important;
+  border: 1px solid #DCE3EB !important;
+  border-width: 1px !important;
+  border-radius: 8px !important;
+  padding: 24px 18px 22px 18px !important;
+  text-align: center !important;
+  position: relative !important;
+  box-shadow: 0 4px 16px rgba(0, 33, 78, 0.05) !important;
+  transition: all 0.28s ease !important;
+}
+
+ul.pricing-list > li:hover .pricing-card-wrap,
+ul.pricing-list > li:hover > div {
+  border-color: #00214E !important;
+  border-width: 1px !important;
+  box-shadow: 0 12px 28px rgba(0, 33, 78, 0.12) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* Category header (h4) */
+ul.pricing-list > li > div > h4,
+.pricing-card-wrap h4 {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #64748B !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  margin: 0 0 14px 0 !important;
+  padding: 0 0 12px 0 !important;
+  border-width: 0 0 1px 0 !important;
+  border-style: solid !important;
+  border-color: #E2E8F0 !important;
+  line-height: 1.3 !important;
+  min-height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Structure Name / Title (h2) - FIX TRUNCATION */
+ul.pricing-list > li > div > h2,
+.pricing-card-wrap h2 {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  color: #00214E !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.6px !important;
+  margin: 0 0 6px 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+/* Subtitle / Facility Period (span) */
+ul.pricing-list > li > div > span,
+.pricing-card-wrap span.pricing-period,
+.pricing-card-wrap > span {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #0A3570 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin: 0 0 14px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 28px !important;
+  line-height: 1.3 !important;
+}
+
+/* Description paragraph (p) */
+ul.pricing-list > li > div > p,
+.pricing-card-wrap p {
+  font-size: 12.5px !important;
+  line-height: 1.5 !important;
+  color: #475569 !important;
+  padding: 0 !important;
+  margin: 0 0 16px 0 !important;
+  min-height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Features List */
+ul.pricing-list > li > div > ul.pricing-list-features,
+.pricing-card-wrap ul.pricing-list-features {
+  margin: 0 0 20px 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  border-top: 1px solid #EDF2F7 !important;
+  width: 100% !important;
+}
+
+ul.pricing-list > li > div > ul.pricing-list-features > li,
+.pricing-card-wrap ul.pricing-list-features > li {
+  margin: 0 !important;
+  padding: 10px 4px !important;
+  border-width: 0 0 1px 0 !important;
+  border-style: solid !important;
+  border-color: #EDF2F7 !important;
+  font-size: 12.5px !important;
+  color: #334155 !important;
+  line-height: 1.4 !important;
+  min-height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Action Button */
+ul.pricing-list > li > div > a.pricing-list-button,
+.pricing-card-wrap a.pricing-list-button {
+  margin-top: auto !important;
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 12px 14px !important;
+  background: #00214E !important;
+  color: #FFFFFF !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  border: 1px solid #00214E !important;
+  transition: all 0.25s ease !important;
+  text-align: center !important;
+  cursor: pointer !important;
+}
+
+ul.pricing-list > li > div > a.pricing-list-button:hover,
+.pricing-card-wrap a.pricing-list-button:hover {
+  background: #0A3570 !important;
+  border-color: #0A3570 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 14px rgba(0, 33, 78, 0.22) !important;
 }
 
 .pricing-tooltip {
-  position: absolute;
-  bottom: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: #2C343D;
-  color: #fff;
-  padding: 6px 12px;
-  font-size: 12px;
-  border-radius: 3px;
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.2s, transform 0.2s;
-  z-index: 10;
+  display: none !important;
 }
 
-.pricing-tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #2C343D transparent transparent transparent;
-}
-
-.pricing-card-wrap:hover .pricing-tooltip {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-4px);
+@media (max-width: 1080px) and (min-width: 641px) {
+  ul.pricing-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
 }
 
 /* Contact form input styles */
@@ -1406,20 +1563,21 @@ ul.filter-list li,
   }
 
   /* Pricing / Trade Finance Plans: Stacked Mobile Cards */
-  .pricing-list {
+  ul.pricing-list {
     display: flex !important;
     flex-direction: column !important;
     gap: 18px !important;
   }
 
-  .pricing-list > li {
+  ul.pricing-list > li {
     width: 100% !important;
     float: none !important;
     margin: 0 !important;
   }
 
-  .pricing-card-wrap {
-    border-radius: 12px !important;
+  .pricing-card-wrap,
+  ul.pricing-list > li > div {
+    border-radius: 10px !important;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08) !important;
     border: 1px solid #E2E8F0 !important;
   }
