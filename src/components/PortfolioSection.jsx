@@ -5,51 +5,50 @@ import { useLanguage } from '../context/LanguageContext';
 const rawItems = [
   {
     id: 1,
-    thumb: '/_sample/gallery/image_01t.jpg',
-    fullImage: '/_sample/gallery/image_01.jpg',
+    thumb: '/image/terminals/houston_terminal.jpg',
+    fullImage: '/image/terminals/houston_terminal.jpg',
     categories: ['image', 'example-1'],
     type: 'image',
     colClass: 'column-left'
   },
   {
     id: 2,
-    thumb: '/_sample/gallery/image_02t.jpg',
-    fullImage: '/_sample/gallery/image_02.jpg',
-    categories: ['image', 'example-2'],
+    thumb: '/image/terminals/rotterdam_terminal.jpg',
+    fullImage: '/image/terminals/rotterdam_terminal.jpg',
+    categories: ['image', 'example-1'],
     type: 'image',
     colClass: 'column-center'
   },
   {
     id: 3,
-    thumb: '/_sample/gallery/image_03t.jpg',
-    fullImage: '/_sample/gallery/image_03.jpg',
-    categories: ['image', 'example-2'],
+    thumb: '/image/terminals/fujairah_terminal.jpg',
+    fullImage: '/image/terminals/fujairah_terminal.jpg',
+    categories: ['image', 'video', 'example-1'],
     type: 'image',
     colClass: 'column-right'
   },
   {
     id: 4,
-    thumb: '/_sample/gallery/image_04t.jpg',
-    videoUrl: 'https://www.youtube.com/embed/t4gjl-uwUHc?autoplay=1',
-    categories: ['video', 'example-2'],
-    type: 'video',
+    thumb: '/image/terminals/singapore_terminal.jpg',
+    fullImage: '/image/terminals/singapore_terminal.jpg',
+    categories: ['video', 'example-1'],
+    type: 'image',
     colClass: 'column-left'
   },
   {
     id: 5,
-    thumb: '/_sample/gallery/image_05t.jpg',
-    videoUrl: 'https://player.vimeo.com/video/1084537?autoplay=1',
-    categories: ['video', 'example-1'],
-    type: 'video',
+    thumb: '/image/terminals/santos_terminal.jpg',
+    fullImage: '/image/terminals/santos_terminal.jpg',
+    categories: ['video', 'example-2'],
+    type: 'image',
     colClass: 'column-center'
   },
   {
     id: 6,
-    thumb: '/_sample/gallery/image_06t.jpg',
-    linkUrl: 'https://vsinternationalllc.com',
-    fullImage: '/_sample/gallery/image_03.jpg',
-    categories: ['video', 'example-2'],
-    type: 'link',
+    thumb: '/image/terminals/port_hedland_terminal.jpg',
+    fullImage: '/image/terminals/port_hedland_terminal.jpg',
+    categories: ['image', 'example-2'],
+    type: 'image',
     colClass: 'column-right'
   }
 ];

@@ -1214,6 +1214,13 @@ ul.filter-list li,
   transition: transform 0.25s ease, box-shadow 0.25s ease !important;
 }
 
+.mobile-app-gallery-list .gallery-card-item div.image img {
+  width: 100% !important;
+  aspect-ratio: 4 / 3 !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
 .mobile-app-gallery-list .gallery-card-item div.image:hover {
   transform: translateY(-4px) !important;
   box-shadow: 0 8px 24px rgba(0, 33, 78, 0.2) !important;
