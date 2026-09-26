@@ -109,41 +109,41 @@ export const translations = {
       title: 'Almacenamiento y Logística Global',
       filters: {
         all: 'Todas las Terminales',
-        image: 'Tanques de Almacenamiento',
-        video: 'Logística Marítima',
-        example1: 'Nodos de Energía',
-        example2: 'Metales y Agro'
+        image: 'Tanques y Almacenamiento',
+        video: 'Buques Petroleros',
+        example1: 'Crudo y Combustibles',
+        example2: 'Costa Afuera y Exportación'
       },
       items: [
         {
           title: 'Parque de Tanques Terminal Houston',
           subtitle: 'Costa del Golfo de EE. UU.',
-          desc: 'Terminal de almacenamiento de energía líquida de alta capacidad con atraques de aguas profundas y conexiones de ductos para crudo y combustibles refinados.'
+          desc: 'Terminal de almacenamiento de petróleo y refinados de alta capacidad con atraques de aguas profundas y conexiones de oleoductos para crudo y combustibles.'
         },
         {
           title: 'Terminal de Combustibles Rotterdam',
           subtitle: 'Corredor Comercial ARA Europeo',
-          desc: 'Centro estratégico europeo para productos limpios de petróleo, jet A1, gasóleo y búnker con conectividad fluvial multimodal por barcaza y ferrocarril.'
+          desc: 'Centro estratégico europeo para productos limpios de petróleo, jet A1, diésel y fueloil marino con conectividad fluvial de barcazas, refinerías y ductos.'
         },
         {
           title: 'Centro de Bunkering Fujairah',
-          subtitle: 'Terminal Estratégica de Medio Oriente',
-          desc: 'Terminal regional líder de abastecimiento de combustible y crudo ubicada fuera del Estrecho de Ormuz, con despacho y bunkering continuo las 24 horas.'
+          subtitle: 'Terminal Petrolera de Medio Oriente',
+          desc: 'Megaterminal costera de abastecimiento de combustible marino y crudo fuera del Estrecho de Ormuz, con atraques de supertanqueros las 24 horas.'
         },
         {
           title: 'Operaciones en el Estrecho de Singapur',
-          subtitle: 'Transbordo en el Sudeste Asiático',
-          desc: 'Almacenamiento flotante e instalaciones de transbordo buque a buque (STS) que atienden corredores comerciales de alto volumen en el Pacífico.'
+          subtitle: 'Transbordo de Crudo Buque a Buque',
+          desc: 'Almacenamiento flotante y operaciones de transbordo buque a buque (STS) para supertanqueros VLCC en los principales corredores petroleros de Asia.'
         },
         {
-          title: 'Terminal Marítima de Santos',
-          subtitle: 'Corredor Agro y Energía de Sudamérica',
-          desc: 'Terminal logística integrada para exportación de granos, transporte de azúcar, fertilizantes y almacenamiento de combustibles en Sudamérica.'
+          title: 'Terminal Petrolera Cuenca de Santos',
+          subtitle: 'Producción de Crudo Costa Afuera',
+          desc: 'Plataformas de extracción marítima y unidades FPSO de almacenamiento de crudo en aguas profundas, con carga a buques petroleros en el Atlántico Sur.'
         },
         {
-          title: 'Terminal de Minerales Port Hedland',
-          subtitle: 'Corredor Minero de Australia',
-          desc: 'Instalación portuaria de carga a granel para exportaciones de mineral de hierro, concentrados de litio, cobre y metales industriales a fundiciones globales.'
+          title: 'Terminal de Crudo Corpus Christi',
+          subtitle: 'Megaterminal de Exportación de Petróleo',
+          desc: 'Instalación portuaria de aguas profundas para exportación masiva de petróleo crudo WTI y refinados, con atraque para buques petroleros de gran calado.'
         }
       ],
       quotes: [
@@ -452,11 +452,11 @@ export const translations = {
     portfolio: {
       title: 'Global Storage & Logistics',
       filters: {
-        all: 'All Terminals',
-        image: 'Tank Storage',
-        video: 'Maritime Logistics',
-        example1: 'Energy Hubs',
-        example2: 'Metals & Agri'
+        all: 'All Strategic Terminals',
+        image: 'Tank Storage & Refineries',
+        video: 'Petroleum Tankers',
+        example1: 'Crude & Fuel Hubs',
+        example2: 'Offshore & Export Terminals'
       },
       items: [
         {
@@ -467,7 +467,7 @@ export const translations = {
         {
           title: 'Rotterdam Bulk Fuel Terminal',
           subtitle: 'ARA European Trade Corridor',
-          desc: 'Strategic European hub for clean petroleum products, jet A1, heating oil and bunkering feedstock with direct multimodal inland barge, pipeline and rail connectivity.'
+          desc: 'Strategic European hub for clean petroleum products, jet A1, heating oil and bunkering feedstock with direct multimodal inland barge, refinery and pipeline connectivity.'
         },
         {
           title: 'Fujairah Bunkering Hub',
@@ -476,18 +476,18 @@ export const translations = {
         },
         {
           title: 'Singapore Strait Operations',
-          subtitle: 'Southeast Asian Transshipment',
-          desc: 'Floating storage and ship-to-ship transshipment facilities servicing high-volume commercial shipping lanes and long-term Pacific rim industrial fuel supply programs.'
+          subtitle: 'Ship-to-Ship Crude Transshipment',
+          desc: 'Floating storage and ship-to-ship (STS) crude oil transfer facilities servicing VLCC supertankers across Pacific rim energy supply lanes.'
         },
         {
-          title: 'Santos Maritime Terminal',
-          subtitle: 'Latin America Agri & Energy',
-          desc: 'Integrated logistics terminal supporting grain export corridors, sugar transport, fertilizer handling and bulk fuel import infrastructure across South American trade routes.'
+          title: 'Santos Basin Offshore Oil Terminal',
+          subtitle: 'Deepwater Crude Production Hub',
+          desc: 'Offshore deepwater oil production platforms and FPSO crude storage units connecting pre-salt oil reserves with global petroleum export corridors.'
         },
         {
-          title: 'Port Hedland Bulk Minerals',
-          subtitle: 'Australian Resource Corridor',
-          desc: 'Heavy industrial bulk loading facility managing high-tonnage exports of iron ore, lithium concentrates, copper and industrial metals to global smelters and consumers.'
+          title: 'Corpus Christi Crude Export Terminal',
+          subtitle: 'Deepwater Oil Export Gateway',
+          desc: 'Specialized deepwater marine export facility designed for direct VLCC supertanker loading of WTI crude oil and refined petroleum distillates.'
         }
       ],
       quotes: [

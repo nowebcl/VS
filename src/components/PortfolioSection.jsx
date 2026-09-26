@@ -45,8 +45,8 @@ const rawItems = [
   },
   {
     id: 6,
-    thumb: '/image/terminals/port_hedland_terminal.jpg',
-    fullImage: '/image/terminals/port_hedland_terminal.jpg',
+    thumb: '/image/terminals/corpus_terminal.jpg',
+    fullImage: '/image/terminals/corpus_terminal.jpg',
     categories: ['image', 'example-2'],
     type: 'image',
     colClass: 'column-right'
