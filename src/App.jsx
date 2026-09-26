@@ -17,12 +17,12 @@ function MinimalLangButton() {
     <button
       onClick={toggleLang}
       className="minimal-lang-button"
-      title={lang === 'es' ? 'Switch to English' : 'Cambiar a Español'}
+      title={lang === 'en' ? 'Cambiar a Español' : 'Switch to English'}
       aria-label="Language switcher"
     >
-      <span className={lang === 'es' ? 'active-lang' : 'inactive-lang'}>ES</span>
-      <span className="lang-slash">/</span>
       <span className={lang === 'en' ? 'active-lang' : 'inactive-lang'}>EN</span>
+      <span className="lang-slash">/</span>
+      <span className={lang === 'es' ? 'active-lang' : 'inactive-lang'}>ES</span>
     </button>
   );
 }
