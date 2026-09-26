@@ -426,6 +426,7 @@ export const translations = {
     },
     footer: {
       copyright: '© 2026 VS INTERNATIONAL GROUP LLC. Todos los derechos reservados.',
+      developedBy: 'Desarrollado por',
       switchLang: 'Language / Idioma:',
       currentLangLabel: 'Español'
     }
@@ -858,6 +859,7 @@ export const translations = {
     },
     footer: {
       copyright: '© 2026 VS INTERNATIONAL GROUP LLC. All Rights Reserved.',
+      developedBy: 'Developed by',
       switchLang: 'Language / Idioma:',
       currentLangLabel: 'English'
     }
