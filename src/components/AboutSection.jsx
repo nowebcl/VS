@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 const sliderImages = [
-  '/_sample/nivo_slider/image_01.jpg',
+  '/_sample/home_carousel/image_01.jpg',
   '/_sample/nivo_slider/image_02.jpg'
 ];
 
@@ -37,20 +37,39 @@ export default function AboutSection() {
                 style={{
                   position: 'relative',
                   overflow: 'hidden',
+                  width: '100%',
+                  aspectRatio: '4 / 3',
                   minHeight: '260px',
-                  borderRadius: '2px'
+                  borderRadius: '2px',
+                  backgroundColor: '#e8edf3'
                 }}
               >
                 {sliderImages.map((img, idx) => (
                   <div
                     key={idx}
                     style={{
-                      display: idx === currentSlide ? 'block' : 'none',
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
                       transition: 'opacity 0.6s ease-in-out',
-                      opacity: idx === currentSlide ? 1 : 0
+                      opacity: idx === currentSlide ? 1 : 0,
+                      pointerEvents: idx === currentSlide ? 'auto' : 'none',
+                      zIndex: idx === currentSlide ? 2 : 1
                     }}
                   >
-                    <img src={img} alt={`Slide ${idx + 1}`} style={{ width: '100%', display: 'block' }} />
+                    <img
+                      src={img}
+                      alt={`Slide ${idx + 1}`}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center top',
+                        display: 'block'
+                      }}
+                    />
                   </div>
                 ))}
               </div>
