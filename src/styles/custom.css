@@ -1667,16 +1667,23 @@ ul.filter-list li,
   margin-bottom: 35px !important;
 }
 
-/* 1. TOP: Full-Width Panoramic Visual Showcase */
+/* ==========================================================================
+   Commodities Divisions Section Styling (.page-commodities)
+   Authentic Atrium Corporate Style: Architectural borders, #00214E palette,
+   classic typography, monochromatic vector icons, zero SaaS/AI aesthetic.
+   ========================================================================== */
+.page-commodities {
+  padding-bottom: 60px !important;
+}
+
+/* 1. TOP: Architectural Image Frame */
 .commodities-hero-visual-box {
   width: 100% !important;
-  margin: 0 0 32px 0 !important;
-  background: #0B1A2E !important;
-  border-radius: 18px !important;
+  margin: 0 0 35px 0 !important;
+  border: 1px solid #E6E6DF !important;
+  border-radius: 2px !important;
   overflow: hidden !important;
-  box-shadow: 0 16px 40px rgba(0, 33, 78, 0.12) !important;
-  border: 1px solid rgba(0, 33, 78, 0.08) !important;
-  position: relative !important;
+  background: #FFFFFF !important;
 }
 
 .commodities-image-wrapper {
@@ -1684,9 +1691,9 @@ ul.filter-list li,
   overflow: hidden !important;
   width: 100% !important;
   aspect-ratio: 1872 / 820 !important;
-  max-height: 480px !important;
-  min-height: 320px !important;
-  background-color: #0B1A2E !important;
+  max-height: 440px !important;
+  min-height: 280px !important;
+  background-color: #001A3D !important;
 }
 
 .commodities-quadrant-img {
@@ -1695,339 +1702,200 @@ ul.filter-list li,
   object-fit: cover !important;
   object-position: center !important;
   display: block !important;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .commodities-hero-visual-box:hover .commodities-quadrant-img {
-  transform: scale(1.02) !important;
+  transform: scale(1.015) !important;
 }
 
-.commodities-overlay-vignette {
-  position: absolute !important;
-  inset: 0 !important;
-  background: radial-gradient(circle at center, transparent 40%, rgba(11, 26, 46, 0.35) 100%) !important;
-  pointer-events: none !important;
-}
-
-/* Quadrant Badge Overlays matching image sectors */
-.quadrant-badge {
-  position: absolute !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  padding: 9px 20px !important;
-  background: rgba(11, 26, 46, 0.86) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  color: #FFFFFF !important;
-  font-size: 13px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.8px !important;
-  border-radius: 30px !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
-  text-transform: uppercase !important;
-  z-index: 2 !important;
-  border: 1px solid rgba(255, 255, 255, 0.28) !important;
-  cursor: pointer !important;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-.quadrant-badge:hover,
-.quadrant-badge.is-badge-active {
-  background: rgba(0, 33, 78, 0.98) !important;
-  border-color: #38BDF8 !important;
-  transform: scale(1.08) translateY(-2px) !important;
-  box-shadow: 0 8px 26px rgba(56, 189, 248, 0.45) !important;
-}
-
-.badge-dot {
-  width: 9px !important;
-  height: 9px !important;
-  border-radius: 50% !important;
-}
-
-.dot-metals {
-  background-color: #F59E0B !important;
-  box-shadow: 0 0 10px #F59E0B !important;
-}
-
-.dot-agriculture {
-  background-color: #22C55E !important;
-  box-shadow: 0 0 10px #22C55E !important;
-}
-
-.dot-energy {
-  background-color: #0284C7 !important;
-  box-shadow: 0 0 10px #0284C7 !important;
-}
-
-.dot-financial {
-  background-color: #8B5CF6 !important;
-  box-shadow: 0 0 10px #8B5CF6 !important;
-}
-
-.badge-metals {
-  top: 22px !important;
-  left: 22px !important;
-}
-
-.badge-agriculture {
-  top: 22px !important;
-  right: 22px !important;
-}
-
-.badge-energy {
-  bottom: 22px !important;
-  left: 22px !important;
-}
-
-.badge-financial {
-  bottom: 22px !important;
-  right: 22px !important;
-}
-
-/* Panoramic Caption Bar */
+/* Classic Corporate Caption Bar */
 .commodities-caption-bar {
-  padding: 18px 28px !important;
+  padding: 14px 24px !important;
   background: #00214E !important;
   color: #FFFFFF !important;
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
   flex-wrap: wrap !important;
-  gap: 14px !important;
+  gap: 12px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 .caption-text-left {
   display: flex !important;
-  flex-direction: column !important;
-  gap: 3px !important;
-}
-
-.caption-tag {
-  font-size: 11.5px !important;
-  font-weight: 800 !important;
-  letter-spacing: 1.2px !important;
-  text-transform: uppercase !important;
-  color: #38BDF8 !important;
-}
-
-.caption-sub {
-  font-size: 13.5px !important;
-  color: #CBD5E1 !important;
-  line-height: 1.4 !important;
-}
-
-.caption-pills-right {
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
+  align-items: baseline !important;
+  gap: 12px !important;
   flex-wrap: wrap !important;
 }
 
-.cap-pill {
-  font-size: 12px !important;
-  font-weight: 600 !important;
+.caption-tag {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
   color: #FFFFFF !important;
-  background: rgba(255, 255, 255, 0.12) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  padding: 6px 14px !important;
-  border-radius: 20px !important;
-  transition: all 0.2s ease !important;
-  cursor: pointer !important;
 }
 
-.cap-pill:hover,
-.cap-pill.active-pill {
-  background: rgba(255, 255, 255, 0.25) !important;
-  border-color: #38BDF8 !important;
-  transform: translateY(-1px) !important;
+.caption-sub {
+  font-size: 12.5px !important;
+  color: #BAC2CB !important;
+  line-height: 1.4 !important;
 }
 
-/* 2. BOTTOM: 4 Modern Cards Using All Horizontal Space */
-.commodities-cards-row {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 24px !important;
-  align-items: stretch !important;
-  width: 100% !important;
+.caption-divisions-right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  color: #BAC2CB !important;
 }
 
-.commodity-division-card {
+.caption-divisions-right span.sep {
+  color: rgba(255, 255, 255, 0.3) !important;
+  font-size: 8px !important;
+}
+
+/* 2. BOTTOM: 4 Structured Institutional Cards Matching Original Template */
+ul.commodities-division-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.commodities-card-wrap {
   background: #FFFFFF !important;
-  border: 1px solid #E2E8F0 !important;
-  border-radius: 18px !important;
-  padding: 26px 22px 22px 22px !important;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  border: 1px solid #E6E6DF !important;
+  border-top: 3px solid #00214E !important;
+  border-radius: 2px !important;
+  padding: 24px 20px 22px 20px !important;
   display: flex !important;
   flex-direction: column !important;
   height: 100% !important;
   box-sizing: border-box !important;
-  position: relative !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 16px rgba(0, 33, 78, 0.04) !important;
+  transition: all 0.3s ease !important;
 }
 
-.commodity-division-card:hover,
-.commodity-division-card.is-selected {
+.commodities-card-wrap:hover {
   border-color: #00214E !important;
-  box-shadow: 0 18px 36px rgba(0, 33, 78, 0.12) !important;
-  transform: translateY(-5px) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 24px rgba(0, 33, 78, 0.08) !important;
 }
 
-/* Top Colored Accent Stripe */
-.card-top-accent {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  height: 4px !important;
-}
-
-.accent-energy {
-  background: linear-gradient(90deg, #0284C7, #38BDF8) !important;
-}
-
-.accent-metals {
-  background: linear-gradient(90deg, #D97706, #F59E0B) !important;
-}
-
-.accent-agriculture {
-  background: linear-gradient(90deg, #16A34A, #4ADE80) !important;
-}
-
-.accent-financial {
-  background: linear-gradient(90deg, #7C3AED, #A78BFA) !important;
-}
-
-.card-header-row {
+.card-top-row {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 14px !important;
 }
 
-.card-icon-pill {
-  width: 46px !important;
-  height: 46px !important;
-  border-radius: 12px !important;
+.commodities-icon-box {
+  width: 44px !important;
+  height: 44px !important;
+  background: #F7F7F2 !important;
+  border: 1px solid #E6E6DF !important;
+  border-radius: 2px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  transition: transform 0.2s ease !important;
+  color: #00214E !important;
+  transition: all 0.25s ease !important;
 }
 
-.commodity-division-card:hover .card-icon-pill {
-  transform: scale(1.08) !important;
+.commodities-card-wrap:hover .commodities-icon-box {
+  background: #00214E !important;
+  border-color: #00214E !important;
+  color: #FFFFFF !important;
 }
 
-.card-icon-pill.icon-energy {
-  background: #E0F2FE !important;
-  color: #0284C7 !important;
-}
-
-.card-icon-pill.icon-metals {
-  background: #FEF3C7 !important;
-  color: #B45309 !important;
-}
-
-.card-icon-pill.icon-agriculture {
-  background: #DCFCE7 !important;
-  color: #16A34A !important;
-}
-
-.card-icon-pill.icon-financial {
-  background: #EDE9FE !important;
-  color: #7C3AED !important;
-}
-
-.division-badge {
+.division-category-label {
   font-size: 11px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.6px !important;
-  color: #475569 !important;
-  background: #F1F5F9 !important;
-  border: 1px solid #E2E8F0 !important;
-  padding: 4px 10px !important;
-  border-radius: 20px !important;
+  letter-spacing: 0.8px !important;
+  color: #828D99 !important;
 }
 
-.division-title {
-  font-size: 21px !important;
-  font-weight: 800 !important;
+.division-card-title {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
   color: #00214E !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
   margin: 0 0 10px 0 !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid #E9E9E3 !important;
   line-height: 1.25 !important;
-  letter-spacing: -0.3px !important;
 }
 
-.division-desc {
-  font-size: 13.5px !important;
-  line-height: 1.6 !important;
-  color: #475569 !important;
-  margin-bottom: 18px !important;
-  flex-grow: 1 !important;
+.division-card-desc {
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+  color: #555555 !important;
+  margin: 0 0 16px 0 !important;
+  min-height: 58px !important;
 }
 
-.division-products-pills {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 6px !important;
-  margin-bottom: 22px !important;
+/* Structured Physical Specification List */
+.commodities-spec-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 0 20px 0 !important;
+  border-top: 1px solid #F0F0EB !important;
 }
 
-.product-chip {
-  font-size: 11px !important;
-  background: #F8FAFC !important;
-  color: #1E293B !important;
-  border: 1px solid #E2E8F0 !important;
-  padding: 4px 9px !important;
-  border-radius: 6px !important;
-  font-weight: 600 !important;
-  transition: all 0.2s ease !important;
-}
-
-.commodity-division-card:hover .product-chip {
-  background: #FFFFFF !important;
-  border-color: #CBD5E1 !important;
-}
-
-.division-action-wrapper {
-  margin-top: auto !important;
-  width: 100% !important;
-}
-
-.division-action-btn {
+.commodities-spec-list li {
+  padding: 7px 0 !important;
+  border-bottom: 1px solid #F0F0EB !important;
+  font-size: 12px !important;
+  color: #334155 !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
+  line-height: 1.35 !important;
+}
+
+.spec-indicator {
+  width: 4px !important;
+  height: 4px !important;
+  background-color: #00214E !important;
+  margin-right: 8px !important;
+  flex-shrink: 0 !important;
+}
+
+.spec-name {
+  font-weight: 600 !important;
+  color: #1E293B !important;
+}
+
+/* Signature Action Button Matching Atrium Template */
+.commodities-action-btn {
+  display: block !important;
   width: 100% !important;
   box-sizing: border-box !important;
-  background: #F1F5F9 !important;
-  color: #00214E !important;
-  padding: 12px 16px !important;
-  border-radius: 10px !important;
-  font-size: 13px !important;
-  font-weight: 700 !important;
-  text-decoration: none !important;
-  transition: all 0.25s ease !important;
-  border: 1px solid #E2E8F0 !important;
-}
-
-.division-action-btn:hover {
+  padding: 12px 14px !important;
   background: #00214E !important;
   color: #FFFFFF !important;
-  border-color: #00214E !important;
-  box-shadow: 0 4px 14px rgba(0, 33, 78, 0.25) !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border-radius: 2px !important;
+  border: 1px solid #00214E !important;
+  margin-top: auto !important;
+  transition: all 0.25s ease !important;
 }
 
-.division-action-btn .btn-arrow {
-  transition: transform 0.25s ease !important;
-}
-
-.division-action-btn:hover .btn-arrow {
-  transform: translateX(4px) !important;
+.commodities-action-btn:hover {
+  background: #2C343D !important;
+  border-color: #2C343D !important;
+  color: #FFFFFF !important;
 }
 
 /* ==========================================================================
@@ -2250,13 +2118,20 @@ ul.filter-list li,
    Responsive Adaptations for Commodities & Energy Products
    ========================================================================== */
 @media (max-width: 1180px) {
-  .commodities-cards-row {
+  ul.commodities-division-list.layout-p-25x25x25x25 {
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 20px !important;
   }
 
+  ul.commodities-division-list > li {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
   .commodities-image-wrapper {
-    max-height: 420px !important;
+    max-height: 380px !important;
   }
 }
 
@@ -2276,49 +2151,25 @@ ul.filter-list li,
 }
 
 @media (max-width: 767px) {
-  .commodities-cards-row {
+  ul.commodities-division-list.layout-p-25x25x25x25 {
+    display: grid !important;
     grid-template-columns: 1fr !important;
-    gap: 18px !important;
+    gap: 16px !important;
   }
 
   .commodities-image-wrapper {
-    min-height: 260px !important;
-    max-height: 320px !important;
+    min-height: 240px !important;
+    max-height: 300px !important;
   }
 
   .commodities-caption-bar {
     flex-direction: column !important;
     align-items: flex-start !important;
-    padding: 16px !important;
+    padding: 14px 16px !important;
   }
 
-  .caption-pills-right {
-    width: 100% !important;
-  }
-
-  .quadrant-badge {
-    padding: 6px 12px !important;
-    font-size: 11px !important;
-  }
-
-  .badge-metals {
-    top: 12px !important;
-    left: 12px !important;
-  }
-
-  .badge-agriculture {
-    top: 12px !important;
-    right: 12px !important;
-  }
-
-  .badge-energy {
-    bottom: 12px !important;
-    left: 12px !important;
-  }
-
-  .badge-financial {
-    bottom: 12px !important;
-    right: 12px !important;
+  .caption-divisions-right {
+    flex-wrap: wrap !important;
   }
 
   .energy-product-row-card {

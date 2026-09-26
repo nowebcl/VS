@@ -65,7 +65,7 @@ export const translations = {
           badge: 'División Primaria',
           desc: 'Trading físico de destilados medios, fuel oil pesado, nafta, asfalto y crudo ligero y pesado con acceso a terminales estratégicas.',
           products: ['Jet A-1', 'EN590 10ppm', 'Fuel Oil D6', 'Nafta Alifática / Aromática', 'Petróleo Crudo'],
-          actionText: 'Ver Productos de Energía →',
+          actionText: 'Ver Productos de Energía',
           actionLink: '#page-energy-products'
         },
         {
@@ -74,7 +74,7 @@ export const translations = {
           badge: 'Minería & Fundición',
           desc: 'Abastecimiento y distribución transfronteriza de metales preciosos e industriales para cadenas de manufactura global.',
           products: ['Lingotes de Oro 999.9', 'Plata Fina', 'Cátodos de Cobre Grado A', 'Aluminio P1020', 'Litio'],
-          actionText: 'Consultar Mesa de Metales →',
+          actionText: 'Consultar Mesa de Metales',
           actionLink: '#page-contact'
         },
         {
@@ -83,7 +83,7 @@ export const translations = {
           badge: 'Soft Commodities',
           desc: 'Originación directa desde productores líderes y entrega a granel de alimentos esenciales y materias primas agrícolas.',
           products: ['Azúcar ICUMSA 45', 'Cacao en Grano', 'Café Arábica & Robusta', 'Soja & Trigo', 'Arroz Blanco'],
-          actionText: 'Consultar Mesa Agrícola →',
+          actionText: 'Consultar Mesa Agrícola',
           actionLink: '#page-contact'
         },
         {
@@ -92,7 +92,7 @@ export const translations = {
           badge: 'Trade Finance Desk',
           desc: 'Estructuración de crédito privado garantizado por inventario y conocimientos de embarque (BL) para mitigar riesgos.',
           products: ['Borrowing Base', 'Cartas de Crédito (LC / SBLC)', 'Descuento de Facturas', 'Pre-export Finance'],
-          actionText: 'Ver Soluciones de Trade Finance →',
+          actionText: 'Ver Soluciones de Trade Finance',
           actionLink: '#page-pricing-plans'
         }
       ]
@@ -545,7 +545,7 @@ export const translations = {
           badge: 'Primary Division',
           desc: 'Physical trading of middle distillates, heavy fuel oils, naphtha, asphalt, and crude oils backed by key terminal storage.',
           products: ['Jet A-1', 'EN590 10ppm', 'D6 Fuel Oil', 'Aliphatic / Aromatic Naphtha', 'Crude Oil'],
-          actionText: 'Explore Energy Products →',
+          actionText: 'Explore Energy Products',
           actionLink: '#page-energy-products'
         },
         {
@@ -554,7 +554,7 @@ export const translations = {
           badge: 'Mining & Smelting',
           desc: 'Cross-border origination and global delivery of precious, base, and strategic metals for international manufacturing.',
           products: ['Gold Bullion 999.9', 'Fine Silver', 'Copper Cathodes Grade A', 'Aluminum P1020', 'Lithium'],
-          actionText: 'Contact Metals Desk →',
+          actionText: 'Contact Metals Desk',
           actionLink: '#page-contact'
         },
         {
@@ -563,7 +563,7 @@ export const translations = {
           badge: 'Soft Commodities',
           desc: 'Direct farm-to-port origination and bulk supply of vital food staples and essential agricultural soft commodities.',
           products: ['ICUMSA 45 Sugar', 'Raw Cocoa Beans', 'Arabica & Robusta Coffee', 'Soybeans & Wheat', 'White Rice'],
-          actionText: 'Contact Agri Desk →',
+          actionText: 'Contact Agri Desk',
           actionLink: '#page-contact'
         },
         {
@@ -572,7 +572,7 @@ export const translations = {
           badge: 'Trade Finance Desk',
           desc: 'Bespoke inventory-backed credit facilities, borrowing base loans, and transactional liquidity mitigating market risks.',
           products: ['Borrowing Base', 'Letters of Credit (LC / SBLC)', 'Invoice Discounting', 'Pre-export Finance'],
-          actionText: 'Explore Trade Finance →',
+          actionText: 'Explore Trade Finance',
           actionLink: '#page-pricing-plans'
         }
       ]
