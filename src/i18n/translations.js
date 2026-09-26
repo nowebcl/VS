@@ -197,7 +197,9 @@ export const translations = {
         }
       ],
       roster: [
-        { name: 'Altagracia Melendez', role: 'Directora de Operaciones', email: 'commercial@vsinternationalllc.com' },
+        { name: 'Michele', role: 'Directora de Operaciones', email: 'michele@vsinternationalllc.com' },
+        { name: 'Eva García', role: 'Gestión Comercial & Trading', email: 'egarcia@vsinternationalllc.com' },
+        { name: 'Jorge Eger', role: 'Trade Finance & Finanzas', email: 'jeger@vsinternationalllc.com' },
         { name: 'Betania Biagini', role: 'Gerente Global de Trading', email: 'biagini@vsinternationalllc.com' },
         { name: 'Davi Assis', role: 'Gerente de Desarrollo', email: 'dassis@vsinternationalllc.com' },
         { name: 'Fredd Ortega', role: 'Adquisición de Productos', email: 'fortega@vsinternationalllc.com' }
@@ -539,7 +541,9 @@ export const translations = {
         }
       ],
       roster: [
-        { name: 'Altagracia Melendez', role: 'Director of Operations', email: 'commercial@vsinternationalllc.com' },
+        { name: 'Michele', role: 'Director of Operations', email: 'michele@vsinternationalllc.com' },
+        { name: 'Eva García', role: 'Commercial Trading & Operations', email: 'egarcia@vsinternationalllc.com' },
+        { name: 'Jorge Eger', role: 'Trade Finance & Structured Credit', email: 'jeger@vsinternationalllc.com' },
         { name: 'Betania Biagini', role: 'Global Trading Manager', email: 'biagini@vsinternationalllc.com' },
         { name: 'Davi Assis', role: 'Development Manager', email: 'dassis@vsinternationalllc.com' },
         { name: 'Fredd Ortega', role: 'Product Acquisition', email: 'fortega@vsinternationalllc.com' }
