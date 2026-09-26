@@ -2360,66 +2360,55 @@ ul.filter-list li,
 
 /* ==========================================================================
    Footer Signature / Developer Credit (noweb.dev)
+   Subtle, elegant, discreet white text without background or instagram icon
    ========================================================================== */
 .footer-credits-box {
   display: flex !important;
   flex-direction: column !important;
-  gap: 8px !important;
+  gap: 6px !important;
 }
 
 .footer-copyright-text {
   font-size: 13.5px !important;
-  color: #64748B !important;
+  color: #828D99 !important;
   line-height: 1.5 !important;
 }
 
 .footer-copyright-text a {
-  color: #00214E !important;
-  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
   text-decoration: none !important;
+  transition: opacity 0.2s ease !important;
 }
 
 .footer-copyright-text a:hover {
-  color: #0284C7 !important;
   text-decoration: underline !important;
+  opacity: 0.9 !important;
 }
 
 .footer-signature-text {
   font-size: 13px !important;
-  color: #64748B !important;
+  color: #828D99 !important;
   display: inline-flex !important;
   align-items: center !important;
   flex-wrap: wrap !important;
-  gap: 5px !important;
+  gap: 4px !important;
   letter-spacing: 0.2px !important;
 }
 
 .noweb-signature-link {
-  color: #00214E !important;
-  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
   text-decoration: none !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 5px !important;
-  transition: color 0.2s ease, transform 0.2s ease !important;
-  padding: 2px 6px !important;
-  border-radius: 4px !important;
-  background-color: rgba(225, 48, 108, 0.08) !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  transition: opacity 0.2s ease !important;
 }
 
 .noweb-signature-link:hover {
-  color: #E1306C !important;
-  background-color: rgba(225, 48, 108, 0.16) !important;
-  transform: translateY(-1px) !important;
-}
-
-.noweb-ig-icon {
-  display: inline-block !important;
-  vertical-align: middle !important;
-  color: #E1306C !important;
-  transition: transform 0.2s ease !important;
-}
-
-.noweb-signature-link:hover .noweb-ig-icon {
-  transform: scale(1.15) !important;
+  color: #FFFFFF !important;
+  text-decoration: underline !important;
+  opacity: 0.85 !important;
+  background: transparent !important;
 }
