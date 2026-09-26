@@ -185,19 +185,19 @@ export const translations = {
           ]
         },
         {
-          name: 'Carlos Ibarra',
-          role: 'Director Comercial',
-          email: 'salesc@vsinternationalllc.com',
-          bio: 'Dirigiendo ventas internacionales, originación de contratos y gestión de relaciones comerciales en energía, metales a granel y productos agrícolas a nivel mundial.',
+          name: 'Michele',
+          role: 'Directora de Operaciones',
+          email: 'michele@vsinternationalllc.com',
+          bio: 'Supervisando la ejecución operativa global, logística portuaria y cumplimiento de contratos en transacciones internacionales de commodities.',
           skills: [
-            { name: 'Ventas Globales y Originación', value: 85 },
-            { name: 'Negociación de Contratos', value: 90 },
-            { name: 'Mitigación de Riesgos', value: 80 }
+            { name: 'Operaciones Globales y Logística', value: 90 },
+            { name: 'Gestión y Cumplimiento de Contratos', value: 85 },
+            { name: 'Mitigación de Riesgos Operativos', value: 85 }
           ]
         }
       ],
       roster: [
-        { name: 'Michele', role: 'Directora de Operaciones', email: 'michele@vsinternationalllc.com' },
+        { name: 'Carlos Ibarra', role: 'Director Comercial', email: 'salesc@vsinternationalllc.com' },
         { name: 'Eva García', role: 'Gestión Comercial & Trading', email: 'egarcia@vsinternationalllc.com' },
         { name: 'Jorge Eger', role: 'Trade Finance & Finanzas', email: 'jeger@vsinternationalllc.com' },
         { name: 'Betania Biagini', role: 'Gerente Global de Trading', email: 'biagini@vsinternationalllc.com' },
@@ -529,19 +529,19 @@ export const translations = {
           ]
         },
         {
-          name: 'Carlos Ibarra',
-          role: 'Commercial Director',
-          email: 'salesc@vsinternationalllc.com',
-          bio: 'Directing international sales, offtake origination and client relationship management for energy products, bulk metals and agricultural soft commodity flows worldwide.',
+          name: 'Michele',
+          role: 'Director of Operations',
+          email: 'michele@vsinternationalllc.com',
+          bio: 'Overseeing global operational execution, port logistics management and contract compliance across international commodity transactions.',
           skills: [
-            { name: 'Global Sales & Origination', value: 85 },
-            { name: 'Contract Negotiation', value: 90 },
-            { name: 'Risk Mitigation', value: 80 }
+            { name: 'Global Operations & Logistics', value: 90 },
+            { name: 'Contract Execution & Compliance', value: 85 },
+            { name: 'Operational Risk Mitigation', value: 85 }
           ]
         }
       ],
       roster: [
-        { name: 'Michele', role: 'Director of Operations', email: 'michele@vsinternationalllc.com' },
+        { name: 'Carlos Ibarra', role: 'Commercial Director', email: 'salesc@vsinternationalllc.com' },
         { name: 'Eva García', role: 'Commercial Trading & Operations', email: 'egarcia@vsinternationalllc.com' },
         { name: 'Jorge Eger', role: 'Trade Finance & Structured Credit', email: 'jeger@vsinternationalllc.com' },
         { name: 'Betania Biagini', role: 'Global Trading Manager', email: 'biagini@vsinternationalllc.com' },

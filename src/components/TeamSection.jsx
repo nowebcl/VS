@@ -13,7 +13,7 @@ const memberSocials = [
     { class: 'social-list-twitter', link: '#twitter' }
   ],
   [
-    { class: 'social-list-email', link: 'mailto:salesc@vsinternationalllc.com' },
+    { class: 'social-list-email', link: 'mailto:michele@vsinternationalllc.com' },
     { class: 'social-list-tumblr', link: '#corporate' },
     { class: 'social-list-digg', link: '#finance' }
   ]
