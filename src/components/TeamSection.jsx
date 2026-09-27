@@ -13,27 +13,14 @@ const memberImages = [
 
 const memberSocials = [
   [
-    { class: 'social-list-linkedin', link: 'https://www.linkedin.com/in/raquel-cantero-184641158' },
-    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
+    { class: 'social-list-linkedin', link: 'https://www.linkedin.com/in/raquel-cantero-184641158' }
   ],
-  [
-    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
-  ],
-  [
-    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
-  ],
-  [
-    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
-  ],
-  [
-    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
-  ],
-  [
-    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
-  ],
-  [
-    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
-  ]
+  [],
+  [],
+  [],
+  [],
+  [],
+  []
 ];
 
 export default function TeamSection() {
@@ -107,19 +94,21 @@ export default function TeamSection() {
                   </div>
 
                   {/* Social icon list */}
-                  <ul className="social-list social-list-style-1">
-                    {(member.socials || []).map((soc, sIdx) => (
-                      <li key={sIdx}>
-                        <a
-                          href={soc.link}
-                          className={soc.class}
-                          target={soc.link.startsWith('http') ? '_blank' : undefined}
-                          rel={soc.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          title={soc.class.includes('linkedin') ? 'LinkedIn' : 'Email'}
-                        />
-                      </li>
-                    ))}
-                  </ul>
+                  {member.socials && member.socials.length > 0 && (
+                    <ul className="social-list social-list-style-1">
+                      {member.socials.map((soc, sIdx) => (
+                        <li key={sIdx}>
+                          <a
+                            href={soc.link}
+                            className={soc.class}
+                            target={soc.link.startsWith('http') ? '_blank' : undefined}
+                            rel={soc.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                            title={soc.class.includes('linkedin') ? 'LinkedIn' : undefined}
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
 
                 {/* Right column */}
@@ -128,14 +117,6 @@ export default function TeamSection() {
                   <span className="occupation-name">{member.role}</span>
 
                   <p>{member.bio}</p>
-
-                  <div style={{ margin: '8px 0 16px', fontSize: '14px', color: '#00214E', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#00214E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                      <polyline points="22,6 12,13 2,6" />
-                    </svg>
-                    <a href={`mailto:${member.email}`} style={{ color: '#00214E', textDecoration: 'none' }}>{member.email}</a>
-                  </div>
 
                   {/* Skills list */}
                   <ul className="skill-list list-0">
@@ -174,12 +155,7 @@ export default function TeamSection() {
                 <li key={oIdx} className={oIdx % 2 === 0 ? 'column-left' : 'column-right'}>
                   <span className="icon icon-people" />
                   <h5>{officer.name}</h5>
-                  <p style={{ margin: '2px 0 4px', fontWeight: '600', color: '#555' }}>{officer.role}</p>
-                  <p style={{ margin: 0 }}>
-                    <a href={`mailto:${officer.email}`} style={{ color: '#00214E', textDecoration: 'none', fontSize: '13px' }}>
-                      {officer.email}
-                    </a>
-                  </p>
+                  <p style={{ margin: '2px 0 0', fontWeight: '600', color: '#555' }}>{officer.role}</p>
                 </li>
               ))}
             </ul>
