@@ -190,16 +190,15 @@ export default function ContactSection() {
                   </p>
                 </li>
                 <li>
-                  <span className="icon icon-mobile"></span>
-                  <p>Phone: +1 (786) 218-3042</p>
-                  <p>Phone: +1 (305) 796-3796</p>
-                  <p>Phone: +1 (786) 530-9165</p>
-                </li>
-                <li>
                   <span className="icon icon-mail"></span>
-                  <p>{t.contact.operationsDesk} operations@vsinternationalllc.com</p>
-                  <p>{t.contact.commercialDesk} salesc@vsinternationalllc.com</p>
-                  <p>{t.contact.tradingDesk} commercial@vsinternationalllc.com</p>
+                  <p style={{ fontSize: '15px', fontWeight: '600', marginTop: '4px' }}>
+                    <a
+                      href="mailto:info@vsinternationalllc.com"
+                      style={{ color: '#00214E', textDecoration: 'none' }}
+                    >
+                      info@vsinternationalllc.com
+                    </a>
+                  </p>
                 </li>
               </ul>
 

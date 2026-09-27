@@ -145,7 +145,23 @@ export default function HeaderHero() {
                             ))
                           : slide.title}
                       </span>
-                      <span>{slide.subtitle}</span>
+                      <span>
+                        {typeof slide.subtitle === 'string' && slide.subtitle.includes('\n')
+                          ? slide.subtitle.split('\n').map((line, idx) => (
+                              <React.Fragment key={idx}>
+                                {idx === 0 ? (
+                                  <span style={{ display: 'block', fontStyle: 'italic', fontWeight: '500', fontSize: '1.12em', letterSpacing: '0.4px', marginBottom: '8px' }}>
+                                    {line}
+                                  </span>
+                                ) : (
+                                  <span style={{ display: 'block', fontSize: '0.88em', opacity: 0.92, lineHeight: 1.45, fontStyle: 'italic' }}>
+                                    {line}
+                                  </span>
+                                )}
+                              </React.Fragment>
+                            ))
+                          : slide.subtitle}
+                      </span>
                     </span>
                   </a>
                 </div>

@@ -14,25 +14,25 @@ const memberImages = [
 const memberSocials = [
   [
     { class: 'social-list-linkedin', link: 'https://www.linkedin.com/in/raquel-cantero-184641158' },
-    { class: 'social-list-email', link: 'mailto:operations@vsinternationalllc.com' }
+    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
   ],
   [
-    { class: 'social-list-email', link: 'mailto:salesc@vsinternationalllc.com' }
+    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
   ],
   [
-    { class: 'social-list-email', link: 'mailto:biagini@vsinternationalllc.com' }
+    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
   ],
   [
-    { class: 'social-list-email', link: 'mailto:fortega@vsinternationalllc.com' }
+    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
   ],
   [
-    { class: 'social-list-email', link: 'mailto:michele@vsinternationalllc.com' }
+    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
   ],
   [
-    { class: 'social-list-email', link: 'mailto:egarcia@vsinternationalllc.com' }
+    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
   ],
   [
-    { class: 'social-list-email', link: 'mailto:eger@vsinternationalllc.com' }
+    { class: 'social-list-email', link: 'mailto:info@vsinternationalllc.com' }
   ]
 ];
 

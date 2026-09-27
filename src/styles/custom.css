@@ -2012,78 +2012,38 @@ ul.commodities-division-list {
 }
 
 .energy-product-row-card {
-  background: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  border-radius: 12px;
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: all 0.25s ease;
+  background: #FFFFFF !important;
+  border: 1px solid #E6E6DF !important;
+  border-left: 4px solid #00214E !important;
+  border-radius: 2px !important;
+  padding: 14px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  box-shadow: 0 2px 6px rgba(0, 33, 78, 0.03) !important;
+  transition: all 0.2s ease !important;
 }
 
 .energy-product-row-card:hover {
-  box-shadow: 0 8px 24px rgba(0, 33, 78, 0.1);
-  border-color: #CBD5E1;
-  transform: translateY(-2px);
-}
-
-.energy-icon-holder {
-  width: 52px;
-  height: 52px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  background: #F8FAFC;
-}
-
-.energy-prod-icon {
-  display: block;
-}
-
-.energy-category-title-box {
-  width: 220px;
-  flex-shrink: 0;
-}
-
-.energy-category-title {
-  margin: 0 !important;
-  font-size: 18px !important;
-  font-weight: 700 !important;
-  font-style: italic !important;
-  color: #111827 !important;
-  line-height: 1.25 !important;
-}
-
-.energy-products-list-box {
-  flex-grow: 1;
-}
-
-.energy-products-list {
-  margin: 0 !important;
-  font-size: 15.5px !important;
-  font-style: italic !important;
-  color: #374151 !important;
-  line-height: 1.4 !important;
-  font-weight: 500 !important;
+  box-shadow: 0 4px 14px rgba(0, 33, 78, 0.08) !important;
+  border-color: #CBD5E1 !important;
+  border-left-color: #0A3570 !important;
+  transform: translateY(-1px) !important;
 }
 
 /* Specs Bottom Strip */
 .energy-specs-strip {
-  margin-top: 36px;
-  background: #00214E;
-  color: #FFFFFF;
-  border-radius: 12px;
-  padding: 18px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 16px;
-  box-shadow: 0 8px 24px rgba(0, 33, 78, 0.12);
+  margin-top: 32px !important;
+  background: #00214E !important;
+  color: #FFFFFF !important;
+  border-radius: 2px !important;
+  padding: 18px 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  flex-wrap: wrap !important;
+  gap: 16px !important;
+  box-shadow: 0 4px 16px rgba(0, 33, 78, 0.12) !important;
 }
 
 .spec-item {

@@ -13,6 +13,8 @@ import PricingSection from './components/PricingSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
+import AboutDetailPage from './components/AboutDetailPage';
+
 function MinimalLangButton() {
   const { lang, toggleLang } = useLanguage();
   return (
@@ -30,6 +32,58 @@ function MinimalLangButton() {
 }
 
 function MainApp() {
+  const [isAboutFull, setIsAboutFull] = React.useState(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      const path = window.location.pathname;
+      return hash === '#/about' || hash === '#about-details' || hash === '#about-full' || path === '/about';
+    }
+    return false;
+  });
+
+  React.useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      const path = window.location.pathname;
+      const match = hash === '#/about' || hash === '#about-details' || hash === '#about-full' || path === '/about';
+      setIsAboutFull(match);
+      if (match) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handleHashChange);
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener('popstate', handleHashChange);
+    };
+  }, []);
+
+  const navigateToHome = () => {
+    setIsAboutFull(false);
+    window.location.hash = '#page-about';
+    setTimeout(() => {
+      const el = document.getElementById('page-about');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 60);
+  };
+
+  const navigateToAboutFull = () => {
+    setIsAboutFull(true);
+    window.location.hash = '#/about';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  if (isAboutFull) {
+    return (
+      <div className="atrium-app">
+        <AboutDetailPage onBack={navigateToHome} />
+        <Footer />
+        <MinimalLangButton />
+      </div>
+    );
+  }
+
   return (
     <div className="atrium-app">
       <ul className="page-list" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -40,7 +94,7 @@ function MainApp() {
         </li>
 
         {/* About Page */}
-        <AboutSection />
+        <AboutSection onExploreFull={navigateToAboutFull} />
 
         {/* Commodities Divisions Page */}
         <CommoditiesDivisionsSection />
