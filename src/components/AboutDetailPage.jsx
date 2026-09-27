@@ -99,17 +99,17 @@ export default function AboutDetailPage({ onBack }) {
 
         {/* Section 1: Executive Overview (Portrait + Institutional Copy) */}
         <section className="about-detail-section about-detail-overview">
-          {/* Executive Portrait Frame */}
+          {/* Corporate Infrastructure Frame */}
           <div className="about-detail-portrait-col">
             <div className="image about-executive-image">
               <img
-                src="/_sample/home_carousel/image_01.jpg"
-                alt="Raquel Cantero - Executive Leadership"
+                src="/image/corporate_tanker_terminal.jpg"
+                alt="VS International Group LLC - Maritime Logistics & Terminal Infrastructure"
                 className="about-detail-portrait-img"
               />
               <div className="image-description">
-                <h5>{t.about.officerName || 'Raquel Cantero'}</h5>
-                <span className="team-position">{t.about.officerRole || 'Chief Executive Officer & President'}</span>
+                <h5>VS INTERNATIONAL GROUP LLC</h5>
+                <span className="team-position">{lang === 'es' ? 'Infraestructura de Terminales & Logística Marítima' : 'Terminal Storage Infrastructure & Maritime Logistics'}</span>
               </div>
             </div>
           </div>

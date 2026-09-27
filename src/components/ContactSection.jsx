@@ -181,8 +181,8 @@ export default function ContactSection() {
                   <span className="icon icon-mappointer"></span>
                   <p><strong>VS INTERNATIONAL GROUP LLC</strong></p>
                   <p>1221 Brickell Avenue. Suite 900. Miami. FL. 33131</p>
-                  <p style={{ fontSize: '13px', color: '#88a', marginTop: '6px' }}>
-                    {t.contact.desksLabel} Spain • United Arab Emirates • Brazil
+                  <p style={{ fontSize: '13px', color: '#88a', marginTop: '6px', lineHeight: '1.5' }}>
+                    <strong>{t.contact.desksLabel}</strong> {t.contact.officesList || 'Spain • United Arab Emirates • Brazil • China • Singapore • Switzerland'}
                   </p>
                 </li>
                 <li>

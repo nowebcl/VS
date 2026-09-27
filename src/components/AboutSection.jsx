@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function AboutSection({ onExploreFull }) {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   const handleCtaClick = (e) => {
     e.preventDefault();
@@ -24,17 +24,17 @@ export default function AboutSection({ onExploreFull }) {
 
         {/* 50x50 Layout */}
         <div className="layout-p-50x50 clear-fix about-layout-container">
-          {/* Left Column: Authentic Executive Portrait Frame */}
+          {/* Left Column: Corporate Terminal & Tanker Infrastructure Frame */}
           <div className="column-left">
             <div className="image about-executive-image">
               <img
-                src="/_sample/home_carousel/image_01.jpg"
-                alt="VS International Group LLC Executive Leadership"
+                src="/image/corporate_tanker_terminal.jpg"
+                alt="VS International Group LLC - Maritime Logistics & Terminal Infrastructure"
                 className="about-portrait-img"
               />
               <div className="image-description">
-                <h5>{t.about.officerName || 'Raquel Cantero'}</h5>
-                <span className="team-position">{t.about.officerRole || 'Chief Executive Officer (C.E.O.)'}</span>
+                <h5>VS INTERNATIONAL GROUP LLC</h5>
+                <span className="team-position">{t.about.imageCaption || (lang === 'es' ? 'Infraestructura de Almacenamiento & Logística Marítima' : 'Storage Infrastructure & Maritime Logistics')}</span>
               </div>
             </div>
           </div>

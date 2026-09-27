@@ -354,8 +354,9 @@ export const translations = {
       subtitle: 'Profesionales líderes en trading de commodities, logística marítima y desarrollo de negocios globales.',
       executives: [
         {
-          name: 'Gladys Raquel Cantero López',
+          name: 'Raquel Cantero',
           role: 'Directora Ejecutiva & Presidenta (C.E.O. & President)',
+          email: 'operations@vsinternationalllc.com',
           bio: 'Fundadora y líder ejecutiva de VS International Group LLC. Conduce la visión global de la compañía, las alianzas estratégicas soberanas y bancarias, y la expansión de las operaciones de trading físico y trade finance en América, Europa, EAU y Asia.',
           skills: [
             { name: 'Trading Global de Commodities', value: 95 },
@@ -366,6 +367,7 @@ export const translations = {
         {
           name: 'Carlos Ibarra',
           role: 'Director Comercial (Commercial Director)',
+          email: 'salesc@vsinternationalllc.com',
           bio: 'Responsable de la dirección comercial global, originación de contratos de suministro físico y gestión de alianzas estratégicas con refinerías, comercializadoras mayoristas y compradores industriales en los principales corredores comerciales del mundo.',
           skills: [
             { name: 'Desarrollo Comercial Global', value: 94 },
@@ -376,6 +378,7 @@ export const translations = {
         {
           name: 'Michele Carvalho',
           role: 'Directora de Operaciones & Business Development',
+          email: 'michele@vsinternationalllc.com',
           bio: 'Lidera la ejecución de operaciones globales, supervisión de contratos transfronterizos y la expansión de nuevos negocios en América Latina y mercados estratégicos. Garantiza el cumplimiento contractual riguroso y la mitigación de riesgos operativos.',
           skills: [
             { name: 'Operaciones Globales & Logística', value: 92 },
@@ -386,6 +389,7 @@ export const translations = {
         {
           name: 'Betania Biagini',
           role: 'Gerente Global de Trading (Global Trading Manager)',
+          email: 'info@vsinternationalllc.com',
           bio: 'Dirige la mesa de trading físico de destilados medios, combustibles y materias primas energéticas. Especialista en análisis de diferenciales de mercado, arbitraje internacional y optimización de fletes y logística marítima para entregas FOB y CIF.',
           skills: [
             { name: 'Trading Físico de Destilados', value: 93 },
@@ -396,6 +400,7 @@ export const translations = {
         {
           name: 'Fredd Ortega',
           role: 'Adquisición de Productos (Product Acquisition)',
+          email: 'info@vsinternationalllc.com',
           bio: 'Encabezando la originación y aseguramiento de volúmenes de commodities en boca de producción y terminales. Especializado en verificación de calidad independiente (SGS/Saybolt), auditoría técnica y gestión de suministros energéticos y minerales.',
           skills: [
             { name: 'Adquisición & Suministro Upstream', value: 91 },
@@ -406,6 +411,7 @@ export const translations = {
         {
           name: 'Eva García',
           role: 'Ejecutiva de Desarrollo de Negocios (Business Development Executive)',
+          email: 'egarcia@vsinternationalllc.com',
           bio: 'Encargada del crecimiento de alianzas corporativas, incorporación de nuevos compradores y estructuración de acuerdos en los mercados de commodities agrícolas y energéticos en Europa, América y Medio Oriente.',
           skills: [
             { name: 'Estructuración de Alianzas Corporativas', value: 90 },
@@ -416,6 +422,7 @@ export const translations = {
         {
           name: 'Jorge Eger',
           role: 'Desarrollo de Negocios - Tierras Raras & Proyectos Mineros',
+          email: 'jeger@vsinternationalllc.com',
           bio: 'Especialista en el desarrollo y estructuración de proyectos de minería crítica, tierras raras y metales estratégicos para la transición tecnológica. Conecta depósitos minerales y centros de beneficio con consumidores industriales globales.',
           skills: [
             { name: 'Tierras Raras & Minerales Críticos', value: 92 },
@@ -541,7 +548,7 @@ export const translations = {
     contact: {
       title: 'Contacto',
       subheaderLeft: 'Comuníquese con nuestras mesas de trading comercial o con el equipo de trade finance para transacciones.',
-      subheaderRight: 'VS INTERNATIONAL GROUP LLC opera desde Miami con mesas de trading internacionales y almacenamiento.',
+      subheaderRight: 'VS INTERNATIONAL GROUP LLC opera desde Miami con oficinas y mesas de trading en España, EAU, Brasil, China, Singapur y Suiza.',
       namePlaceholder: 'Su Nombre *',
       emailPlaceholder: 'Correo Corporativo *',
       websitePlaceholder: 'Empresa / Sitio Web',
@@ -551,7 +558,8 @@ export const translations = {
       successMsg: '✓ ¡Gracias! Su mensaje ha sido recibido. Nuestra mesa de operaciones responderá a la brevedad.',
       errorMsg: '⚠ Por favor complete su nombre, correo y mensaje.',
       postalLabel: 'Dirección Postal:',
-      desksLabel: 'Mesas:',
+      desksLabel: 'Oficinas & Mesas:',
+      officesList: 'España • Emiratos Árabes Unidos • Brasil • China • Singapur • Suiza',
       operationsDesk: 'Operaciones:',
       commercialDesk: 'Comercial:',
       tradingDesk: 'Trading:',
@@ -922,18 +930,20 @@ export const translations = {
       subtitle: 'Leading professionals in physical commodities trading, maritime logistics, structured trade finance, and global business development.',
       executives: [
         {
-          name: 'Gladys Raquel Cantero López',
+          name: 'Raquel Cantero',
           role: 'Chief Executive Officer & President (C.E.O. & President)',
+          email: 'operations@vsinternationalllc.com',
           bio: 'Founder and executive leader of VS International Group LLC. Directs the firm’s global vision, sovereign and institutional banking partnerships, and the worldwide expansion of physical trading and trade finance across the Americas, Europe, UAE, and Asia.',
           skills: [
-            { name: 'Global Commodities Trading', value: 95 },
-            { name: 'Governance & Institutional Partnerships', value: 92 },
-            { name: 'Trade Finance & Capital Strategy', value: 94 }
+             { name: 'Global Commodities Trading', value: 95 },
+             { name: 'Governance & Institutional Partnerships', value: 92 },
+             { name: 'Trade Finance & Capital Strategy', value: 94 }
           ]
         },
         {
           name: 'Carlos Ibarra',
           role: 'Commercial Director',
+          email: 'salesc@vsinternationalllc.com',
           bio: 'Leads global commercial direction, physical supply contract origination, and strategic partnerships with refineries, wholesale marketers, and industrial offtakers across the world’s primary trade corridors.',
           skills: [
             { name: 'Global Commercial Development', value: 94 },
@@ -944,6 +954,7 @@ export const translations = {
         {
           name: 'Michele Carvalho',
           role: 'Director of Operations & Business Development',
+          email: 'michele@vsinternationalllc.com',
           bio: 'Oversees global transaction execution, cross-border contract compliance, and business development across Latin America and strategic emerging markets. Ensures rigorous operational risk mitigation and vessel logistics execution.',
           skills: [
             { name: 'Global Operations & Logistics', value: 92 },
@@ -954,6 +965,7 @@ export const translations = {
         {
           name: 'Betania Biagini',
           role: 'Global Trading Manager',
+          email: 'info@vsinternationalllc.com',
           bio: 'Directs the physical trading desk for middle distillates, fuels, and energy commodities. Specializes in market differential analysis, international arbitrage structures, and chartering and maritime freight optimization for FOB and CIF deliveries.',
           skills: [
             { name: 'Physical Distillates Trading', value: 93 },
@@ -964,6 +976,7 @@ export const translations = {
         {
           name: 'Fredd Ortega',
           role: 'Product Acquisition',
+          email: 'info@vsinternationalllc.com',
           bio: 'Heads origination and procurement of physical commodities at production heads and terminal hubs. Specializes in independent quality inspection (SGS/Saybolt), technical cargo auditing, and energy and mineral supply chain management.',
           skills: [
             { name: 'Upstream Sourcing & Acquisition', value: 91 },
@@ -974,6 +987,7 @@ export const translations = {
         {
           name: 'Eva García',
           role: 'Business Development Executive',
+          email: 'egarcia@vsinternationalllc.com',
           bio: 'Drives strategic corporate partnerships, new buyer onboarding, and cross-border commercial structuring across agricultural and energy commodities in Europe, the Americas, and the Middle East.',
           skills: [
             { name: 'Corporate Partnership Structuring', value: 90 },
@@ -984,6 +998,7 @@ export const translations = {
         {
           name: 'Jorge Eger',
           role: 'Business Development Executive - Rare Earths & Mining Projects',
+          email: 'jeger@vsinternationalllc.com',
           bio: 'Specialist in the structuring and development of critical minerals, rare earths, and strategic industrial metals projects for the global technological transition. Connects mining assets and processing facilities with tier-1 industrial offtakers worldwide.',
           skills: [
             { name: 'Rare Earths & Critical Minerals', value: 92 },
@@ -1109,7 +1124,7 @@ export const translations = {
     contact: {
       title: 'Contact Us',
       subheaderLeft: 'Contact our commercial trading desks or structured trade finance teams for transactions.',
-      subheaderRight: 'VS INTERNATIONAL GROUP LLC operates from Miami with international desks and storage.',
+      subheaderRight: 'VS INTERNATIONAL GROUP LLC operates from Miami with offices and trading desks in Spain, UAE, Brazil, China, Singapore, and Switzerland.',
       namePlaceholder: 'Your Name *',
       emailPlaceholder: 'Corporate E-mail *',
       websitePlaceholder: 'Company / Website',
@@ -1119,7 +1134,8 @@ export const translations = {
       successMsg: '✓ Thank you! Your message has been received. Our trading desk will respond promptly.',
       errorMsg: '⚠ Please fill in your name, email, and message.',
       postalLabel: 'Postal Address:',
-      desksLabel: 'Desks:',
+      desksLabel: 'Offices & Desks:',
+      officesList: 'Spain • United Arab Emirates • Brazil • China • Singapore • Switzerland',
       operationsDesk: 'Operations:',
       commercialDesk: 'Commercial:',
       tradingDesk: 'Trading:',

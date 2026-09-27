@@ -2346,12 +2346,29 @@ ul.commodities-division-list {
   background-color: #FFFFFF !important;
 }
 
-.about-portrait-img {
+.about-portrait-img,
+.about-detail-portrait-img {
   width: 100% !important;
   aspect-ratio: 4/5 !important;
   object-fit: cover !important;
-  object-position: center 12% !important;
+  object-position: center center !important;
   display: block !important;
+  transition: transform 0.4s ease !important;
+}
+
+.about-executive-image:hover .about-portrait-img,
+.about-executive-image:hover .about-detail-portrait-img {
+  transform: scale(1.02);
+}
+
+.team-member-email-link:hover {
+  background-color: #00214E !important;
+  color: #FFFFFF !important;
+  border-color: #00214E !important;
+}
+
+.team-member-email-link:hover .icon-mail {
+  color: #FFFFFF !important;
 }
 
 .about-strategic-callout {

@@ -97,27 +97,61 @@ export default function TeamSection() {
                   </div>
 
                   {/* Social icon list */}
-                  {member.socials && member.socials.length > 0 && (
-                    <ul className="social-list social-list-style-1">
-                      {member.socials.map((soc, sIdx) => (
-                        <li key={sIdx}>
-                          <a
-                            href={soc.link}
-                            className={soc.class}
-                            target={soc.link.startsWith('http') ? '_blank' : undefined}
-                            rel={soc.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                            title={soc.class.includes('linkedin') ? 'LinkedIn' : undefined}
-                          />
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <ul className="social-list social-list-style-1">
+                    {member.socials && member.socials.map((soc, sIdx) => (
+                      <li key={sIdx}>
+                        <a
+                          href={soc.link}
+                          className={soc.class}
+                          target={soc.link.startsWith('http') ? '_blank' : undefined}
+                          rel={soc.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          title={soc.class.includes('linkedin') ? 'LinkedIn' : undefined}
+                        />
+                      </li>
+                    ))}
+                    {member.email && (
+                      <li>
+                        <a
+                          href={`mailto:${member.email}`}
+                          className="social-list-email"
+                          title={`Email: ${member.email}`}
+                        />
+                      </li>
+                    )}
+                  </ul>
                 </div>
 
                 {/* Right column */}
                 <div className="column-right">
                   <h3 className="team-name">{member.name}</h3>
                   <span className="occupation-name">{member.role}</span>
+
+                  {/* Individual Email Contact Link */}
+                  {member.email && (
+                    <div className="team-member-contact-bar" style={{ marginTop: '8px', marginBottom: '14px' }}>
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="team-member-email-link"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '6px',
+                          color: '#00214E',
+                          fontSize: '13.5px',
+                          fontWeight: '600',
+                          textDecoration: 'none',
+                          padding: '4px 10px',
+                          backgroundColor: '#F1F5F9',
+                          borderRadius: '3px',
+                          border: '1px solid #E2E8F0',
+                          transition: 'all 0.2s ease'
+                        }}
+                      >
+                        <span className="icon icon-mail" style={{ fontSize: '12px', color: '#00214E' }}></span>
+                        <span>{member.email}</span>
+                      </a>
+                    </div>
+                  )}
 
                   <p>{member.bio}</p>
 
