@@ -21,35 +21,80 @@ export const translations = {
     },
     about: {
       title: 'Quiénes Somos',
+      companyName: 'VS International Group LLC',
+      tagline: 'Comercio Internacional • Relaciones Estratégicas • Oportunidades Globales',
       officerName: 'Raquel Cantero',
       officerRole: 'Directora Ejecutiva (C.E.O.)',
-      description: 'VS International Group es una casa independiente de trading de commodities con sede en Miami, conectando mercados de origen con centros de consumo mediante logística y financiamiento comercial.',
+      description: 'VS International Group LLC (VSIG) es una compañía de comercio internacional y soluciones comerciales con sede en Miami, Florida, enfocada en conectar compradores y proveedores calificados a través de transacciones estructuradas, transparentes y gestionadas profesionalmente.',
+      overview: {
+        p1: 'VS International Group LLC (VSIG) es una compañía estadounidense de comercio internacional y soluciones comerciales con sede central en Miami, Florida, enfocada en conectar compradores y proveedores calificados a través de transacciones estructuradas, transparentes y gestionadas profesionalmente.',
+        p2: 'Nuestra empresa fue establecida con una visión clara: desarrollar relaciones comerciales internacionales a largo plazo basadas en la integridad, transparencia, eficiencia y valor mutuo.',
+        p3: 'A lo largo de los años, VSIG ha desarrollado relaciones comerciales sólidas en múltiples mercados y sectores, particularmente dentro de la industria global de commodities. Nuestras actividades abarcan la originación, estructuración, negociación y coordinación de transacciones que involucran productos energéticos, derivados del petróleo, materias primas agrícolas y otros bienes de comercio internacional.'
+      },
+      approach: {
+        title: 'Nuestro Enfoque',
+        p1: 'En VS International Group entendemos que las transacciones internacionales exitosas requieren más que simplemente conectar a un comprador con un vendedor. Exigen debida diligencia, procedimientos estructurados, contrapartes confiables, claridad documental y logística coordinada.',
+        p2: 'Por esta razón, trabajamos estrechamente con socios comerciales calificados, proveedores, compradores, instituciones financieras, compañías de inspección y operadores logísticos para facilitar las transacciones desde la fase comercial inicial hasta su ejecución final.',
+        bulletsTitle: 'Nuestro enfoque se centra en:',
+        bullets: [
+          'Relaciones comerciales verificadas',
+          'Procedimientos de transacción estructurados',
+          'Comunicación transparente',
+          'Claridad documental y contractual',
+          'Debida diligencia y cumplimiento normativo',
+          'Coordinación eficiente de logística y ejecución',
+          'Relaciones comerciales a largo plazo'
+        ]
+      },
+      globalVision: {
+        title: 'Nuestra Visión Global',
+        p1: 'VSIG opera con una perspectiva internacional, trabajando con contrapartes y oportunidades comerciales en los principales mercados globales, incluyendo las Américas, Europa, Medio Oriente y Asia.',
+        p2: 'Nuestro objetivo es construir una plataforma de comercio internacional confiable, capaz de facilitar transacciones con alta eficiencia y manteniendo rigurosos estándares de profesionalismo e integridad comercial.',
+        p3: 'Creemos que el crecimiento sostenible se construye a través de la confianza, la responsabilidad, el desempeño y las alianzas a largo plazo.'
+      },
+      commitment: {
+        title: 'Nuestro Compromiso',
+        subtitle: 'Excelencia Operativa & Integridad Comercial',
+        p1: 'Cada transacción se aborda con profesionalismo y meticulosa atención al detalle. Buscamos comprender los requisitos comerciales de cada parte y establecer un marco de ejecución claro antes de avanzar.',
+        p2: 'Nuestro compromiso es generar valor a través de un comercio internacional responsable, combinando experiencia comercial, alianzas estratégicas, gestión de transacciones y coordinación operativa.'
+      },
+      lookingAhead: {
+        title: 'Hacia el Futuro',
+        p1: 'VS International Group continúa expandiendo su red internacional y desarrollando nuevas oportunidades comerciales en el mercado global de commodities. Nos mantenemos enfocados en un principio fundamental:',
+        principleTitle: 'Principio Fundamental',
+        quote: 'Construir relaciones duraderas a través de un comercio internacional responsable, transparente y profesionalmente estructurado.',
+        signOffCompany: 'VS International Group LLC',
+        signOffMotto: 'Comercio Internacional. Relaciones Estratégicas. Oportunidades Globales.'
+      },
       bullets: [
-        'Trading físico en energía y metales.',
-        'Red estratégica global de tanques en puertos clave.',
-        'Soluciones a medida de crédito privado y capital.',
-        'Presencia activa en EE. UU., Europa, EAU y Brasil.'
+        'Relaciones comerciales verificadas',
+        'Procedimientos de transacción estructurados',
+        'Comunicación transparente',
+        'Claridad documental y contractual',
+        'Debida diligencia y cumplimiento normativo',
+        'Coordinación eficiente de logística y ejecución',
+        'Relaciones comerciales a largo plazo'
       ],
       pillars: [
         {
-          icon: 'icon-battery',
-          title: 'Productos Energéticos',
-          description: 'Suministro de Jet A1, diésel EN590, crudo, fuel oil, nafta, asfalto y coque de petróleo.'
+          icon: 'icon-shield',
+          title: 'Enfoque Estructurado',
+          description: 'Debida diligencia rigurosa, procedimientos estructurados y logística coordinada desde la fase comercial inicial hasta su ejecución.'
+        },
+        {
+          icon: 'icon-network',
+          title: 'Visión Global',
+          description: 'Presencia comercial y oportunidades transfronterizas en mercados clave de las Américas, Europa, Medio Oriente y Asia.'
+        },
+        {
+          icon: 'icon-people',
+          title: 'Nuestro Compromiso',
+          description: 'Comercio responsable, atención meticulosa al detalle y creación de valor mutuo en cada marco transaccional.'
         },
         {
           icon: 'icon-chart',
-          title: 'Minería y Metales',
-          description: 'Comercialización global de aluminio, cobre, oro, mineral de hierro, litio y barras de acero.'
-        },
-        {
-          icon: 'icon-leaf',
-          title: 'Productos Agrícolas',
-          description: 'Originación y distribución directa de azúcar, cacao, café, trigo, soja y arroz blanco.'
-        },
-        {
-          icon: 'icon-shield',
-          title: 'Trade Finance',
-          description: 'Crédito privado, facilidades borrowing base, descuento de facturas y liquidez de suministro.'
+          title: 'Alianzas Duraderas',
+          description: 'Crecimiento sostenible fundado en la confianza, integridad, responsabilidad y desempeño operativo a largo plazo.'
         }
       ]
     },
@@ -501,35 +546,80 @@ export const translations = {
     },
     about: {
       title: 'About Us',
+      companyName: 'VS International Group LLC',
+      tagline: 'International Trade • Strategic Relationships • Global Opportunities',
       officerName: 'Raquel Cantero',
       officerRole: 'Chief Executive Officer (C.E.O.)',
-      description: 'VS International Group is an independent physical commodities trading house headquartered in Miami, connecting origin markets with consumption hubs through logistics and trade finance.',
+      description: 'VS International Group LLC (VSIG) is a U.S.-based international trading and commercial solutions company headquartered in Miami, Florida, with a focus on connecting qualified buyers and suppliers through structured, transparent, and professionally managed transactions.',
+      overview: {
+        p1: 'VS International Group LLC (VSIG) is a U.S.-based international trading and commercial solutions company headquartered in Miami, Florida, with a focus on connecting qualified buyers and suppliers through structured, transparent, and professionally managed transactions.',
+        p2: 'Our company was established with a clear vision: to develop long-term international business relationships based on integrity, transparency, efficiency, and mutual value.',
+        p3: 'Over the years, VSIG has developed commercial relationships across multiple markets and sectors, particularly within the global commodities industry. Our activities include the sourcing, structuring, negotiation, and coordination of transactions involving energy products, petroleum derivatives, agricultural commodities, and other internationally traded products.'
+      },
+      approach: {
+        title: 'Our Approach',
+        p1: 'At VS International Group, we understand that successful international transactions require more than simply connecting a buyer with a seller. They require due diligence, structured procedures, reliable counterparties, clear documentation, and coordinated logistics.',
+        p2: 'For this reason, we work closely with qualified commercial partners, suppliers, buyers, financial institutions, inspection companies, and logistics providers to facilitate transactions from the initial commercial stage through execution.',
+        bulletsTitle: 'Our approach is centered on:',
+        bullets: [
+          'Verified commercial relationships',
+          'Structured transaction procedures',
+          'Transparent communication',
+          'Documentary and contractual clarity',
+          'Due diligence and compliance',
+          'Efficient coordination of logistics and execution',
+          'Long-term business relationships'
+        ]
+      },
+      globalVision: {
+        title: 'Our Global Vision',
+        p1: 'VSIG operates with an international perspective, working with counterparties and commercial opportunities across key global trading markets, including the Americas, Europe, the Middle East, and Asia.',
+        p2: 'Our objective is to build a reliable international trading platform capable of facilitating transactions efficiently while maintaining high standards of professionalism and commercial integrity.',
+        p3: 'We believe that sustainable growth is built through trust, accountability, performance, and long-term partnerships.'
+      },
+      commitment: {
+        title: 'Our Commitment',
+        subtitle: 'Operational Excellence & Commercial Integrity',
+        p1: 'Every transaction is approached with professionalism and attention to detail. We seek to understand the commercial requirements of each party and establish a clear framework for execution before moving forward.',
+        p2: 'Our commitment is to create value through responsible international commerce, combining commercial expertise, strategic relationships, transaction management, and operational coordination.'
+      },
+      lookingAhead: {
+        title: 'Looking Ahead',
+        p1: 'VS International Group continues to expand its international network and develop new commercial opportunities across the global commodities market. We remain focused on one fundamental principle:',
+        principleTitle: 'Fundamental Principle',
+        quote: 'Building lasting relationships through responsible, transparent, and professionally structured international trade.',
+        signOffCompany: 'VS International Group LLC',
+        signOffMotto: 'International Trade. Strategic Relationships. Global Opportunities.'
+      },
       bullets: [
-        'Physical trading in energy and metals.',
-        'Global strategic tank storage network in major ports.',
-        'Tailored trade finance and private capital solutions.',
-        'Active presence in USA, Europe, UAE and Brazil.'
+        'Verified commercial relationships',
+        'Structured transaction procedures',
+        'Transparent communication',
+        'Documentary and contractual clarity',
+        'Due diligence and compliance',
+        'Efficient coordination of logistics and execution',
+        'Long-term business relationships'
       ],
       pillars: [
         {
-          icon: 'icon-battery',
-          title: 'Energy Products',
-          description: 'Jet A1, EN590 diesel, crude oil, heavy fuel oil, naphtha, bitumen and petcoke supplies.'
+          icon: 'icon-shield',
+          title: 'Structured Approach',
+          description: 'Rigorous due diligence, structured procedures, and coordinated logistics from the initial commercial stage through execution.'
+        },
+        {
+          icon: 'icon-network',
+          title: 'Global Vision',
+          description: 'Commercial presence and strategic opportunities across key markets in the Americas, Europe, Middle East, and Asia.'
+        },
+        {
+          icon: 'icon-people',
+          title: 'Our Commitment',
+          description: 'Responsible commerce, meticulous attention to detail, and mutual value creation across every transaction framework.'
         },
         {
           icon: 'icon-chart',
-          title: 'Mining & Metals',
-          description: 'Global marketing of aluminum, copper, gold, iron ore, lithium and industrial steel rebar.'
-        },
-        {
-          icon: 'icon-leaf',
-          title: 'Agri Commodities',
-          description: 'Direct origination and distribution of sugar, cocoa, coffee, wheat, soybeans and rice.'
-        },
-        {
-          icon: 'icon-shield',
-          title: 'Trade Finance',
-          description: 'Private credit, senior borrowing base facilities, receivables discounting and supply chain liquidity.'
+          title: 'Lasting Partnerships',
+          description: 'Sustainable growth built upon trust, integrity, accountability, and disciplined operational performance.'
         }
       ]
     },
