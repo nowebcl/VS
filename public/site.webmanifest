@@ -1,0 +1,21 @@
+{
+  "name": "VS International Group LLC",
+  "short_name": "VS International",
+  "description": "Global Physical Commodities Trading & Trade Finance Solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#00214E",
+  "theme_color": "#00214E",
+  "icons": [
+    {
+      "src": "/image/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/image/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# robots.txt for VS International Group LLC
+# Website: https://vsinternationalllc.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://vsinternationalllc.com/sitemap.xml
