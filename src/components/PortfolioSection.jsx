@@ -178,53 +178,28 @@ export default function PortfolioSection() {
 
           {/* Portfolio list */}
           <ul className="gallery-list mobile-app-gallery-list clear-fix">
-            {filteredItems.map((item) => {
-              const overlayClass =
-                item.type === 'video'
-                  ? 'image-overlay-video'
-                  : item.type === 'link'
-                  ? 'image-overlay-url'
-                  : 'image-overlay-image';
+            {filteredItems.map((item) => (
+              <li key={item.id} className="gallery-card-item">
+                <div className="image gallery-card-image-box">
+                  <a
+                    href={item.linkUrl || item.fullImage || '#'}
+                    className="gallery-card-link"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      openLightbox(item);
+                    }}
+                    title={item.title}
+                  >
+                    <img src={item.thumb} alt={item.title} style={{ width: '100%', display: 'block' }} />
+                  </a>
 
-              const iconMediaClass =
-                item.type === 'video'
-                  ? 'movie'
-                  : item.type === 'link'
-                  ? 'hyperlink'
-                  : 'image';
-
-              return (
-                <li key={item.id} className="gallery-card-item">
-                  <div className={`image ${overlayClass}`}>
-                    <a
-                      href={item.linkUrl || item.fullImage || '#'}
-                      className="image-overlay-container"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        openLightbox(item);
-                      }}
-                    >
-                      <img src={item.thumb} alt={item.title} style={{ width: '100%', display: 'block' }} />
-                      <div className="overlay-curtain">
-                        <span
-                          style={{
-                            width: '80px',
-                            height: '80px',
-                            display: 'block',
-                            background: `url('/image/icon_media/${iconMediaClass}.png') no-repeat center center`
-                          }}
-                        />
-                      </div>
-                    </a>
-
-                    <div className="image-description">
-                      <h5>{item.title}</h5>
-                      <span>{item.subtitle}</span>
-                    </div>
+                  <div className="image-description">
+                    <h5>{item.title}</h5>
+                    <span>{item.subtitle}</span>
                   </div>
-                </li>
-              );
-            })}
+                </div>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

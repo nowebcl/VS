@@ -115,7 +115,7 @@ export default function NavigationBar() {
         className={`clear-fix ${isSticky ? 'is-sticky-bar' : ''}`}
       >
         <div className="main clear-fix">
-          {/* Logo */}
+          {/* Logo with Brand Name below */}
           <div className="logo">
             <a
               href="#home"
@@ -123,12 +123,30 @@ export default function NavigationBar() {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
+              className="nav-brand-lockup"
+              style={{
+                textDecoration: 'none',
+                display: 'inline-flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '3px'
+              }}
             >
               <img
                 src="/image/logo.png"
                 alt="VS International Group"
                 className="nav-logo-img"
+                style={{
+                  maxHeight: '38px',
+                  width: 'auto',
+                  objectFit: 'contain',
+                  display: 'block'
+                }}
               />
+              <span className="nav-brand-subtitle">
+                VS INTERNATIONAL GROUP LLC
+              </span>
             </a>
           </div>
 

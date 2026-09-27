@@ -411,9 +411,9 @@ div.section-background-3 > .main {
 
   #navigation-bar div.logo img,
   .nav-logo-img {
-    width: clamp(220px, 70vw, 300px) !important;
-    max-width: 88vw !important;
-    max-height: 100px !important;
+    width: auto !important;
+    max-width: clamp(180px, 60vw, 240px) !important;
+    max-height: 52px !important;
     height: auto !important;
     object-fit: contain !important;
     display: block !important;
@@ -629,29 +629,40 @@ div.section-background-3 > .main {
   }
 }
 
-/* Image hover overlay animation */
-.image-overlay-container {
+/* Permanently disable dark curtain overlay and legacy media icons globally */
+.overlay-curtain,
+.image-overlay-container .overlay-curtain,
+div.image-overlay-image > a > span,
+div.image-overlay-url > a > span,
+div.image-overlay-video > a > span {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.gallery-card-image-box {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-card-link {
+  display: block;
   position: relative;
   overflow: hidden;
-  display: block;
+  cursor: pointer;
 }
 
-.image-overlay-container .overlay-curtain {
-  position: absolute;
-  top: 0;
-  left: -100%;
+.gallery-card-link img {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
+  display: block;
+  transition: transform 0.4s ease, filter 0.3s ease;
 }
 
-.image-overlay-container:hover .overlay-curtain {
-  left: 0;
+.gallery-card-link:hover img {
+  transform: scale(1.03);
+  filter: brightness(1.02);
 }
 
 /* Lightbox Modal */
@@ -2223,3 +2234,1227 @@ ul.commodities-division-list {
   opacity: 0.85 !important;
   background: transparent !important;
 }
+
+/* Disable any hover overlay curtain or media icon on team photos */
+.team-list div.image a,
+.team-list div.image a>span,
+.team-list div.image a span,
+.team-list .overlay-curtain {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.team-list div.image,
+.team-list div.image img {
+  cursor: default !important;
+}
+
+/* Brand Lockup: Logo with White Text Below (Sophisticated & Grand) */
+.hero-brand-lockup {
+  transition: opacity 0.2s ease !important;
+  text-decoration: none !important;
+  margin-top: 4px !important;
+}
+
+.hero-brand-lockup:hover {
+  opacity: 0.92 !important;
+}
+
+.hero-brand-lockup .hero-brand-subtitle {
+  font-family: 'Cinzel', 'Montserrat', 'Droid Serif', Georgia, serif !important;
+  font-size: 16.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3.5px !important;
+  color: #FFFFFF !important;
+  text-transform: uppercase !important;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95), 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+  line-height: 1.2 !important;
+  margin-top: 6px !important;
+  display: block !important;
+}
+
+.nav-brand-lockup {
+  transition: opacity 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+.nav-brand-lockup:hover {
+  opacity: 0.92 !important;
+}
+
+.nav-brand-lockup .nav-brand-subtitle {
+  font-family: 'Cinzel', 'Montserrat', 'Droid Serif', Georgia, serif !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2.2px !important;
+  color: #FFFFFF !important;
+  text-transform: uppercase !important;
+  line-height: 1.15 !important;
+  margin-top: 4px !important;
+  display: block !important;
+}
+
+/* Mobile typography: significantly larger, clear and prominent */
+@media (max-width: 767px) {
+  .hero-brand-lockup img {
+    max-height: 56px !important;
+  }
+  .hero-brand-lockup .hero-brand-subtitle {
+    font-size: 15.5px !important;
+    letter-spacing: 3px !important;
+    margin-top: 8px !important;
+    text-align: center !important;
+  }
+  .nav-brand-lockup {
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .nav-brand-lockup img {
+    max-height: 48px !important;
+  }
+  .nav-brand-lockup .nav-brand-subtitle {
+    font-size: 15.5px !important;
+    letter-spacing: 2.4px !important;
+    font-weight: 700 !important;
+    margin-top: 8px !important;
+    text-align: center !important;
+    display: block !important;
+    line-height: 1.25 !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .nav-brand-lockup .nav-brand-subtitle {
+    font-size: 14.5px !important;
+    letter-spacing: 2px !important;
+  }
+}
+
+/* ==========================================================================
+   ABOUT SECTION: SOPHISTICATED CORPORATE TEMPLATE DESIGN
+   ========================================================================== */
+.about-layout-container {
+  margin-top: 25px !important;
+}
+
+.about-executive-image {
+  border: 1px solid #D5DCE5 !important;
+  border-radius: 2px !important;
+  overflow: hidden !important;
+  background-color: #FFFFFF !important;
+}
+
+.about-portrait-img {
+  width: 100% !important;
+  aspect-ratio: 4/5 !important;
+  object-fit: cover !important;
+  object-position: center 12% !important;
+  display: block !important;
+}
+
+.about-strategic-callout {
+  margin: 22px 0 18px 0 !important;
+  padding: 16px 20px !important;
+  background-color: #F8FAFC !important;
+  border: 1px solid #E2E8F0 !important;
+  border-left: 4px solid #00214E !important;
+  border-radius: 2px !important;
+}
+
+.about-strategic-callout h4 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #00214E !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.about-strategic-callout p {
+  font-size: 13.5px !important;
+  line-height: 1.65 !important;
+  color: #475569 !important;
+  margin: 0 !important;
+}
+
+.about-core-capabilities {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 8px 24px !important;
+  margin-top: 18px !important;
+  margin-bottom: 24px !important;
+}
+
+.about-core-capabilities li {
+  margin-bottom: 0 !important;
+}
+
+.about-core-capabilities li > div {
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #1E293B !important;
+  letter-spacing: 0.3px !important;
+}
+
+.about-cta-wrapper {
+  margin-top: 22px !important;
+}
+
+.about-cta-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 14px 28px !important;
+  background-color: #00214E !important;
+  color: #FFFFFF !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  border-radius: 2px !important;
+  border: 1px solid #00214E !important;
+  box-shadow: 0 4px 14px rgba(0, 33, 78, 0.15) !important;
+  transition: all 0.25s ease !important;
+}
+
+.about-cta-btn:hover {
+  background-color: #2C343D !important;
+  border-color: #2C343D !important;
+  color: #FFFFFF !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(0, 33, 78, 0.22) !important;
+}
+
+.about-cta-arrow {
+  font-size: 16px !important;
+  transition: transform 0.2s ease !important;
+}
+
+.about-cta-btn:hover .about-cta-arrow {
+  transform: translateX(4px) !important;
+}
+
+/* --------------------------------------------------------------------------
+   ABOUT SECTION MOBILE RESPONSIVE OPTIMIZATION (< 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .about-layout-container {
+    margin-top: 15px !important;
+  }
+
+  .about-layout-container > .column-left {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto 28px auto !important;
+    float: none !important;
+  }
+
+  .about-portrait-img {
+    max-height: 360px !important;
+    aspect-ratio: auto !important;
+    height: 360px !important;
+  }
+
+  .about-layout-container > .column-right {
+    width: 100% !important;
+    float: none !important;
+    padding: 0 5px !important;
+  }
+
+  .about-layout-container > .column-right h3 {
+    font-size: 24px !important;
+    text-align: left !important;
+    margin-bottom: 6px !important;
+  }
+
+  .about-layout-container > .column-right .occupation-name {
+    font-size: 14px !important;
+    display: block !important;
+    margin-bottom: 12px !important;
+  }
+
+  .about-core-capabilities {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    margin: 16px 0 20px 0 !important;
+  }
+
+  .about-core-capabilities li > div {
+    font-size: 14px !important;
+  }
+
+  .about-cta-wrapper {
+    margin-top: 20px !important;
+    text-align: center !important;
+  }
+
+  .about-cta-btn {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 15px 20px !important;
+    font-size: 13.5px !important;
+  }
+
+  .about-parallax-section {
+    margin-top: 40px !important;
+  }
+
+  .about-feature-list > li {
+    padding: 24px 15px !important;
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+/* ==========================================================================
+   ABOUT DETAIL PAGE (DEDICATED #/about VIEW)
+   Authentic Website Design, Sophisticated Aesthetics & Mobile Optimization
+   ========================================================================== */
+.about-detail-view {
+  background-color: #FFFFFF !important;
+  min-height: 100vh !important;
+  color: #1E293B !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  overflow-x: hidden !important;
+}
+
+/* Top Sticky Navigation Bar */
+.about-detail-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  background-color: #00214E !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 4px 18px rgba(0, 33, 78, 0.18) !important;
+}
+
+.about-detail-header-inner {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 12px 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.about-detail-brand {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 3px !important;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.about-detail-brand:hover {
+  opacity: 0.9 !important;
+}
+
+.about-detail-logo-img {
+  max-height: 38px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.about-detail-brand-text {
+  font-family: 'Source Sans Pro', 'Montserrat', -apple-system, sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 300 !important;
+  letter-spacing: 1.8px !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  text-transform: uppercase !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+  margin-top: 2px !important;
+  display: block !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.about-detail-header-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex-shrink: 0 !important;
+}
+
+.about-detail-back-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  padding: 0 !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #FFFFFF !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.about-detail-back-btn:hover {
+  background-color: rgba(255, 255, 255, 0.18) !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  color: #FFFFFF !important;
+}
+
+.about-detail-back-btn:hover .about-detail-back-icon {
+  transform: translateX(-2px) !important;
+}
+
+.about-detail-back-icon {
+  transition: transform 0.2s ease !important;
+  display: block !important;
+}
+
+.about-detail-lang-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 38px !important;
+  padding: 0 12px !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #FFFFFF !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  letter-spacing: 0.8px !important;
+  transition: all 0.2s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.about-detail-lang-btn:hover {
+  background-color: rgba(255, 255, 255, 0.14) !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.about-detail-lang-btn .lang-active {
+  color: #FFFFFF !important;
+}
+
+.about-detail-lang-btn .lang-inactive {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.about-detail-lang-btn .lang-divider {
+  margin: 0 4px !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Main Container */
+.about-detail-main {
+  max-width: 1160px !important;
+  margin: 0 auto !important;
+  padding: 50px 24px 90px 24px !important;
+}
+
+/* Title Box */
+.about-detail-title-box {
+  margin-bottom: 48px !important;
+}
+
+.about-detail-kicker {
+  display: block !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  color: #828D99 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+}
+
+.about-detail-title {
+  font-size: 36px !important;
+  font-weight: 400 !important;
+  color: #00214E !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+}
+
+.about-detail-subtitle {
+  max-width: 900px !important;
+  color: #555E68 !important;
+  margin-top: 10px !important;
+}
+
+/* Sections General */
+.about-detail-section {
+  margin-bottom: 56px !important;
+}
+
+/* Section 1: Executive Overview */
+.about-detail-overview {
+  display: grid !important;
+  grid-template-columns: 380px 1fr !important;
+  gap: 40px !important;
+  align-items: start !important;
+}
+
+.about-detail-portrait-col {
+  width: 100% !important;
+}
+
+.about-detail-portrait-img {
+  width: 100% !important;
+  aspect-ratio: 4/5 !important;
+  object-fit: cover !important;
+  object-position: center 12% !important;
+  display: block !important;
+}
+
+.about-detail-lead-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.about-lead-statement {
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #00214E !important;
+  font-weight: 600 !important;
+  padding-bottom: 16px !important;
+  border-bottom: 2px solid #E2E8F0 !important;
+}
+
+.about-body-text {
+  font-size: 15px !important;
+  line-height: 1.75 !important;
+  color: #334155 !important;
+  margin: 0 !important;
+}
+
+.about-highlight-callout {
+  padding: 16px 20px !important;
+  background-color: #F8FAFC !important;
+  border-left: 4px solid #00214E !important;
+  border: 1px solid #E2E8F0 !important;
+  border-left-width: 4px !important;
+  border-left-color: #00214E !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #00214E !important;
+  border-radius: 2px !important;
+}
+
+/* Section 2: Platform Card */
+.about-platform-card {
+  background-color: #F8FAFC !important;
+  border: 1px solid #E2E8F0 !important;
+  border-left: 5px solid #00214E !important;
+  padding: 38px 36px !important;
+  border-radius: 2px !important;
+}
+
+.about-section-tag {
+  display: block !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  color: #828D99 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 6px !important;
+}
+
+.about-section-h3 {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #00214E !important;
+  margin: 0 0 14px 0 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.about-lead-bold {
+  font-size: 15.5px !important;
+  line-height: 1.65 !important;
+  color: #1E293B !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+}
+
+.about-roles-container {
+  border-top: 1px solid #E2E8F0 !important;
+  margin-top: 24px !important;
+  padding-top: 24px !important;
+}
+
+.about-roles-title {
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  color: #00214E !important;
+  margin-bottom: 16px !important;
+}
+
+.about-roles-list {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 8px 24px !important;
+}
+
+.about-roles-list li {
+  margin-bottom: 0 !important;
+}
+
+.about-roles-list li > div {
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #1E293B !important;
+  line-height: 1.5 !important;
+}
+
+.about-objective-quote {
+  margin-top: 28px !important;
+  padding: 20px 24px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 2px !important;
+  text-align: center !important;
+}
+
+.about-objective-tag {
+  display: block !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.8px !important;
+  color: #828D99 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+}
+
+.about-objective-text {
+  font-family: 'Droid Serif', Georgia, serif !important;
+  font-style: italic !important;
+  font-size: 17px !important;
+  color: #00214E !important;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+}
+
+/* Section 3: Strategic Markets Banner */
+.about-markets-banner {
+  background-color: #00214E !important;
+  color: #FFFFFF !important;
+  border-radius: 2px !important;
+  padding: 42px 36px !important;
+  box-shadow: 0 8px 28px rgba(0, 33, 78, 0.18) !important;
+}
+
+.about-markets-tag {
+  display: block !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2.2px !important;
+  color: #8EB9E5 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 6px !important;
+}
+
+.about-markets-h3 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 14px 0 !important;
+  letter-spacing: 0.6px !important;
+}
+
+.about-markets-lead {
+  font-size: 15px !important;
+  line-height: 1.75 !important;
+  color: #CBD5E1 !important;
+  max-width: 860px !important;
+  margin-bottom: 24px !important;
+}
+
+.about-products-wrapper {
+  margin-bottom: 24px !important;
+}
+
+.about-products-label {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: #8EB9E5 !important;
+  margin-bottom: 12px !important;
+}
+
+.about-products-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+}
+
+.about-product-badge {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  padding: 9px 18px !important;
+  border-radius: 2px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.6px !important;
+  color: #FFFFFF !important;
+}
+
+.about-markets-footer {
+  font-size: 13.5px !important;
+  line-height: 1.65 !important;
+  color: #94A3B8 !important;
+  margin: 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+  padding-top: 18px !important;
+}
+
+/* Section 4: The VSIG Difference */
+.about-subheading-box {
+  margin-bottom: 28px !important;
+}
+
+.about-difference-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  gap: 20px !important;
+}
+
+.about-diff-card {
+  background-color: #F8FAFC !important;
+  border: 1px solid #E2E8F0 !important;
+  border-left: 4px solid #00214E !important;
+  border-radius: 2px !important;
+  padding: 24px 20px !important;
+}
+
+.about-diff-index {
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  color: #828D99 !important;
+  letter-spacing: 1.5px !important;
+  margin-bottom: 8px !important;
+}
+
+.about-diff-title {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #00214E !important;
+  margin: 0 0 10px 0 !important;
+  letter-spacing: 0.4px !important;
+  text-transform: uppercase !important;
+}
+
+.about-diff-desc {
+  font-size: 13.5px !important;
+  line-height: 1.65 !important;
+  color: #475569 !important;
+  margin: 0 !important;
+}
+
+/* Section 5: Corporate Principles */
+.about-principles-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.about-principle-item {
+  display: flex !important;
+  align-items: baseline !important;
+  padding: 14px 18px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-left: 4px solid #00214E !important;
+  border-radius: 2px !important;
+  gap: 16px !important;
+}
+
+.about-principle-name {
+  font-size: 14.5px !important;
+  font-weight: 800 !important;
+  color: #00214E !important;
+  min-width: 140px !important;
+  letter-spacing: 0.4px !important;
+  flex-shrink: 0 !important;
+}
+
+.about-principle-text {
+  font-size: 14px !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
+}
+
+/* Section 6: Corporate Vision */
+.about-vision-section {
+  background-color: #F8FAFC !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 2px !important;
+  padding: 38px 36px !important;
+  text-align: center !important;
+}
+
+.about-vision-lead {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  color: #334155 !important;
+  max-width: 800px !important;
+  margin: 0 auto 24px auto !important;
+}
+
+.about-vision-steps-box {
+  max-width: 600px !important;
+  margin: 0 auto 28px auto !important;
+}
+
+.about-vision-sublead {
+  display: block !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.5px !important;
+  color: #828D99 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 14px !important;
+}
+
+.about-vision-steps-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.about-vision-step-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 2px !important;
+  padding: 10px 16px !important;
+  text-align: left !important;
+}
+
+.about-vision-step-item .step-num {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50% !important;
+  background-color: #00214E !important;
+  color: #FFFFFF !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  flex-shrink: 0 !important;
+}
+
+.about-vision-step-item .step-label {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #00214E !important;
+  letter-spacing: 0.3px !important;
+}
+
+.about-vision-footer {
+  border-top: 1px solid #E2E8F0 !important;
+  padding-top: 22px !important;
+}
+
+.about-vision-company {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  color: #00214E !important;
+  letter-spacing: 1px !important;
+}
+
+.about-vision-tagline {
+  font-family: 'Droid Serif', Georgia, serif !important;
+  font-style: italic !important;
+  font-size: 14px !important;
+  color: #64748B !important;
+  margin-top: 4px !important;
+}
+
+/* Section 7: Action Callout Bottom Bar */
+.about-cta-bottom-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+  padding: 28px 32px !important;
+  background-color: #00214E !important;
+  color: #FFFFFF !important;
+  border-radius: 2px !important;
+  box-shadow: 0 8px 24px rgba(0, 33, 78, 0.18) !important;
+}
+
+.about-cta-company {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.about-cta-desk {
+  font-size: 13.5px !important;
+  color: #CBD5E1 !important;
+  margin: 0 !important;
+}
+
+.about-cta-buttons {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+}
+
+.about-cta-contact-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px 22px !important;
+  background-color: #FFFFFF !important;
+  color: #00214E !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  border-radius: 2px !important;
+  border: 1px solid #FFFFFF !important;
+  transition: all 0.2s ease !important;
+}
+
+.about-cta-contact-btn:hover {
+  background-color: #8EB9E5 !important;
+  border-color: #8EB9E5 !important;
+  color: #00214E !important;
+}
+
+.about-cta-back-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 12px 20px !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  color: #FFFFFF !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.6px !important;
+  cursor: pointer !important;
+  border-radius: 2px !important;
+  transition: all 0.2s ease !important;
+}
+
+.about-cta-back-btn:hover {
+  border-color: #FFFFFF !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Corporate Dedicated Footer for About Detail */
+.about-detail-footer {
+  background-color: #00122e !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 24px 20px !important;
+  color: #94A3B8 !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 13px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+.about-detail-footer-inner {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  box-sizing: border-box !important;
+}
+
+.about-detail-footer-copy {
+  color: #94A3B8 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.3px !important;
+}
+
+.about-detail-footer-dev {
+  color: #64748B !important;
+  font-size: 12.5px !important;
+}
+
+.about-detail-footer-dev .noweb-signature-link {
+  color: #8EB9E5 !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: color 0.2s ease !important;
+}
+
+.about-detail-footer-dev .noweb-signature-link:hover {
+  color: #FFFFFF !important;
+  text-decoration: underline !important;
+}
+
+/* --------------------------------------------------------------------------
+   ABOUT DETAIL PAGE MOBILE RESPONSIVE OPTIMIZATION (< 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .about-detail-view {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .about-detail-header-inner {
+    padding: 10px 14px !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-detail-brand {
+    align-items: flex-start !important;
+    width: auto !important;
+    text-align: left !important;
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .about-detail-logo-img {
+    max-height: 32px !important;
+  }
+
+  .about-detail-brand-text {
+    font-size: 9px !important;
+    font-weight: 300 !important;
+    letter-spacing: 1.3px !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+    margin-top: 1px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.2 !important;
+  }
+
+  .about-detail-header-actions {
+    width: auto !important;
+    justify-content: flex-end !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .about-detail-back-btn {
+    width: 36px !important;
+    height: 36px !important;
+    flex: none !important;
+    padding: 0 !important;
+    border-radius: 4px !important;
+  }
+
+  .about-detail-back-btn .about-detail-back-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .about-detail-lang-btn {
+    height: 36px !important;
+    padding: 0 10px !important;
+    font-size: 11px !important;
+    border-radius: 4px !important;
+    flex: none !important;
+  }
+
+  .about-detail-main {
+    padding: 24px 14px 60px 14px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .about-detail-title-box {
+    margin-bottom: 26px !important;
+  }
+
+  .about-detail-title {
+    font-size: 26px !important;
+  }
+
+  .about-detail-overview {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  .about-detail-portrait-col {
+    max-width: 320px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
+  .about-detail-portrait-img {
+    aspect-ratio: auto !important;
+    max-height: 340px !important;
+    height: 340px !important;
+    width: 100% !important;
+  }
+
+  .about-platform-card {
+    padding: 22px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-roles-list {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .about-markets-banner {
+    padding: 24px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-markets-h3 {
+    font-size: 20px !important;
+  }
+
+  .about-diff-card {
+    padding: 20px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-principle-item {
+    flex-direction: column !important;
+    gap: 4px !important;
+    padding: 12px 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-principle-name {
+    min-width: auto !important;
+  }
+
+  .about-vision-section {
+    padding: 24px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-vision-steps-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  /* Bottom CTA Bar & Buttons Full Mobile Adaptation */
+  .about-cta-bottom-bar {
+    padding: 22px 16px !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .about-cta-info {
+    margin-bottom: 16px !important;
+    text-align: center !important;
+  }
+
+  .about-cta-company {
+    font-size: 17px !important;
+  }
+
+  .about-cta-desk {
+    font-size: 12.5px !important;
+    line-height: 1.4 !important;
+  }
+
+  .about-cta-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-cta-contact-btn,
+  .about-cta-back-btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+    padding: 12px 16px !important;
+    font-size: 12px !important;
+  }
+
+  .about-detail-footer-inner {
+    flex-direction: column !important;
+    gap: 8px !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-detail-header-inner {
+    padding: 8px 10px !important;
+    gap: 6px !important;
+  }
+
+  .about-detail-logo-img {
+    max-height: 28px !important;
+  }
+
+  .about-detail-brand-text {
+    font-size: 8px !important;
+    letter-spacing: 1px !important;
+  }
+
+  .about-detail-header-actions {
+    gap: 6px !important;
+  }
+
+  .about-detail-back-btn {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .about-detail-lang-btn {
+    height: 34px !important;
+    padding: 0 8px !important;
+    font-size: 10.5px !important;
+  }
+
+  .about-detail-main {
+    padding: 20px 10px 50px 10px !important;
+  }
+
+  .about-detail-title {
+    font-size: 24px !important;
+  }
+
+  .about-cta-bottom-bar {
+    padding: 18px 12px !important;
+  }
+
+  .about-cta-contact-btn,
+  .about-cta-back-btn {
+    padding: 11px 12px !important;
+    font-size: 11.5px !important;
+  }
+}
+
+
+

@@ -49,20 +49,34 @@ export default function HeaderHero() {
       {/* Bar with logo and social icons */}
       <div className="home-carousel-bar">
         <div className="main clear-fix">
-          {/* Logo */}
-          <a href="#home" className="float-left">
+          {/* Brand: Logo + White Text Below */}
+          <a
+            href="#home"
+            className="float-left hero-brand-lockup"
+            style={{
+              textDecoration: 'none',
+              display: 'inline-flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
             <img
               src="/image/logo.png"
               alt="VS International Group"
               style={{
-                maxHeight: '95px',
-                maxWidth: '320px',
+                maxHeight: '70px',
+                maxWidth: '240px',
                 width: 'auto',
                 height: 'auto',
                 objectFit: 'contain',
-                filter: 'drop-shadow(0 3px 12px rgba(0, 0, 0, 0.75))'
+                filter: 'drop-shadow(0 2px 10px rgba(0, 0, 0, 0.75))',
+                display: 'block'
               }}
             />
+            <span className="hero-brand-subtitle">
+              VS INTERNATIONAL GROUP LLC
+            </span>
           </a>
 
           {/* Social icon list - Only LinkedIn */}

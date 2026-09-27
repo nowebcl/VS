@@ -88,20 +88,17 @@ export default function TeamSection() {
               <div className="layout-p-33x66 clear-fix">
                 {/* Left column */}
                 <div className="column-left">
-                  <div className="image image-overlay-image">
-                    <a href={member.image} className="image-overlay-container" onClick={(e) => e.preventDefault()}>
-                      <img src={member.image} alt={member.name} style={{ width: '100%', display: 'block', borderRadius: '2px' }} />
-                      <div className="overlay-curtain">
-                        <span
-                          style={{
-                            width: '80px',
-                            height: '80px',
-                            display: 'block',
-                            background: "url('/image/icon_media/image.png') no-repeat center center"
-                          }}
-                        />
-                      </div>
-                    </a>
+                  <div className="image team-member-image" style={{ borderRadius: '2px', overflow: 'hidden' }}>
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      style={{
+                        width: '100%',
+                        display: 'block',
+                        borderRadius: '2px 2px 0 0',
+                        objectFit: 'cover'
+                      }}
+                    />
 
                     <div className="image-description">
                       <h5>{member.name}</h5>

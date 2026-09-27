@@ -1,7 +1,7 @@
 export const translations = {
   es: {
     nav: {
-      about: 'Quiénes Somos',
+      about: 'Sobre la Empresa',
       commodities: 'Commodities',
       energyProducts: 'Energía',
       divisions: 'Divisiones',
@@ -20,7 +20,7 @@ export const translations = {
       slide2Subtitle: 'Connecting Energy, Logistics & Finance\nInfraestructura estratégica de almacenamiento, terminales portuarias y ejecución de comercio transfronterizo'
     },
     about: {
-      title: 'Quiénes Somos',
+      title: 'Sobre la Empresa',
       companyName: 'VS International Group LLC',
       tagline: 'Donde el Comercio Global se Vuelve Ejecutable',
       officerName: 'Raquel Cantero',
@@ -66,7 +66,7 @@ export const translations = {
     },
     aboutFull: {
       backButton: 'Volver al Inicio',
-      title: 'Acerca de VS International Group',
+      title: 'Sobre la Empresa',
       subtitle: 'Donde el Comercio Global se Vuelve Ejecutable',
       intro: {
         lead: 'VS International Group LLC (VSIG) es una compañía estadounidense de comercio internacional y commodities construida en torno a un único propósito: transformar oportunidades comerciales calificadas en transacciones estructuradas y ejecutables.',
@@ -78,7 +78,7 @@ export const translations = {
         title: 'Más Que una Conexión. Una Plataforma Transaccional.',
         lead: 'VSIG no se posiciona simplemente como un intermediario o broker.',
         p1: 'Operamos como un puente comercial entre compradores internacionales, proveedores y socios estratégicos, ayudando a coordinar los elementos críticos requeridos para avanzar una transacción.',
-        roleTitle: 'Nuestro rol abarca:',
+        roleTitle: 'Alcance Operativo y Comercial:',
         roles: [
           'Originación de compradores y proveedores internacionales',
           'Desarrollo de oportunidades comerciales estratégicas',
@@ -92,9 +92,9 @@ export const translations = {
         objective: 'Crear claridad donde existe complejidad y estructura donde existe oportunidad.'
       },
       markets: {
-        title: 'Nuestros Mercados Principales',
+        title: 'Mercados Estratégicos',
         lead: 'VSIG se enfoca en commodities de comercio internacional y oportunidades comerciales estratégicas, con particular experiencia en el sector de energía y derivados petrolíferos.',
-        productsTitle: 'Nuestras actividades comerciales comprenden productos tales como:',
+        productsTitle: 'Actividad Comercial y Productos:',
         products: ['EN590 10PPM', 'Jet A-1', 'D6 Fuel Oil', 'Productos Petrolíferos', 'Commodities Energéticos'],
         footerText: 'Trabajamos con contrapartes internacionales de acuerdo a los requerimientos específicos, procedimientos, documentación y marco comercial particular de cada transacción.'
       },
@@ -120,7 +120,7 @@ export const translations = {
         ]
       },
       principles: {
-        title: 'Nuestros Principios',
+        title: 'Principios Corporativos',
         list: [
           { name: 'Integridad', text: 'Valoramos una comunicación directa, honesta y profesional.' },
           { name: 'Transparencia', text: 'Creemos firmemente que las relaciones comerciales sólidas requieren total claridad y responsabilidad.' },
@@ -130,7 +130,7 @@ export const translations = {
         ]
       },
       vision: {
-        title: 'Nuestra Visión',
+        title: 'Visión Corporativa',
         lead: 'Visualizamos a VS International Group como una plataforma internacional de referencia para el trading estratégico de commodities y el desarrollo comercial transfronterizo.',
         sublead: 'A medida que nuestra red se expande, nuestro enfoque permanece constante:',
         steps: [
@@ -143,7 +143,7 @@ export const translations = {
         company: 'VS International Group LLC',
         tagline: 'Comercio Global. Transacciones Estructuradas. Relaciones Estratégicas.'
       },
-      ctaContact: 'Contactar a Nuestro Desk Comercial'
+      ctaContact: 'Contactar Desk Comercial'
     },
     commodities: {
       title: 'Divisiones de Commodities',
@@ -592,7 +592,7 @@ export const translations = {
       slide2Subtitle: 'Connecting Energy, Logistics & Finance\nStrategic bulk storage terminals, maritime logistics and cross-border trade execution'
     },
     about: {
-      title: 'About Us',
+      title: 'About',
       companyName: 'VS International Group LLC',
       tagline: 'Where Global Commerce Becomes Executable',
       officerName: 'Raquel Cantero',
@@ -650,7 +650,7 @@ export const translations = {
         title: 'More Than a Connection. A Transaction Platform.',
         lead: 'VSIG does not position itself simply as a broker or intermediary.',
         p1: 'We operate as a commercial bridge between international buyers, suppliers, and strategic partners, helping coordinate the critical elements required to advance a transaction.',
-        roleTitle: 'Our role can encompass:',
+        roleTitle: 'Operational & Transaction Scope:',
         roles: [
           'International supplier and buyer sourcing',
           'Commercial opportunity development',
@@ -664,9 +664,9 @@ export const translations = {
         objective: 'Create clarity where there is complexity and structure where there is opportunity.'
       },
       markets: {
-        title: 'Our Core Markets',
+        title: 'Strategic Markets',
         lead: 'VSIG focuses on internationally traded commodities and strategic commercial opportunities, with particular experience across the energy and petroleum products sector.',
-        productsTitle: 'Our commercial activities may include products such as:',
+        productsTitle: 'Commercial Activities & Key Products:',
         products: ['EN590 10PPM', 'Jet A-1', 'D6 Fuel Oil', 'Petroleum Products', 'Energy Commodities'],
         footerText: 'We work with international counterparties according to the specific requirements, procedures, documentation, and commercial framework of each transaction.'
       },
@@ -692,17 +692,17 @@ export const translations = {
         ]
       },
       principles: {
-        title: 'Our Principles',
+        title: 'Corporate Principles',
         list: [
-          { name: 'Integridad', text: 'We value straightforward and professional communication.' },
-          { name: 'Transparencia', text: 'We believe commercial relationships require clarity and accountability.' },
-          { name: 'Disciplina', text: 'We approach transactions through defined processes and documented expectations.' },
-          { name: 'Relaciones', text: 'We build partnerships designed to create long-term commercial value.' },
-          { name: 'Ejecución', text: 'We focus on moving qualified opportunities forward — not simply creating introductions.' }
+          { name: 'Integrity', text: 'We value straightforward and professional communication.' },
+          { name: 'Transparency', text: 'We believe commercial relationships require clarity and accountability.' },
+          { name: 'Discipline', text: 'We approach transactions through defined processes and documented expectations.' },
+          { name: 'Relationships', text: 'We build partnerships designed to create long-term commercial value.' },
+          { name: 'Execution', text: 'We focus on moving qualified opportunities forward — not simply creating introductions.' }
         ]
       },
       vision: {
-        title: 'Our Vision',
+        title: 'Corporate Vision',
         lead: 'We envision VS International Group as a trusted international platform for strategic commodities trading and cross-border commercial development.',
         sublead: 'As our network grows, our focus remains the same:',
         steps: [
@@ -715,7 +715,7 @@ export const translations = {
         company: 'VS International Group LLC',
         tagline: 'Global Commerce. Structured Transactions. Strategic Relationships.'
       },
-      ctaContact: 'Contact Our Trading Desk'
+      ctaContact: 'Contact Trading Desk'
     },
     commodities: {
       title: 'Commodities Divisions',

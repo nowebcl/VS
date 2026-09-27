@@ -53,19 +53,9 @@ export default function BlogSection() {
                   <span>{t.blog.repliesLabel}</span>
                 </div>
 
-                <div className="image image-overlay-url">
-                  <a href="#blog" className="image-overlay-container" onClick={(e) => e.preventDefault()}>
+                <div className="image">
+                  <a href="#blog" onClick={(e) => e.preventDefault()}>
                     <img src={post.image} alt={post.title} style={{ width: '100%', display: 'block' }} />
-                    <div className="overlay-curtain">
-                      <span
-                        style={{
-                          width: '80px',
-                          height: '80px',
-                          display: 'block',
-                          background: "url('/image/icon_media/hyperlink.png') no-repeat center center"
-                        }}
-                      />
-                    </div>
                   </a>
                 </div>
               </div>

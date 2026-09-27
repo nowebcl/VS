@@ -76,10 +76,8 @@ function MainApp() {
 
   if (isAboutFull) {
     return (
-      <div className="atrium-app">
+      <div className="atrium-app about-detail-app">
         <AboutDetailPage onBack={navigateToHome} />
-        <Footer />
-        <MinimalLangButton />
       </div>
     );
   }
