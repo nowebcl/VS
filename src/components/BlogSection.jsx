@@ -29,6 +29,9 @@ export default function BlogSection() {
     <li className="page-blog" id="page-blog">
       <div className="main blog">
         {/* Header */}
+        <div className="section-title-logo-box">
+          <img src="/logoblanco.png" alt="VS International Group" className="section-title-logo" />
+        </div>
         <h2 className="underline">
           <span>{t.blog.title}</span>
           <span></span>
@@ -54,19 +57,15 @@ export default function BlogSection() {
                 </div>
 
                 <div className="image">
-                  <a href="#blog" onClick={(e) => e.preventDefault()}>
-                    <img src={post.image} alt={post.title} style={{ width: '100%', display: 'block' }} />
-                  </a>
+                  <img src={post.image} alt={post.title} style={{ width: '100%', display: 'block' }} />
                 </div>
               </div>
 
               {/* Content */}
               <div className="post-list-content">
                 <div>
-                  <h4>
-                    <a href="#blog" onClick={(e) => e.preventDefault()}>
-                      {post.title}
-                    </a>
+                  <h4 style={{ color: '#FFFFFF', fontSize: '18px', fontWeight: '700', lineHeight: '1.4', marginBottom: '14px', letterSpacing: '0.2px' }}>
+                    {post.title}
                   </h4>
 
                   <p>{post.excerpt}</p>
@@ -75,17 +74,13 @@ export default function BlogSection() {
                     <div className="post-info-bar-category">
                       {post.categories.map((cat, cIdx) => (
                         <React.Fragment key={cIdx}>
-                          <a href="#blog" onClick={(e) => e.preventDefault()}>
-                            {cat}
-                          </a>
+                          <span style={{ color: '#B0B8C1' }}>{cat}</span>
                           {cIdx < post.categories.length - 1 && ', '}
                         </React.Fragment>
                       ))}
                     </div>
                     <div className="post-info-bar-author">
-                      <a href="#blog" onClick={(e) => e.preventDefault()}>
-                        {post.author}
-                      </a>
+                      <span style={{ color: '#CBD5E1', fontWeight: '500' }}>{post.author}</span>
                     </div>
                   </div>
                 </div>
@@ -93,11 +88,6 @@ export default function BlogSection() {
             </li>
           ))}
         </ul>
-
-        {/* Browse Button */}
-        <a href="#blog" className="button-browse" onClick={(e) => e.preventDefault()}>
-          {t.blog.browseBtn}
-        </a>
       </div>
 
       {/* Twitter Timeline / News Ticker */}
@@ -117,10 +107,10 @@ export default function BlogSection() {
                   <span className="quotation-list-icon-up" />
                   <span className="quotation-list-text">{tw.text}</span>
                   <span className="quotation-list-icon-dn" />
-                  <span className="quotation-list-author" style={{ marginLeft: '10px', color: '#00214E' }}>
+                  <span className="quotation-list-author" style={{ marginLeft: '10px', color: '#FFFFFF', fontWeight: '600' }}>
                     {tw.author}
                   </span>
-                  <span className="quotation-list-datetime" style={{ marginLeft: '8px', color: '#999' }}>
+                  <span className="quotation-list-datetime" style={{ marginLeft: '8px', color: '#B0B8C1' }}>
                     {tw.time}
                   </span>
                 </li>

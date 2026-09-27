@@ -4,16 +4,16 @@ import { useLanguage } from '../context/LanguageContext';
 const memberImages = [
   '/image/team/raquel_cantero.jpg',
   '/image/team/carlos_ibarra.jpg',
+  '/image/team/michele_carvalho.jpg',
   '/image/team/betania_biagini.jpg',
   '/image/team/fredd_ortega.jpg',
-  '/image/team/michele_carvalho.jpg',
   '/image/team/eva_garcia.jpg',
   '/image/team/jorge_eger.jpg'
 ];
 
 const memberSocials = [
   [
-    { class: 'social-list-linkedin', link: 'https://www.linkedin.com/in/raquel-cantero-184641158' }
+    { class: 'social-list-linkedin', link: 'https://www.linkedin.com/feed/update/urn:li:activity:7509987707868082176' }
   ],
   [],
   [],
@@ -57,6 +57,9 @@ export default function TeamSection() {
     <li className="page-team" id="page-team" ref={teamRef}>
       <div className="main">
         {/* Header */}
+        <div className="section-title-logo-box">
+          <img src="/logoblanco.png" alt="VS International Group" className="section-title-logo" />
+        </div>
         <h2 className="underline">
           <span>{t.team.title}</span>
           <span></span>

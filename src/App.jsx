@@ -9,7 +9,6 @@ import ServicesSection from './components/ServicesSection';
 import PortfolioSection from './components/PortfolioSection';
 import TeamSection from './components/TeamSection';
 import BlogSection from './components/BlogSection';
-import PricingSection from './components/PricingSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -111,9 +110,6 @@ function MainApp() {
 
         {/* Blog Page */}
         <BlogSection />
-
-        {/* Pricing Plans Page */}
-        <PricingSection />
 
         {/* Contact Page */}
         <ContactSection />

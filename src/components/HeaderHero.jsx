@@ -83,7 +83,7 @@ export default function HeaderHero() {
           <ul className="social-list social-list-style-3 float-right">
             <li>
               <a
-                href="https://www.linkedin.com/in/raquel-cantero-184641158"
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7509987707868082176"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-list-linkedin"

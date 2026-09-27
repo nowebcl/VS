@@ -41,7 +41,7 @@ export default function ContactSection() {
         <iframe
           title="VS International Group Headquarters"
           style={{ border: 0, width: '100%', height: '100%', filter: 'grayscale(100%) contrast(1.1)' }}
-          src="https://maps.google.com/maps?q=333+SE+2nd+Ave,+Miami,+FL+33131&z=15&output=embed"
+          src="https://maps.google.com/maps?q=1221+Brickell+Avenue,+Suite+900,+Miami,+FL+33131&z=15&output=embed"
           allowFullScreen
           loading="lazy"
         />
@@ -180,12 +180,8 @@ export default function ContactSection() {
                 <li>
                   <span className="icon icon-mappointer"></span>
                   <p><strong>VS INTERNATIONAL GROUP LLC</strong></p>
-                  <p>333 SE 2nd Av, Suite 3000</p>
-                  <p>Miami, FL 33131, United States</p>
-                  <p style={{ fontSize: '13px', color: '#aaa', marginTop: '6px' }}>
-                    {t.contact.postalLabel} 488 NE 18th Street, Miami, FL 33132
-                  </p>
-                  <p style={{ fontSize: '13px', color: '#88a' }}>
+                  <p>1221 Brickell Avenue. Suite 900. Miami. FL. 33131</p>
+                  <p style={{ fontSize: '13px', color: '#88a', marginTop: '6px' }}>
                     {t.contact.desksLabel} Spain • United Arab Emirates • Brazil
                   </p>
                 </li>
@@ -194,7 +190,8 @@ export default function ContactSection() {
                   <p style={{ fontSize: '15px', fontWeight: '600', marginTop: '4px' }}>
                     <a
                       href="mailto:info@vsinternationalllc.com"
-                      style={{ color: '#00214E', textDecoration: 'none' }}
+                      className="contact-email-link"
+                      style={{ color: '#ffffff', textDecoration: 'none', transition: 'opacity 0.2s ease' }}
                     >
                       info@vsinternationalllc.com
                     </a>
@@ -206,7 +203,7 @@ export default function ContactSection() {
               <ul className="social-list social-list-style-2 clear-fix margin-top-50">
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/raquel-cantero-184641158"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7509987707868082176"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-list-linkedin"
@@ -214,6 +211,29 @@ export default function ContactSection() {
                   />
                 </li>
               </ul>
+
+              {/* Headquarters Building Image */}
+              <div className="contact-hq-card">
+                <div className="contact-hq-image-box">
+                  <img
+                    src="/foto.png"
+                    alt="VS International Group LLC - 1221 Brickell Avenue, Miami Headquarters"
+                    className="contact-hq-image"
+                    loading="lazy"
+                  />
+                  <div className="contact-hq-gradient"></div>
+                  <div className="contact-hq-info">
+                    <div className="contact-hq-badge-tag">
+                      <span className="contact-hq-dot"></span>
+                      <span>{t.contact.hqLabel}</span>
+                    </div>
+                    <div className="contact-hq-details">
+                      <strong className="contact-hq-name">{t.contact.hqAddress}</strong>
+                      <span className="contact-hq-subtext">{t.contact.hqSubtext}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

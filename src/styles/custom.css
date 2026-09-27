@@ -3456,5 +3456,170 @@ ul.commodities-division-list {
   }
 }
 
+/* Contact info email link */
+.contact-email-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease, color 0.2s ease !important;
+}
 
+.contact-email-link:hover {
+  color: #ffffff !important;
+  opacity: 0.85 !important;
+  text-decoration: underline !important;
+}
 
+/* ==========================================================================
+   Contact Section - Corporate Headquarters Building Image (.contact-hq-card)
+   ========================================================================== */
+.contact-hq-card {
+  margin-top: 24px;
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  background-color: #0b1523;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.contact-hq-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px -4px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.contact-hq-image-box {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  display: block;
+}
+
+.contact-hq-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 30% !important;
+  display: block !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.contact-hq-card:hover .contact-hq-image {
+  transform: scale(1.03) !important;
+}
+
+.contact-hq-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 20, 38, 0.05) 0%,
+    rgba(10, 20, 38, 0) 35%,
+    rgba(7, 16, 30, 0.72) 72%,
+    rgba(5, 12, 24, 0.95) 100%
+  );
+  pointer-events: none;
+}
+
+.contact-hq-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.contact-hq-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 33, 78, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #38BDF8;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.contact-hq-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #38BDF8;
+  box-shadow: 0 0 8px #38BDF8;
+}
+
+.contact-hq-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-hq-name {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+}
+
+.contact-hq-subtext {
+  font-size: 12px;
+  color: #94A3B8;
+  letter-spacing: 0.2px;
+  margin-top: 2px;
+}
+
+@media (max-width: 959px) {
+  .contact-hq-image-box {
+    height: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-hq-card {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .contact-hq-image-box {
+    height: 250px;
+  }
+}
+
+/* ==========================================================================
+   Market Intelligence / Blog Post Title & Meta Contrast Fixes
+   ========================================================================== */
+.page-blog .post-list-content h4,
+ul.post-list li div.post-list-content > div h4,
+.post-list-1 .post-list-content h4 {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+}
+
+.page-blog .post-list-content p,
+ul.post-list li div.post-list-content > div p {
+  color: #CBD5E1 !important;
+}
+
+.page-blog .post-info-bar span {
+  color: #B0B8C1 !important;
+}
+
+.twitter-user-timeline .quotation-list-author {
+  color: #FFFFFF !important;
+}
+
+.twitter-user-timeline .quotation-list-datetime {
+  color: #B0B8C1 !important;
+}

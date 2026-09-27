@@ -185,7 +185,7 @@ export const translations = {
           desc: 'Estructuración de crédito privado garantizado por inventario y conocimientos de embarque (BL) para mitigar riesgos.',
           products: ['Borrowing Base', 'Cartas de Crédito (LC / SBLC)', 'Descuento de Facturas', 'Pre-export Finance'],
           actionText: 'Ver Soluciones de Trade Finance',
-          actionLink: '#page-pricing-plans'
+          actionLink: '#page-contact'
         }
       ]
     },
@@ -264,7 +264,7 @@ export const translations = {
         {
           icon: 'icon-administration',
           title: 'Terminales de Tanques',
-          desc: 'Terminales de tanques de almacenamiento operadas en Houston, Rotterdam, Fujairah, Singapur, México y Brasil.'
+          desc: 'Terminales de tanques de almacenamiento operadas en Houston, Rotterdam, Fujairah, Jurong Port, México y Brasil.'
         }
       ],
       stats: [
@@ -276,7 +276,7 @@ export const translations = {
         {
           num: '100',
           title: 'Puertos Globales Cubiertos',
-          desc: 'Almacenamiento estratégico en Houston, Rotterdam, Fujairah, Singapur, México, Brasil y Australia.'
+          desc: 'Almacenamiento estratégico en Houston, Rotterdam, Fujairah, Jurong Port, México, Brasil y Australia.'
         },
         {
           num: '100',
@@ -311,9 +311,9 @@ export const translations = {
           desc: 'Megaterminal costera de abastecimiento de combustible marino y crudo fuera del Estrecho de Ormuz, con atraques de supertanqueros las 24 horas.'
         },
         {
-          title: 'Operaciones en el Estrecho de Singapur',
-          subtitle: 'Transbordo de Crudo Buque a Buque',
-          desc: 'Almacenamiento flotante y operaciones de transbordo buque a buque (STS) para supertanqueros VLCC en los principales corredores petroleros de Asia.'
+          title: 'Terminal de Tanques Jurong Port',
+          subtitle: 'Hub de Almacenamiento & Bunkering de Asia',
+          desc: 'Terminal de almacenamiento de clase mundial en Jurong Port, con instalaciones de atraque de aguas profundas, almacenamiento de destilados y combustibles limpios en el principal centro de comercio energético de Asia.'
         },
         {
           title: 'Terminal Petrolera Cuenca de Santos',
@@ -374,6 +374,16 @@ export const translations = {
           ]
         },
         {
+          name: 'Michele Carvalho',
+          role: 'Directora de Operaciones & Business Development',
+          bio: 'Lidera la ejecución de operaciones globales, supervisión de contratos transfronterizos y la expansión de nuevos negocios en América Latina y mercados estratégicos. Garantiza el cumplimiento contractual riguroso y la mitigación de riesgos operativos.',
+          skills: [
+            { name: 'Operaciones Globales & Logística', value: 92 },
+            { name: 'Cumplimiento Contractual & Legal', value: 89 },
+            { name: 'Desarrollo de Negocios Internacionales', value: 90 }
+          ]
+        },
+        {
           name: 'Betania Biagini',
           role: 'Gerente Global de Trading (Global Trading Manager)',
           bio: 'Dirige la mesa de trading físico de destilados medios, combustibles y materias primas energéticas. Especialista en análisis de diferenciales de mercado, arbitraje internacional y optimización de fletes y logística marítima para entregas FOB y CIF.',
@@ -391,16 +401,6 @@ export const translations = {
             { name: 'Adquisición & Suministro Upstream', value: 91 },
             { name: 'Control de Calidad & Certificación SGS', value: 90 },
             { name: 'Operaciones en Terminales & Almacenamiento', value: 87 }
-          ]
-        },
-        {
-          name: 'Michele Carvalho',
-          role: 'Directora de Operaciones & Business Development',
-          bio: 'Lidera la ejecución de operaciones globales, supervisión de contratos transfronterizos y la expansión de nuevos negocios en América Latina y mercados estratégicos. Garantiza el cumplimiento contractual riguroso y la mitigación de riesgos operativos.',
-          skills: [
-            { name: 'Operaciones Globales & Logística', value: 92 },
-            { name: 'Cumplimiento Contractual & Legal', value: 89 },
-            { name: 'Desarrollo de Negocios Internacionales', value: 90 }
           ]
         },
         {
@@ -554,7 +554,10 @@ export const translations = {
       desksLabel: 'Mesas:',
       operationsDesk: 'Operaciones:',
       commercialDesk: 'Comercial:',
-      tradingDesk: 'Trading:'
+      tradingDesk: 'Trading:',
+      hqLabel: 'Sede Central Miami',
+      hqAddress: '1221 Brickell Avenue, Miami, FL',
+      hqSubtext: 'Distrito Financiero de Miami • Sede Global'
     },
     footer: {
       copyright: '© 2026 VS INTERNATIONAL GROUP LLC. Todos los derechos reservados.',
@@ -939,6 +942,16 @@ export const translations = {
           ]
         },
         {
+          name: 'Michele Carvalho',
+          role: 'Director of Operations & Business Development',
+          bio: 'Oversees global transaction execution, cross-border contract compliance, and business development across Latin America and strategic emerging markets. Ensures rigorous operational risk mitigation and vessel logistics execution.',
+          skills: [
+            { name: 'Global Operations & Logistics', value: 92 },
+            { name: 'Contract Execution & Compliance', value: 89 },
+            { name: 'International Business Expansion', value: 90 }
+          ]
+        },
+        {
           name: 'Betania Biagini',
           role: 'Global Trading Manager',
           bio: 'Directs the physical trading desk for middle distillates, fuels, and energy commodities. Specializes in market differential analysis, international arbitrage structures, and chartering and maritime freight optimization for FOB and CIF deliveries.',
@@ -956,16 +969,6 @@ export const translations = {
             { name: 'Upstream Sourcing & Acquisition', value: 91 },
             { name: 'Quality Control & SGS Verification', value: 90 },
             { name: 'Terminal Storage & Operations', value: 87 }
-          ]
-        },
-        {
-          name: 'Michele Carvalho',
-          role: 'Director of Operations & Business Development',
-          bio: 'Oversees global transaction execution, cross-border contract compliance, and business development across Latin America and strategic emerging markets. Ensures rigorous operational risk mitigation and vessel logistics execution.',
-          skills: [
-            { name: 'Global Operations & Logistics', value: 92 },
-            { name: 'Contract Execution & Compliance', value: 89 },
-            { name: 'International Business Expansion', value: 90 }
           ]
         },
         {
@@ -1119,7 +1122,10 @@ export const translations = {
       desksLabel: 'Desks:',
       operationsDesk: 'Operations:',
       commercialDesk: 'Commercial:',
-      tradingDesk: 'Trading:'
+      tradingDesk: 'Trading:',
+      hqLabel: 'Miami Global Headquarters',
+      hqAddress: '1221 Brickell Avenue, Miami, FL',
+      hqSubtext: 'Miami Financial District • Global Headquarters'
     },
     footer: {
       copyright: '© 2026 VS INTERNATIONAL GROUP LLC. All Rights Reserved.',

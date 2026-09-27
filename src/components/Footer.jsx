@@ -12,7 +12,6 @@ export default function Footer() {
     { label: t.nav.terminals, targetId: 'page-portfolio' },
     { label: t.nav.leadership, targetId: 'page-team' },
     { label: t.nav.intelligence, targetId: 'page-blog' },
-    { label: t.nav.tradeFinance, targetId: 'page-pricing-plans' },
     { label: t.nav.contact, targetId: 'page-contact' }
   ];
 

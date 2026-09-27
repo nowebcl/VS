@@ -106,6 +106,9 @@ export default function PortfolioSection() {
     <li className="page-portfolio" id="page-portfolio">
       <div className="main">
         {/* Header */}
+        <div className="section-title-logo-box">
+          <img src="/logoblanco.png" alt="VS International Group" className="section-title-logo" />
+        </div>
         <h2 className="underline">
           <span>{t.portfolio.title}</span>
           <span></span>

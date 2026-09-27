@@ -3103,3 +3103,45 @@ ul.list-0
 {
 	display:none;
 }
+
+/**************************************************************************/
+/*	Section Title Corporate Logo Mark                                     */
+/**************************************************************************/
+.section-title-logo-box
+{
+	text-align: center;
+	margin-bottom: 8px;
+	line-height: 1;
+}
+
+.section-title-logo
+{
+	height: 32px !important;
+	max-height: 32px !important;
+	width: auto !important;
+	max-width: 70px !important;
+	object-fit: contain !important;
+	display: inline-block !important;
+	opacity: 0.95;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.section-title-logo:hover
+{
+	transform: scale(1.05);
+	opacity: 1;
+}
+
+@media screen and (max-width: 767px)
+{
+	.section-title-logo-box
+	{
+		margin-bottom: 6px;
+	}
+	.section-title-logo
+	{
+		height: 24px !important;
+		max-height: 24px !important;
+		max-width: 55px !important;
+	}
+}

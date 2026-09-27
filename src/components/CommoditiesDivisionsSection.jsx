@@ -60,6 +60,14 @@ export default function CommoditiesDivisionsSection() {
     <li className="page-commodities" id="page-commodities">
       <div className="main">
         {/* Section Header */}
+        <div className="section-title-logo-box">
+          <img
+            src="/logoblanco.png"
+            alt="VS International Group"
+            className="section-title-logo"
+            style={{ height: '32px', maxHeight: '32px', width: 'auto', maxWidth: '70px', objectFit: 'contain', display: 'inline-block' }}
+          />
+        </div>
         <h2 className="underline">
           <span>{t.commodities.title}</span>
           <span />

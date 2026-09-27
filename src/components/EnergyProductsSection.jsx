@@ -9,6 +9,9 @@ export default function EnergyProductsSection() {
     <li className="page-energy-products" id="page-energy-products">
       <div className="main">
         {/* Section Header */}
+        <div className="section-title-logo-box">
+          <img src="/logoblanco.png" alt="VS International Group" className="section-title-logo" />
+        </div>
         <h2 className="underline">
           <span>{t.energyProducts.title}</span>
           <span />

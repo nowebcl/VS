@@ -21,13 +21,8 @@ export default function NavigationBar() {
     {
       id: 'blog',
       label: t.nav.intelligence,
-      targetId: 'page-blog',
-      subItems: [
-        { label: t.nav.marketOverview, targetId: 'page-blog' },
-        { label: t.nav.commodityReports, targetId: 'page-blog' }
-      ]
+      targetId: 'page-blog'
     },
-    { id: 'pricing-plans', label: t.nav.tradeFinance, targetId: 'page-pricing-plans' },
     { id: 'contact', label: t.nav.contact, targetId: 'page-contact' }
   ];
 
@@ -224,9 +219,6 @@ export default function NavigationBar() {
               <option value="portfolio">{t.nav.terminals}</option>
               <option value="team">{t.nav.leadership}</option>
               <option value="blog">{t.nav.intelligence}</option>
-              <option value="blog">- {t.nav.marketOverview}</option>
-              <option value="blog">- {t.nav.commodityReports}</option>
-              <option value="pricing-plans">{t.nav.tradeFinance}</option>
               <option value="contact">{t.nav.contact}</option>
             </select>
           </div>
