@@ -1770,14 +1770,26 @@ ul.filter-list li,
   font-size: 8px !important;
 }
 
-/* 2. BOTTOM: 4 Structured Institutional Cards Matching Original Template */
+/* 2. BOTTOM: 3 Structured Institutional Cards (Energy, Metals, Agriculture) */
 ul.commodities-division-list {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
   margin: 0 !important;
   padding: 0 !important;
   list-style: none !important;
+  width: 100% !important;
+}
+
+ul.commodities-division-list > li {
+  float: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  display: flex !important;
 }
 
 .commodities-card-wrap {
+  width: 100% !important;
   background: #FFFFFF !important;
   border: 1px solid #E6E6DF !important;
   border-top: 3px solid #00214E !important;
@@ -2088,17 +2100,10 @@ ul.commodities-division-list {
 /* ==========================================================================
    Responsive Adaptations for Commodities & Energy Products
    ========================================================================== */
-@media (max-width: 1180px) {
-  ul.commodities-division-list.layout-p-25x25x25x25 {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+@media (max-width: 991px) {
+  ul.commodities-division-list {
+    grid-template-columns: 1fr !important;
     gap: 20px !important;
-  }
-
-  ul.commodities-division-list > li {
-    float: none !important;
-    width: 100% !important;
-    margin: 0 !important;
   }
 
   .commodities-image-wrapper {
@@ -2122,8 +2127,7 @@ ul.commodities-division-list {
 }
 
 @media (max-width: 767px) {
-  ul.commodities-division-list.layout-p-25x25x25x25 {
-    display: grid !important;
+  ul.commodities-division-list {
     grid-template-columns: 1fr !important;
     gap: 16px !important;
   }

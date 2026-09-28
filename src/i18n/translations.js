@@ -147,8 +147,8 @@ export const translations = {
     },
     commodities: {
       title: 'Divisiones de Commodities',
-      subtitle: 'Comercio físico global, infraestructura logística y liquidez estructurada en cuatro divisiones fundamentales.',
-      imageAlt: 'Divisiones de Commodities de VS International Group: Metales, Agricultura, Energía y Finanzas',
+      subtitle: 'Comercio físico global e infraestructura logística en tres divisiones fundamentales.',
+      imageAlt: 'Divisiones de Commodities de VS International Group: Energía, Metales y Agricultura',
       badgeSector: 'Portafolio de Trading Global',
       divisions: [
         {
@@ -176,15 +176,6 @@ export const translations = {
           desc: 'Originación directa desde productores líderes y entrega a granel de alimentos esenciales y materias primas agrícolas.',
           products: ['Azúcar ICUMSA 45', 'Cacao en Grano', 'Café Arábica & Robusta', 'Soja & Trigo', 'Arroz Blanco'],
           actionText: 'Consultar Mesa Agrícola',
-          actionLink: '#page-contact'
-        },
-        {
-          id: 'financial',
-          title: 'Finanzas',
-          badge: 'Trade Finance Desk',
-          desc: 'Estructuración de crédito privado garantizado por inventario y conocimientos de embarque (BL) para mitigar riesgos.',
-          products: ['Borrowing Base', 'Cartas de Crédito (LC / SBLC)', 'Descuento de Facturas', 'Pre-export Finance'],
-          actionText: 'Ver Soluciones de Trade Finance',
           actionLink: '#page-contact'
         }
       ]
@@ -723,8 +714,8 @@ export const translations = {
     },
     commodities: {
       title: 'Commodities Divisions',
-      subtitle: 'Global physical trading, integrated logistics, and structured liquidity across four core commodity divisions.',
-      imageAlt: 'VS International Group Commodities Divisions: Metals, Agriculture, Energy, and Financial',
+      subtitle: 'Global physical trading and integrated logistics across three core commodity divisions.',
+      imageAlt: 'VS International Group Commodities Divisions: Energy, Metals, and Agriculture',
       badgeSector: 'Global Trading Portfolio',
       divisions: [
         {
@@ -753,15 +744,6 @@ export const translations = {
           products: ['ICUMSA 45 Sugar', 'Raw Cocoa Beans', 'Arabica & Robusta Coffee', 'Soybeans & Wheat', 'White Rice'],
           actionText: 'Contact Agri Desk',
           actionLink: '#page-contact'
-        },
-        {
-          id: 'financial',
-          title: 'Financial',
-          badge: 'Trade Finance Desk',
-          desc: 'Bespoke inventory-backed credit facilities, borrowing base loans, and transactional liquidity mitigating market risks.',
-          products: ['Borrowing Base', 'Letters of Credit (LC / SBLC)', 'Invoice Discounting', 'Pre-export Finance'],
-          actionText: 'Explore Trade Finance',
-          actionLink: '#page-pricing-plans'
         }
       ]
     },

@@ -28,14 +28,6 @@ const AgricultureIcon = ({ size = 20 }) => (
   </svg>
 );
 
-const FinancialIcon = ({ size = 20 }) => (
-  <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2L4 5.5v6c0 5 3.4 9.3 8 10.5 4.6-1.2 8-5.5 8-10.5v-6L12 2z" />
-    <path d="M8 14l3-3 2.5 2L16 9.5" />
-    <polyline points="13.5 9.5 16 9.5 16 12" />
-  </svg>
-);
-
 export default function CommoditiesDivisionsSection() {
   const { t, lang } = useLanguage();
 
@@ -47,8 +39,6 @@ export default function CommoditiesDivisionsSection() {
         return <MetalsIcon size={20} />;
       case 'agriculture':
         return <AgricultureIcon size={20} />;
-      case 'financial':
-        return <FinancialIcon size={20} />;
       default:
         return null;
     }
@@ -96,8 +86,8 @@ export default function CommoditiesDivisionsSection() {
               <span className="caption-tag">{t.commodities.badgeSector}</span>
               <span className="caption-sub">
                 {lang === 'es'
-                  ? 'Abastecimiento físico global, almacenamiento portuario y mitigación de riesgo de capital'
-                  : 'Physical global origination, strategic storage terminals, and structured liquidity'}
+                  ? 'Abastecimiento físico global y almacenamiento portuario estratégico'
+                  : 'Physical global origination and strategic terminal storage'}
               </span>
             </div>
             <div className="caption-divisions-right">
@@ -106,22 +96,18 @@ export default function CommoditiesDivisionsSection() {
               <span>02. {lang === 'es' ? 'METALES' : 'METALS'}</span>
               <span className="sep">•</span>
               <span>03. {lang === 'es' ? 'AGRICULTURA' : 'AGRICULTURE'}</span>
-              <span className="sep">•</span>
-              <span>04. {lang === 'es' ? 'TRADE FINANCE' : 'FINANCIAL'}</span>
             </div>
           </div>
         </div>
 
-        {/* 2. BOTTOM: 4 Structured Institutional Cards Matching Original Template */}
-        <ul className="clear-fix commodities-division-list layout-p-25x25x25x25">
+        {/* 2. BOTTOM: 3 Structured Institutional Cards Matching Original Template */}
+        <ul className="clear-fix commodities-division-list layout-p-33x33x33">
           {divisions.map((div, index) => {
             const colClass =
               index === 0
                 ? 'column-left'
                 : index === 1
-                ? 'column-center-left'
-                : index === 2
-                ? 'column-center-right'
+                ? 'column-center'
                 : 'column-right';
 
             return (
