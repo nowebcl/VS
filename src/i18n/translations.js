@@ -380,7 +380,7 @@ export const translations = {
         {
           name: 'Betania Biagini',
           role: 'Gerente Global de Trading (Global Trading Manager)',
-          email: 'info@vsinternationalllc.com',
+          email: 'biagini@vsinternationalllc.com',
           bio: 'Dirige la mesa de trading físico de destilados medios, combustibles y materias primas energéticas. Especialista en análisis de diferenciales de mercado, arbitraje internacional y optimización de fletes y logística marítima para entregas FOB y CIF.',
           skills: [
             { name: 'Trading Físico de Destilados', value: 93 },
@@ -391,7 +391,7 @@ export const translations = {
         {
           name: 'Fredd Ortega',
           role: 'Adquisición de Productos (Product Acquisition)',
-          email: 'info@vsinternationalllc.com',
+          email: 'fortega@vsinternationalllc.com',
           bio: 'Encabezando la originación y aseguramiento de volúmenes de commodities en boca de producción y terminales. Especializado en verificación de calidad independiente (SGS/Saybolt), auditoría técnica y gestión de suministros energéticos y minerales.',
           skills: [
             { name: 'Adquisición & Suministro Upstream', value: 91 },
@@ -947,7 +947,7 @@ export const translations = {
         {
           name: 'Betania Biagini',
           role: 'Global Trading Manager',
-          email: 'info@vsinternationalllc.com',
+          email: 'biagini@vsinternationalllc.com',
           bio: 'Directs the physical trading desk for middle distillates, fuels, and energy commodities. Specializes in market differential analysis, international arbitrage structures, and chartering and maritime freight optimization for FOB and CIF deliveries.',
           skills: [
             { name: 'Physical Distillates Trading', value: 93 },
@@ -958,7 +958,7 @@ export const translations = {
         {
           name: 'Fredd Ortega',
           role: 'Product Acquisition',
-          email: 'info@vsinternationalllc.com',
+          email: 'fortega@vsinternationalllc.com',
           bio: 'Heads origination and procurement of physical commodities at production heads and terminal hubs. Specializes in independent quality inspection (SGS/Saybolt), technical cargo auditing, and energy and mineral supply chain management.',
           skills: [
             { name: 'Upstream Sourcing & Acquisition', value: 91 },
