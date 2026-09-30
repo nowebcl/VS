@@ -25,21 +25,11 @@ export default function EnergyProductsSection() {
         <div className="energy-products-container">
           {/* Left Column: High-Impact Refinery Image */}
           <div className="energy-hero-column">
-            <div
-              className="energy-hero-image-box"
-              style={{
-                position: 'relative',
-                borderRadius: '2px',
-                overflow: 'hidden',
-                boxShadow: '0 8px 24px rgba(0, 33, 78, 0.12)',
-                border: '1px solid #E6E6DF'
-              }}
-            >
+            <div className="energy-hero-image-box">
               <img
                 src="/image/energy_products.jpg"
                 alt={t.energyProducts.imageAlt}
                 className="energy-hero-img"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
               <div
                 className="energy-hero-gradient-overlay"

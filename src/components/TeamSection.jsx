@@ -78,16 +78,11 @@ export default function TeamSection() {
               <div className="layout-p-33x66 clear-fix">
                 {/* Left column */}
                 <div className="column-left">
-                  <div className="image team-member-image" style={{ borderRadius: '2px', overflow: 'hidden' }}>
+                  <div className="image team-member-image">
                     <img
                       src={member.image}
                       alt={member.name}
-                      style={{
-                        width: '100%',
-                        display: 'block',
-                        borderRadius: '2px 2px 0 0',
-                        objectFit: 'cover'
-                      }}
+                      className="team-member-portrait"
                     />
 
                     <div className="image-description">

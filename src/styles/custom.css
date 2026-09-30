@@ -1692,7 +1692,7 @@ ul.filter-list li,
   width: 100% !important;
   margin: 0 0 35px 0 !important;
   border: 1px solid #E6E6DF !important;
-  border-radius: 2px !important;
+  border-radius: 18px !important;
   overflow: hidden !important;
   background: #FFFFFF !important;
 }
@@ -1713,11 +1713,6 @@ ul.filter-list li,
   object-fit: cover !important;
   object-position: center !important;
   display: block !important;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-.commodities-hero-visual-box:hover .commodities-quadrant-img {
-  transform: scale(1.015) !important;
 }
 
 /* Classic Corporate Caption Bar */
@@ -2344,8 +2339,8 @@ ul.commodities-division-list > li {
 }
 
 .about-executive-image {
-  border: 1px solid #D5DCE5 !important;
-  border-radius: 2px !important;
+  border: 1px solid rgba(0, 33, 78, 0.14) !important;
+  border-radius: 56px 16px 56px 16px !important;
   overflow: hidden !important;
   background-color: #FFFFFF !important;
 }
@@ -2357,12 +2352,6 @@ ul.commodities-division-list > li {
   object-fit: cover !important;
   object-position: center center !important;
   display: block !important;
-  transition: transform 0.4s ease !important;
-}
-
-.about-executive-image:hover .about-portrait-img,
-.about-executive-image:hover .about-detail-portrait-img {
-  transform: scale(1.02);
 }
 
 .team-member-email-link:hover {
@@ -3644,3 +3633,152 @@ ul.post-list li div.post-list-content > div p {
 .twitter-user-timeline .quotation-list-datetime {
   color: #B0B8C1 !important;
 }
+
+/* ==========================================================================
+   TVS SHIPPING (tvs-shipping.com) AESTHETIC IMAGE SYSTEM & HOVER DYNAMICS
+   ========================================================================== */
+
+/* 1. Universal TVS Image Card Base & Interactive Canvas */
+.team-member-image,
+.about-executive-image,
+.gallery-card-image-box,
+.commodities-hero-visual-box,
+.energy-hero-image-box,
+.contact-hq-card,
+.post-list-image .image {
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 18px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 33, 78, 0.1), 0 4px 10px -2px rgba(0, 0, 0, 0.04) !important;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  isolation: isolate;
+  background-color: #001A3D !important;
+}
+
+/* Hover Elevation for TVS Cards */
+.team-member-image:hover,
+.gallery-card-image-box:hover,
+.commodities-hero-visual-box:hover,
+.energy-hero-image-box:hover,
+.contact-hq-card:hover,
+.post-list-image .image:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 22px 45px -8px rgba(0, 33, 78, 0.22), 0 8px 18px -4px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* 2. TVS Signature Asymmetric Arch (Featured Story / Corporate Portrait) */
+.about-executive-image {
+  border-radius: 56px 16px 56px 16px !important;
+  border: 1px solid rgba(0, 33, 78, 0.14) !important;
+  box-shadow: 0 16px 36px -6px rgba(0, 33, 78, 0.18), 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+}
+
+.about-executive-image:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 26px 50px -8px rgba(0, 33, 78, 0.26), 0 10px 20px -4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 3. TVS Signature Asymmetric Team Headshot Framing */
+.team-member-image {
+  border-radius: 20px 8px 20px 8px !important;
+  border: 1px solid rgba(0, 33, 78, 0.1) !important;
+  cursor: pointer;
+}
+
+/* 4. TVS Smooth Cinematic Image Zoom */
+.team-member-image img,
+.team-member-portrait,
+.about-portrait-img,
+.about-detail-portrait-img,
+.gallery-card-link img,
+.commodities-quadrant-img,
+.energy-hero-img,
+.contact-hq-image,
+.post-list-image .image img {
+  width: 100% !important;
+  display: block !important;
+  transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1), filter 0.45s ease !important;
+  will-change: transform;
+}
+
+.team-member-image:hover img,
+.team-member-image:hover .team-member-portrait,
+.about-executive-image:hover .about-portrait-img,
+.about-executive-image:hover .about-detail-portrait-img,
+.gallery-card-image-box:hover .gallery-card-link img,
+.commodities-hero-visual-box:hover .commodities-quadrant-img,
+.energy-hero-image-box:hover .energy-hero-img,
+.contact-hq-card:hover .contact-hq-image,
+.post-list-image:hover .image img {
+  transform: scale(1.06) !important;
+  filter: brightness(1.04) contrast(1.02) !important;
+}
+
+/* 5. Dynamic Light Sheen / Shimmer Sweep (Signature TVS Effect) */
+.team-member-image::after,
+.about-executive-image::after,
+.gallery-card-image-box::after,
+.commodities-image-wrapper::after,
+.energy-hero-image-box::after,
+.contact-hq-image-box::after,
+.post-list-image .image::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -150% !important;
+  width: 65% !important;
+  height: 100% !important;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.28) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+  transform: skewX(-25deg) !important;
+  transition: left 0.85s cubic-bezier(0.19, 1, 0.22, 1) !important;
+  pointer-events: none !important;
+  z-index: 10 !important;
+}
+
+.team-member-image:hover::after,
+.about-executive-image:hover::after,
+.gallery-card-image-box:hover::after,
+.commodities-hero-visual-box:hover .commodities-image-wrapper::after,
+.energy-hero-image-box:hover::after,
+.contact-hq-card:hover .contact-hq-image-box::after,
+.post-list-image:hover .image::after {
+  left: 175% !important;
+}
+
+/* 6. Refined Team Card Caption Bar */
+.team-member-image .image-description {
+  position: relative !important;
+  z-index: 2 !important;
+  background: #00214E !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  transition: background-color 0.35s ease !important;
+}
+
+.team-member-image:hover .image-description {
+  background: #001A3D !important;
+}
+
+.team-member-image .image-description h5 {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+}
+
+.team-member-image .image-description .team-position {
+  color: #8EB9E5 !important;
+}
+
+/* Mobile & Responsive Adaptations */
+@media (max-width: 767px) {
+  .about-executive-image {
+    border-radius: 36px 12px 36px 12px !important;
+  }
+  .team-member-image {
+    border-radius: 16px 8px 16px 8px !important;
+  }
+}
+
