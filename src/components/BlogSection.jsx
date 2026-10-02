@@ -40,7 +40,7 @@ export default function BlogSection() {
         {/* Posts list */}
         <ul className="post-list post-list-1">
           {posts.map((post, index) => (
-            <li key={index} className="clear-fix">
+            <li key={index} className={`clear-fix tvs-reveal-up tvs-delay-${Math.min((index + 1) * 100, 400)}`}>
               {/* Date */}
               <div className="post-list-date">
                 <div className="post-date-box">

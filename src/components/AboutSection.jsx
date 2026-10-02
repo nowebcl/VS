@@ -25,7 +25,7 @@ export default function AboutSection({ onExploreFull }) {
         {/* 50x50 Layout */}
         <div className="layout-p-50x50 clear-fix about-layout-container">
           {/* Left Column: Corporate Terminal & Tanker Infrastructure Frame */}
-          <div className="column-left">
+          <div className="column-left tvs-reveal-left">
             <div className="image about-executive-image">
               <img
                 src="/image/corporate_tanker_terminal.jpg"
@@ -40,7 +40,7 @@ export default function AboutSection({ onExploreFull }) {
           </div>
 
           {/* Right Column: Corporate Information & Core Pillars */}
-          <div className="column-right">
+          <div className="column-right tvs-reveal-right">
             <h3>{t.about.companyName}</h3>
             <span className="occupation-name">{t.about.tagline}</span>
 

@@ -100,7 +100,7 @@ export default function AboutDetailPage({ onBack }) {
         {/* Section 1: Executive Overview (Portrait + Institutional Copy) */}
         <section className="about-detail-section about-detail-overview">
           {/* Corporate Infrastructure Frame */}
-          <div className="about-detail-portrait-col">
+          <div className="about-detail-portrait-col tvs-reveal-left">
             <div className="image about-executive-image">
               <img
                 src="/image/corporate_tanker_terminal.jpg"
@@ -115,7 +115,7 @@ export default function AboutDetailPage({ onBack }) {
           </div>
 
           {/* Lead Copy */}
-          <div className="about-detail-lead-col">
+          <div className="about-detail-lead-col tvs-reveal-right">
             <div className="about-lead-statement">
               {data.intro.lead}
             </div>

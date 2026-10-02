@@ -3782,3 +3782,103 @@ ul.post-list li div.post-list-content > div p {
   }
 }
 
+/* ==========================================================================
+   TVS SHIPPING (tvs-shipping.com) SCROLL ENTRANCE REVEAL SYSTEM
+   ========================================================================== */
+
+/* Base transition parameters: cubic-bezier matching TVS Elementor animations */
+.tvs-reveal-left,
+.tvs-reveal-right,
+.tvs-reveal-up,
+.tvs-reveal-zoom,
+.tvs-reveal-fade {
+  transition-property: opacity, transform !important;
+  transition-duration: 0.95s !important;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: opacity, transform;
+}
+
+/* 1. Slide In From Left (like TVS pic-7 & pic-13 split hero) */
+.tvs-reveal-left {
+  opacity: 0 !important;
+  transform: translate3d(-60px, 0, 0) !important;
+}
+
+.tvs-reveal-left.is-revealed {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+/* 2. Slide In From Right (like TVS cross/pinza opposite column) */
+.tvs-reveal-right {
+  opacity: 0 !important;
+  transform: translate3d(60px, 0, 0) !important;
+}
+
+.tvs-reveal-right.is-revealed {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+/* 3. Slide In Up (like TVS service cards & team cards) */
+.tvs-reveal-up {
+  opacity: 0 !important;
+  transform: translate3d(0, 48px, 0) !important;
+}
+
+.tvs-reveal-up.is-revealed {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+/* 4. Zoom In (like TVS promo boxes & featured highlight cards) */
+.tvs-reveal-zoom {
+  opacity: 0 !important;
+  transform: scale3d(0.88, 0.88, 0.88) !important;
+}
+
+.tvs-reveal-zoom.is-revealed {
+  opacity: 1 !important;
+  transform: scale3d(1, 1, 1) !important;
+}
+
+/* 5. Fade In (like TVS technical process diagrams) */
+.tvs-reveal-fade {
+  opacity: 0 !important;
+}
+
+.tvs-reveal-fade.is-revealed {
+  opacity: 1 !important;
+}
+
+/* Staggered Delay Utilities matching TVS sequential rhythm */
+.tvs-delay-100 { transition-delay: 100ms !important; }
+.tvs-delay-150 { transition-delay: 150ms !important; }
+.tvs-delay-200 { transition-delay: 200ms !important; }
+.tvs-delay-250 { transition-delay: 250ms !important; }
+.tvs-delay-300 { transition-delay: 300ms !important; }
+.tvs-delay-350 { transition-delay: 350ms !important; }
+.tvs-delay-400 { transition-delay: 400ms !important; }
+
+/* Responsive adjustments: prevent horizontal scrollbar on mobile screens */
+@media (max-width: 767px) {
+  .tvs-reveal-left,
+  .tvs-reveal-right {
+    transform: translate3d(0, 32px, 0) !important;
+  }
+}
+
+/* Accessibility: respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .tvs-reveal-left,
+  .tvs-reveal-right,
+  .tvs-reveal-up,
+  .tvs-reveal-zoom,
+  .tvs-reveal-fade {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+

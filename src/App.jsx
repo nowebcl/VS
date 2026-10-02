@@ -13,6 +13,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 import AboutDetailPage from './components/AboutDetailPage';
+import { useScrollReveal } from './hooks/useScrollReveal';
 
 function MinimalLangButton() {
   const { lang, toggleLang } = useLanguage();
@@ -39,6 +40,8 @@ function MainApp() {
     }
     return false;
   });
+
+  useScrollReveal(isAboutFull);
 
   React.useEffect(() => {
     const handleHashChange = () => {

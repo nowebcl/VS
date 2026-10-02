@@ -213,7 +213,7 @@ export default function ContactSection() {
               </ul>
 
               {/* Headquarters Building Image */}
-              <div className="contact-hq-card">
+              <div className="contact-hq-card tvs-reveal-up">
                 <div className="contact-hq-image-box">
                   <img
                     src="/foto.png"

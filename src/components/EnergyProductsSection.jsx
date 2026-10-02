@@ -24,7 +24,7 @@ export default function EnergyProductsSection() {
         {/* Master 50x50 Layout */}
         <div className="energy-products-container">
           {/* Left Column: High-Impact Refinery Image */}
-          <div className="energy-hero-column">
+          <div className="energy-hero-column tvs-reveal-left">
             <div className="energy-hero-image-box">
               <img
                 src="/image/energy_products.jpg"
@@ -98,7 +98,7 @@ export default function EnergyProductsSection() {
           </div>
 
           {/* Right Column: 5 Exact Product Category Cards (Corporate, Zero Toy Icons, 100% Brand Consistency) */}
-          <div className="energy-cards-column" style={{ display: 'flex', flexDirection: 'column', gap: '10px', justifyContent: 'space-between' }}>
+          <div className="energy-cards-column tvs-reveal-right" style={{ display: 'flex', flexDirection: 'column', gap: '10px', justifyContent: 'space-between' }}>
             {cards.map((card, idx) => (
               <div
                 key={card.id}

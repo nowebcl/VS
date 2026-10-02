@@ -181,8 +181,8 @@ export default function PortfolioSection() {
 
           {/* Portfolio list */}
           <ul className="gallery-list mobile-app-gallery-list clear-fix">
-            {filteredItems.map((item) => (
-              <li key={item.id} className="gallery-card-item">
+            {filteredItems.map((item, idx) => (
+              <li key={item.id} className={`gallery-card-item tvs-reveal-zoom tvs-delay-${Math.min((idx % 4 + 1) * 100, 400)}`}>
                 <div className="image gallery-card-image-box">
                   <a
                     href={item.linkUrl || item.fullImage || '#'}

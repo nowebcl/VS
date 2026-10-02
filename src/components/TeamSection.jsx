@@ -74,7 +74,7 @@ export default function TeamSection() {
         {/* Team members list */}
         <ul className="team-list clear-fix">
           {teamMembers.map((member, index) => (
-            <li key={index}>
+            <li key={index} className={`tvs-reveal-up tvs-delay-${Math.min((index % 4 + 1) * 100, 400)}`}>
               <div className="layout-p-33x66 clear-fix">
                 {/* Left column */}
                 <div className="column-left">

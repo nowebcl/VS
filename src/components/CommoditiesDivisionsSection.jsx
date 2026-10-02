@@ -71,7 +71,7 @@ export default function CommoditiesDivisionsSection() {
         )}
 
         {/* 1. TOP: Architectural Image Frame */}
-        <div className="commodities-hero-visual-box">
+        <div className="commodities-hero-visual-box tvs-reveal-zoom">
           <div className="commodities-image-wrapper">
             <img
               src="/COMODITY.png"
@@ -111,7 +111,7 @@ export default function CommoditiesDivisionsSection() {
                 : 'column-right';
 
             return (
-              <li key={div.id} className={colClass}>
+              <li key={div.id} className={`${colClass} tvs-reveal-up tvs-delay-${(index + 1) * 100}`}>
                 <div className="commodities-card-wrap">
                   {/* Card Header with Monochromatic Icon Box & Category Label */}
                   <div className="card-top-row">
